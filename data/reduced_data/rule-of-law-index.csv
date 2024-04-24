@@ -1,0 +1,3739 @@
+Entity,Code,Year,rule_of_law_vdem_owid
+Afghanistan,AFG,2000,0.12
+Afghanistan,AFG,2001,0.143
+Afghanistan,AFG,2002,0.184
+Afghanistan,AFG,2003,0.176
+Afghanistan,AFG,2004,0.18
+Afghanistan,AFG,2005,0.176
+Afghanistan,AFG,2006,0.17
+Afghanistan,AFG,2007,0.169
+Afghanistan,AFG,2008,0.17
+Afghanistan,AFG,2009,0.171
+Afghanistan,AFG,2010,0.169
+Afghanistan,AFG,2011,0.168
+Afghanistan,AFG,2012,0.158
+Afghanistan,AFG,2013,0.178
+Afghanistan,AFG,2014,0.182
+Afghanistan,AFG,2015,0.209
+Afghanistan,AFG,2016,0.197
+Afghanistan,AFG,2017,0.208
+Afghanistan,AFG,2018,0.218
+Afghanistan,AFG,2019,0.212
+Afghanistan,AFG,2020,0.236
+Albania,ALB,2000,0.46
+Albania,ALB,2001,0.509
+Albania,ALB,2002,0.497
+Albania,ALB,2003,0.493
+Albania,ALB,2004,0.503
+Albania,ALB,2005,0.522
+Albania,ALB,2006,0.522
+Albania,ALB,2007,0.522
+Albania,ALB,2008,0.487
+Albania,ALB,2009,0.502
+Albania,ALB,2010,0.498
+Albania,ALB,2011,0.498
+Albania,ALB,2012,0.504
+Albania,ALB,2013,0.515
+Albania,ALB,2014,0.525
+Albania,ALB,2015,0.525
+Albania,ALB,2016,0.525
+Albania,ALB,2017,0.511
+Albania,ALB,2018,0.516
+Albania,ALB,2019,0.543
+Albania,ALB,2020,0.532
+Algeria,DZA,2000,0.239
+Algeria,DZA,2001,0.239
+Algeria,DZA,2002,0.239
+Algeria,DZA,2003,0.239
+Algeria,DZA,2004,0.239
+Algeria,DZA,2005,0.24
+Algeria,DZA,2006,0.24
+Algeria,DZA,2007,0.24
+Algeria,DZA,2008,0.24
+Algeria,DZA,2009,0.24
+Algeria,DZA,2010,0.241
+Algeria,DZA,2011,0.241
+Algeria,DZA,2012,0.253
+Algeria,DZA,2013,0.253
+Algeria,DZA,2014,0.258
+Algeria,DZA,2015,0.258
+Algeria,DZA,2016,0.283
+Algeria,DZA,2017,0.237
+Algeria,DZA,2018,0.242
+Algeria,DZA,2019,0.216
+Algeria,DZA,2020,0.248
+Angola,AGO,2000,0.178
+Angola,AGO,2001,0.178
+Angola,AGO,2002,0.146
+Angola,AGO,2003,0.121
+Angola,AGO,2004,0.121
+Angola,AGO,2005,0.121
+Angola,AGO,2006,0.121
+Angola,AGO,2007,0.121
+Angola,AGO,2008,0.121
+Angola,AGO,2009,0.124
+Angola,AGO,2010,0.125
+Angola,AGO,2011,0.125
+Angola,AGO,2012,0.125
+Angola,AGO,2013,0.132
+Angola,AGO,2014,0.132
+Angola,AGO,2015,0.132
+Angola,AGO,2016,0.132
+Angola,AGO,2017,0.257
+Angola,AGO,2018,0.335
+Angola,AGO,2019,0.335
+Angola,AGO,2020,0.343
+Argentina,ARG,2000,0.667
+Argentina,ARG,2001,0.672
+Argentina,ARG,2002,0.65
+Argentina,ARG,2003,0.639
+Argentina,ARG,2004,0.645
+Argentina,ARG,2005,0.641
+Argentina,ARG,2006,0.641
+Argentina,ARG,2007,0.631
+Argentina,ARG,2008,0.619
+Argentina,ARG,2009,0.619
+Argentina,ARG,2010,0.619
+Argentina,ARG,2011,0.624
+Argentina,ARG,2012,0.624
+Argentina,ARG,2013,0.599
+Argentina,ARG,2014,0.599
+Argentina,ARG,2015,0.619
+Argentina,ARG,2016,0.689
+Argentina,ARG,2017,0.69
+Argentina,ARG,2018,0.679
+Argentina,ARG,2019,0.665
+Argentina,ARG,2020,0.69
+Armenia,ARM,2000,0.259
+Armenia,ARM,2001,0.217
+Armenia,ARM,2002,0.214
+Armenia,ARM,2003,0.229
+Armenia,ARM,2004,0.223
+Armenia,ARM,2005,0.224
+Armenia,ARM,2006,0.224
+Armenia,ARM,2007,0.224
+Armenia,ARM,2008,0.219
+Armenia,ARM,2009,0.228
+Armenia,ARM,2010,0.229
+Armenia,ARM,2011,0.237
+Armenia,ARM,2012,0.233
+Armenia,ARM,2013,0.243
+Armenia,ARM,2014,0.24
+Armenia,ARM,2015,0.236
+Armenia,ARM,2016,0.247
+Armenia,ARM,2017,0.261
+Armenia,ARM,2018,0.679
+Armenia,ARM,2019,0.781
+Armenia,ARM,2020,0.703
+Australia,AUS,2000,0.995
+Australia,AUS,2001,0.995
+Australia,AUS,2002,0.995
+Australia,AUS,2003,0.995
+Australia,AUS,2004,0.995
+Australia,AUS,2005,0.995
+Australia,AUS,2006,0.995
+Australia,AUS,2007,0.995
+Australia,AUS,2008,0.995
+Australia,AUS,2009,0.995
+Australia,AUS,2010,0.995
+Australia,AUS,2011,0.995
+Australia,AUS,2012,0.995
+Australia,AUS,2013,0.991
+Australia,AUS,2014,0.991
+Australia,AUS,2015,0.99
+Australia,AUS,2016,0.992
+Australia,AUS,2017,0.992
+Australia,AUS,2018,0.991
+Australia,AUS,2019,0.991
+Australia,AUS,2020,0.991
+Austria,AUT,2000,0.954
+Austria,AUT,2001,0.947
+Austria,AUT,2002,0.947
+Austria,AUT,2003,0.953
+Austria,AUT,2004,0.945
+Austria,AUT,2005,0.945
+Austria,AUT,2006,0.951
+Austria,AUT,2007,0.963
+Austria,AUT,2008,0.963
+Austria,AUT,2009,0.963
+Austria,AUT,2010,0.963
+Austria,AUT,2011,0.96
+Austria,AUT,2012,0.962
+Austria,AUT,2013,0.966
+Austria,AUT,2014,0.966
+Austria,AUT,2015,0.966
+Austria,AUT,2016,0.966
+Austria,AUT,2017,0.962
+Austria,AUT,2018,0.945
+Austria,AUT,2019,0.951
+Austria,AUT,2020,0.96
+Azerbaijan,AZE,2000,0.04
+Azerbaijan,AZE,2001,0.04
+Azerbaijan,AZE,2002,0.04
+Azerbaijan,AZE,2003,0.04
+Azerbaijan,AZE,2004,0.042
+Azerbaijan,AZE,2005,0.042
+Azerbaijan,AZE,2006,0.042
+Azerbaijan,AZE,2007,0.041
+Azerbaijan,AZE,2008,0.044
+Azerbaijan,AZE,2009,0.043
+Azerbaijan,AZE,2010,0.044
+Azerbaijan,AZE,2011,0.044
+Azerbaijan,AZE,2012,0.045
+Azerbaijan,AZE,2013,0.029
+Azerbaijan,AZE,2014,0.029
+Azerbaijan,AZE,2015,0.029
+Azerbaijan,AZE,2016,0.029
+Azerbaijan,AZE,2017,0.035
+Azerbaijan,AZE,2018,0.027
+Azerbaijan,AZE,2019,0.037
+Azerbaijan,AZE,2020,0.039
+Bahrain,BHR,2000,0.225
+Bahrain,BHR,2001,0.225
+Bahrain,BHR,2002,0.248
+Bahrain,BHR,2003,0.248
+Bahrain,BHR,2004,0.248
+Bahrain,BHR,2005,0.224
+Bahrain,BHR,2006,0.224
+Bahrain,BHR,2007,0.212
+Bahrain,BHR,2008,0.212
+Bahrain,BHR,2009,0.212
+Bahrain,BHR,2010,0.212
+Bahrain,BHR,2011,0.124
+Bahrain,BHR,2012,0.121
+Bahrain,BHR,2013,0.128
+Bahrain,BHR,2014,0.136
+Bahrain,BHR,2015,0.142
+Bahrain,BHR,2016,0.142
+Bahrain,BHR,2017,0.142
+Bahrain,BHR,2018,0.146
+Bahrain,BHR,2019,0.164
+Bahrain,BHR,2020,0.164
+Bangladesh,BGD,2000,0.284
+Bangladesh,BGD,2001,0.274
+Bangladesh,BGD,2002,0.242
+Bangladesh,BGD,2003,0.242
+Bangladesh,BGD,2004,0.242
+Bangladesh,BGD,2005,0.242
+Bangladesh,BGD,2006,0.237
+Bangladesh,BGD,2007,0.256
+Bangladesh,BGD,2008,0.258
+Bangladesh,BGD,2009,0.149
+Bangladesh,BGD,2010,0.115
+Bangladesh,BGD,2011,0.115
+Bangladesh,BGD,2012,0.115
+Bangladesh,BGD,2013,0.109
+Bangladesh,BGD,2014,0.105
+Bangladesh,BGD,2015,0.128
+Bangladesh,BGD,2016,0.128
+Bangladesh,BGD,2017,0.117
+Bangladesh,BGD,2018,0.112
+Bangladesh,BGD,2019,0.1
+Bangladesh,BGD,2020,0.11
+Barbados,BRB,2000,0.914
+Barbados,BRB,2001,0.914
+Barbados,BRB,2002,0.914
+Barbados,BRB,2003,0.914
+Barbados,BRB,2004,0.914
+Barbados,BRB,2005,0.914
+Barbados,BRB,2006,0.914
+Barbados,BRB,2007,0.914
+Barbados,BRB,2008,0.914
+Barbados,BRB,2009,0.914
+Barbados,BRB,2010,0.909
+Barbados,BRB,2011,0.909
+Barbados,BRB,2012,0.909
+Barbados,BRB,2013,0.909
+Barbados,BRB,2014,0.909
+Barbados,BRB,2015,0.904
+Barbados,BRB,2016,0.904
+Barbados,BRB,2017,0.905
+Barbados,BRB,2018,0.917
+Barbados,BRB,2019,0.924
+Barbados,BRB,2020,0.924
+Belarus,BLR,2000,0.273
+Belarus,BLR,2001,0.287
+Belarus,BLR,2002,0.274
+Belarus,BLR,2003,0.274
+Belarus,BLR,2004,0.263
+Belarus,BLR,2005,0.263
+Belarus,BLR,2006,0.263
+Belarus,BLR,2007,0.266
+Belarus,BLR,2008,0.266
+Belarus,BLR,2009,0.266
+Belarus,BLR,2010,0.266
+Belarus,BLR,2011,0.264
+Belarus,BLR,2012,0.277
+Belarus,BLR,2013,0.26
+Belarus,BLR,2014,0.26
+Belarus,BLR,2015,0.26
+Belarus,BLR,2016,0.289
+Belarus,BLR,2017,0.284
+Belarus,BLR,2018,0.285
+Belarus,BLR,2019,0.298
+Belarus,BLR,2020,0.141
+Belgium,BEL,2000,0.984
+Belgium,BEL,2001,0.984
+Belgium,BEL,2002,0.984
+Belgium,BEL,2003,0.984
+Belgium,BEL,2004,0.984
+Belgium,BEL,2005,0.984
+Belgium,BEL,2006,0.984
+Belgium,BEL,2007,0.984
+Belgium,BEL,2008,0.984
+Belgium,BEL,2009,0.984
+Belgium,BEL,2010,0.984
+Belgium,BEL,2011,0.984
+Belgium,BEL,2012,0.984
+Belgium,BEL,2013,0.984
+Belgium,BEL,2014,0.984
+Belgium,BEL,2015,0.984
+Belgium,BEL,2016,0.983
+Belgium,BEL,2017,0.983
+Belgium,BEL,2018,0.983
+Belgium,BEL,2019,0.982
+Belgium,BEL,2020,0.982
+Benin,BEN,2000,0.53
+Benin,BEN,2001,0.53
+Benin,BEN,2002,0.53
+Benin,BEN,2003,0.53
+Benin,BEN,2004,0.53
+Benin,BEN,2005,0.578
+Benin,BEN,2006,0.569
+Benin,BEN,2007,0.569
+Benin,BEN,2008,0.571
+Benin,BEN,2009,0.571
+Benin,BEN,2010,0.571
+Benin,BEN,2011,0.571
+Benin,BEN,2012,0.571
+Benin,BEN,2013,0.642
+Benin,BEN,2014,0.638
+Benin,BEN,2015,0.59
+Benin,BEN,2016,0.739
+Benin,BEN,2017,0.794
+Benin,BEN,2018,0.752
+Benin,BEN,2019,0.677
+Benin,BEN,2020,0.769
+Bhutan,BTN,2000,0.807
+Bhutan,BTN,2001,0.807
+Bhutan,BTN,2002,0.84
+Bhutan,BTN,2003,0.847
+Bhutan,BTN,2004,0.85
+Bhutan,BTN,2005,0.85
+Bhutan,BTN,2006,0.855
+Bhutan,BTN,2007,0.855
+Bhutan,BTN,2008,0.922
+Bhutan,BTN,2009,0.932
+Bhutan,BTN,2010,0.929
+Bhutan,BTN,2011,0.925
+Bhutan,BTN,2012,0.93
+Bhutan,BTN,2013,0.914
+Bhutan,BTN,2014,0.914
+Bhutan,BTN,2015,0.914
+Bhutan,BTN,2016,0.912
+Bhutan,BTN,2017,0.916
+Bhutan,BTN,2018,0.907
+Bhutan,BTN,2019,0.923
+Bhutan,BTN,2020,0.917
+Bolivia,BOL,2000,0.457
+Bolivia,BOL,2001,0.457
+Bolivia,BOL,2002,0.465
+Bolivia,BOL,2003,0.478
+Bolivia,BOL,2004,0.451
+Bolivia,BOL,2005,0.462
+Bolivia,BOL,2006,0.401
+Bolivia,BOL,2007,0.401
+Bolivia,BOL,2008,0.412
+Bolivia,BOL,2009,0.388
+Bolivia,BOL,2010,0.364
+Bolivia,BOL,2011,0.364
+Bolivia,BOL,2012,0.362
+Bolivia,BOL,2013,0.407
+Bolivia,BOL,2014,0.402
+Bolivia,BOL,2015,0.404
+Bolivia,BOL,2016,0.402
+Bolivia,BOL,2017,0.402
+Bolivia,BOL,2018,0.392
+Bolivia,BOL,2019,0.351
+Bolivia,BOL,2020,0.399
+Bosnia and Herzegovina,BIH,2000,0.408
+Bosnia and Herzegovina,BIH,2001,0.486
+Bosnia and Herzegovina,BIH,2002,0.48
+Bosnia and Herzegovina,BIH,2003,0.473
+Bosnia and Herzegovina,BIH,2004,0.457
+Bosnia and Herzegovina,BIH,2005,0.476
+Bosnia and Herzegovina,BIH,2006,0.464
+Bosnia and Herzegovina,BIH,2007,0.464
+Bosnia and Herzegovina,BIH,2008,0.469
+Bosnia and Herzegovina,BIH,2009,0.464
+Bosnia and Herzegovina,BIH,2010,0.461
+Bosnia and Herzegovina,BIH,2011,0.461
+Bosnia and Herzegovina,BIH,2012,0.461
+Bosnia and Herzegovina,BIH,2013,0.474
+Bosnia and Herzegovina,BIH,2014,0.474
+Bosnia and Herzegovina,BIH,2015,0.47
+Bosnia and Herzegovina,BIH,2016,0.475
+Bosnia and Herzegovina,BIH,2017,0.48
+Bosnia and Herzegovina,BIH,2018,0.48
+Bosnia and Herzegovina,BIH,2019,0.416
+Bosnia and Herzegovina,BIH,2020,0.422
+Botswana,BWA,2000,0.909
+Botswana,BWA,2001,0.909
+Botswana,BWA,2002,0.909
+Botswana,BWA,2003,0.909
+Botswana,BWA,2004,0.909
+Botswana,BWA,2005,0.909
+Botswana,BWA,2006,0.909
+Botswana,BWA,2007,0.906
+Botswana,BWA,2008,0.903
+Botswana,BWA,2009,0.905
+Botswana,BWA,2010,0.908
+Botswana,BWA,2011,0.908
+Botswana,BWA,2012,0.9
+Botswana,BWA,2013,0.892
+Botswana,BWA,2014,0.884
+Botswana,BWA,2015,0.866
+Botswana,BWA,2016,0.866
+Botswana,BWA,2017,0.87
+Botswana,BWA,2018,0.88
+Botswana,BWA,2019,0.888
+Botswana,BWA,2020,0.898
+Brazil,BRA,2000,0.757
+Brazil,BRA,2001,0.757
+Brazil,BRA,2002,0.742
+Brazil,BRA,2003,0.742
+Brazil,BRA,2004,0.742
+Brazil,BRA,2005,0.798
+Brazil,BRA,2006,0.799
+Brazil,BRA,2007,0.799
+Brazil,BRA,2008,0.799
+Brazil,BRA,2009,0.799
+Brazil,BRA,2010,0.799
+Brazil,BRA,2011,0.798
+Brazil,BRA,2012,0.797
+Brazil,BRA,2013,0.795
+Brazil,BRA,2014,0.792
+Brazil,BRA,2015,0.79
+Brazil,BRA,2016,0.724
+Brazil,BRA,2017,0.721
+Brazil,BRA,2018,0.707
+Brazil,BRA,2019,0.636
+Brazil,BRA,2020,0.639
+Bulgaria,BGR,2000,0.804
+Bulgaria,BGR,2001,0.786
+Bulgaria,BGR,2002,0.786
+Bulgaria,BGR,2003,0.786
+Bulgaria,BGR,2004,0.786
+Bulgaria,BGR,2005,0.786
+Bulgaria,BGR,2006,0.793
+Bulgaria,BGR,2007,0.795
+Bulgaria,BGR,2008,0.797
+Bulgaria,BGR,2009,0.724
+Bulgaria,BGR,2010,0.704
+Bulgaria,BGR,2011,0.703
+Bulgaria,BGR,2012,0.724
+Bulgaria,BGR,2013,0.738
+Bulgaria,BGR,2014,0.749
+Bulgaria,BGR,2015,0.725
+Bulgaria,BGR,2016,0.71
+Bulgaria,BGR,2017,0.707
+Bulgaria,BGR,2018,0.678
+Bulgaria,BGR,2019,0.654
+Bulgaria,BGR,2020,0.652
+Burkina Faso,BFA,2000,0.64
+Burkina Faso,BFA,2001,0.64
+Burkina Faso,BFA,2002,0.64
+Burkina Faso,BFA,2003,0.646
+Burkina Faso,BFA,2004,0.646
+Burkina Faso,BFA,2005,0.646
+Burkina Faso,BFA,2006,0.644
+Burkina Faso,BFA,2007,0.644
+Burkina Faso,BFA,2008,0.644
+Burkina Faso,BFA,2009,0.644
+Burkina Faso,BFA,2010,0.648
+Burkina Faso,BFA,2011,0.646
+Burkina Faso,BFA,2012,0.646
+Burkina Faso,BFA,2013,0.708
+Burkina Faso,BFA,2014,0.74
+Burkina Faso,BFA,2015,0.767
+Burkina Faso,BFA,2016,0.759
+Burkina Faso,BFA,2017,0.697
+Burkina Faso,BFA,2018,0.691
+Burkina Faso,BFA,2019,0.646
+Burkina Faso,BFA,2020,0.659
+Burundi,BDI,2000,0.477
+Burundi,BDI,2001,0.477
+Burundi,BDI,2002,0.477
+Burundi,BDI,2003,0.477
+Burundi,BDI,2004,0.463
+Burundi,BDI,2005,0.18
+Burundi,BDI,2006,0.164
+Burundi,BDI,2007,0.155
+Burundi,BDI,2008,0.158
+Burundi,BDI,2009,0.159
+Burundi,BDI,2010,0.135
+Burundi,BDI,2011,0.135
+Burundi,BDI,2012,0.133
+Burundi,BDI,2013,0.09
+Burundi,BDI,2014,0.08
+Burundi,BDI,2015,0.069
+Burundi,BDI,2016,0.041
+Burundi,BDI,2017,0.044
+Burundi,BDI,2018,0.035
+Burundi,BDI,2019,0.072
+Burundi,BDI,2020,0.073
+Cambodia,KHM,2000,0.078
+Cambodia,KHM,2001,0.078
+Cambodia,KHM,2002,0.078
+Cambodia,KHM,2003,0.078
+Cambodia,KHM,2004,0.078
+Cambodia,KHM,2005,0.078
+Cambodia,KHM,2006,0.078
+Cambodia,KHM,2007,0.078
+Cambodia,KHM,2008,0.078
+Cambodia,KHM,2009,0.078
+Cambodia,KHM,2010,0.078
+Cambodia,KHM,2011,0.078
+Cambodia,KHM,2012,0.078
+Cambodia,KHM,2013,0.077
+Cambodia,KHM,2014,0.1
+Cambodia,KHM,2015,0.1
+Cambodia,KHM,2016,0.09
+Cambodia,KHM,2017,0.069
+Cambodia,KHM,2018,0.061
+Cambodia,KHM,2019,0.064
+Cambodia,KHM,2020,0.061
+Cameroon,CMR,2000,0.097
+Cameroon,CMR,2001,0.097
+Cameroon,CMR,2002,0.097
+Cameroon,CMR,2003,0.097
+Cameroon,CMR,2004,0.097
+Cameroon,CMR,2005,0.09
+Cameroon,CMR,2006,0.09
+Cameroon,CMR,2007,0.091
+Cameroon,CMR,2008,0.09
+Cameroon,CMR,2009,0.094
+Cameroon,CMR,2010,0.094
+Cameroon,CMR,2011,0.094
+Cameroon,CMR,2012,0.092
+Cameroon,CMR,2013,0.091
+Cameroon,CMR,2014,0.091
+Cameroon,CMR,2015,0.092
+Cameroon,CMR,2016,0.072
+Cameroon,CMR,2017,0.074
+Cameroon,CMR,2018,0.071
+Cameroon,CMR,2019,0.068
+Cameroon,CMR,2020,0.078
+Canada,CAN,2000,0.979
+Canada,CAN,2001,0.979
+Canada,CAN,2002,0.979
+Canada,CAN,2003,0.979
+Canada,CAN,2004,0.979
+Canada,CAN,2005,0.979
+Canada,CAN,2006,0.979
+Canada,CAN,2007,0.983
+Canada,CAN,2008,0.982
+Canada,CAN,2009,0.982
+Canada,CAN,2010,0.983
+Canada,CAN,2011,0.983
+Canada,CAN,2012,0.983
+Canada,CAN,2013,0.983
+Canada,CAN,2014,0.983
+Canada,CAN,2015,0.985
+Canada,CAN,2016,0.985
+Canada,CAN,2017,0.985
+Canada,CAN,2018,0.985
+Canada,CAN,2019,0.981
+Canada,CAN,2020,0.971
+Cape Verde,CPV,2000,0.861
+Cape Verde,CPV,2001,0.865
+Cape Verde,CPV,2002,0.865
+Cape Verde,CPV,2003,0.865
+Cape Verde,CPV,2004,0.865
+Cape Verde,CPV,2005,0.865
+Cape Verde,CPV,2006,0.865
+Cape Verde,CPV,2007,0.865
+Cape Verde,CPV,2008,0.865
+Cape Verde,CPV,2009,0.865
+Cape Verde,CPV,2010,0.865
+Cape Verde,CPV,2011,0.865
+Cape Verde,CPV,2012,0.865
+Cape Verde,CPV,2013,0.868
+Cape Verde,CPV,2014,0.861
+Cape Verde,CPV,2015,0.858
+Cape Verde,CPV,2016,0.865
+Cape Verde,CPV,2017,0.847
+Cape Verde,CPV,2018,0.84
+Cape Verde,CPV,2019,0.835
+Cape Verde,CPV,2020,0.843
+Central African Republic,CAF,2000,0.227
+Central African Republic,CAF,2001,0.227
+Central African Republic,CAF,2002,0.227
+Central African Republic,CAF,2003,0.198
+Central African Republic,CAF,2004,0.152
+Central African Republic,CAF,2005,0.154
+Central African Republic,CAF,2006,0.156
+Central African Republic,CAF,2007,0.156
+Central African Republic,CAF,2008,0.156
+Central African Republic,CAF,2009,0.156
+Central African Republic,CAF,2010,0.155
+Central African Republic,CAF,2011,0.15
+Central African Republic,CAF,2012,0.143
+Central African Republic,CAF,2013,0.11
+Central African Republic,CAF,2014,0.191
+Central African Republic,CAF,2015,0.195
+Central African Republic,CAF,2016,0.23
+Central African Republic,CAF,2017,0.245
+Central African Republic,CAF,2018,0.266
+Central African Republic,CAF,2019,0.265
+Central African Republic,CAF,2020,0.18
+Chad,TCD,2000,0.061
+Chad,TCD,2001,0.061
+Chad,TCD,2002,0.061
+Chad,TCD,2003,0.061
+Chad,TCD,2004,0.061
+Chad,TCD,2005,0.061
+Chad,TCD,2006,0.057
+Chad,TCD,2007,0.057
+Chad,TCD,2008,0.057
+Chad,TCD,2009,0.056
+Chad,TCD,2010,0.055
+Chad,TCD,2011,0.055
+Chad,TCD,2012,0.055
+Chad,TCD,2013,0.045
+Chad,TCD,2014,0.044
+Chad,TCD,2015,0.044
+Chad,TCD,2016,0.044
+Chad,TCD,2017,0.051
+Chad,TCD,2018,0.048
+Chad,TCD,2019,0.05
+Chad,TCD,2020,0.051
+Chile,CHL,2000,0.961
+Chile,CHL,2001,0.961
+Chile,CHL,2002,0.961
+Chile,CHL,2003,0.961
+Chile,CHL,2004,0.961
+Chile,CHL,2005,0.961
+Chile,CHL,2006,0.961
+Chile,CHL,2007,0.961
+Chile,CHL,2008,0.961
+Chile,CHL,2009,0.961
+Chile,CHL,2010,0.964
+Chile,CHL,2011,0.964
+Chile,CHL,2012,0.964
+Chile,CHL,2013,0.961
+Chile,CHL,2014,0.96
+Chile,CHL,2015,0.954
+Chile,CHL,2016,0.954
+Chile,CHL,2017,0.954
+Chile,CHL,2018,0.95
+Chile,CHL,2019,0.945
+Chile,CHL,2020,0.949
+China,CHN,2000,0.346
+China,CHN,2001,0.343
+China,CHN,2002,0.356
+China,CHN,2003,0.355
+China,CHN,2004,0.353
+China,CHN,2005,0.282
+China,CHN,2006,0.282
+China,CHN,2007,0.282
+China,CHN,2008,0.275
+China,CHN,2009,0.281
+China,CHN,2010,0.277
+China,CHN,2011,0.278
+China,CHN,2012,0.284
+China,CHN,2013,0.304
+China,CHN,2014,0.309
+China,CHN,2015,0.297
+China,CHN,2016,0.298
+China,CHN,2017,0.296
+China,CHN,2018,0.295
+China,CHN,2019,0.29
+China,CHN,2020,0.269
+Colombia,COL,2000,0.687
+Colombia,COL,2001,0.687
+Colombia,COL,2002,0.705
+Colombia,COL,2003,0.705
+Colombia,COL,2004,0.705
+Colombia,COL,2005,0.711
+Colombia,COL,2006,0.714
+Colombia,COL,2007,0.707
+Colombia,COL,2008,0.71
+Colombia,COL,2009,0.711
+Colombia,COL,2010,0.724
+Colombia,COL,2011,0.75
+Colombia,COL,2012,0.76
+Colombia,COL,2013,0.753
+Colombia,COL,2014,0.753
+Colombia,COL,2015,0.748
+Colombia,COL,2016,0.749
+Colombia,COL,2017,0.742
+Colombia,COL,2018,0.741
+Colombia,COL,2019,0.735
+Colombia,COL,2020,0.714
+Comoros,COM,2000,0.28
+Comoros,COM,2001,0.26
+Comoros,COM,2002,0.316
+Comoros,COM,2003,0.343
+Comoros,COM,2004,0.343
+Comoros,COM,2005,0.359
+Comoros,COM,2006,0.315
+Comoros,COM,2007,0.315
+Comoros,COM,2008,0.321
+Comoros,COM,2009,0.3
+Comoros,COM,2010,0.333
+Comoros,COM,2011,0.339
+Comoros,COM,2012,0.354
+Comoros,COM,2013,0.321
+Comoros,COM,2014,0.327
+Comoros,COM,2015,0.3
+Comoros,COM,2016,0.322
+Comoros,COM,2017,0.285
+Comoros,COM,2018,0.24
+Comoros,COM,2019,0.138
+Comoros,COM,2020,0.148
+Congo,COG,2000,0.122
+Congo,COG,2001,0.122
+Congo,COG,2002,0.122
+Congo,COG,2003,0.122
+Congo,COG,2004,0.122
+Congo,COG,2005,0.122
+Congo,COG,2006,0.122
+Congo,COG,2007,0.122
+Congo,COG,2008,0.122
+Congo,COG,2009,0.117
+Congo,COG,2010,0.121
+Congo,COG,2011,0.121
+Congo,COG,2012,0.121
+Congo,COG,2013,0.115
+Congo,COG,2014,0.115
+Congo,COG,2015,0.115
+Congo,COG,2016,0.115
+Congo,COG,2017,0.117
+Congo,COG,2018,0.139
+Congo,COG,2019,0.113
+Congo,COG,2020,0.155
+Costa Rica,CRI,2000,0.954
+Costa Rica,CRI,2001,0.954
+Costa Rica,CRI,2002,0.954
+Costa Rica,CRI,2003,0.954
+Costa Rica,CRI,2004,0.954
+Costa Rica,CRI,2005,0.949
+Costa Rica,CRI,2006,0.942
+Costa Rica,CRI,2007,0.942
+Costa Rica,CRI,2008,0.942
+Costa Rica,CRI,2009,0.942
+Costa Rica,CRI,2010,0.945
+Costa Rica,CRI,2011,0.946
+Costa Rica,CRI,2012,0.948
+Costa Rica,CRI,2013,0.943
+Costa Rica,CRI,2014,0.95
+Costa Rica,CRI,2015,0.951
+Costa Rica,CRI,2016,0.947
+Costa Rica,CRI,2017,0.944
+Costa Rica,CRI,2018,0.945
+Costa Rica,CRI,2019,0.948
+Costa Rica,CRI,2020,0.948
+Cote d'Ivoire,CIV,2000,0.506
+Cote d'Ivoire,CIV,2001,0.499
+Cote d'Ivoire,CIV,2002,0.46
+Cote d'Ivoire,CIV,2003,0.472
+Cote d'Ivoire,CIV,2004,0.472
+Cote d'Ivoire,CIV,2005,0.472
+Cote d'Ivoire,CIV,2006,0.472
+Cote d'Ivoire,CIV,2007,0.472
+Cote d'Ivoire,CIV,2008,0.47
+Cote d'Ivoire,CIV,2009,0.477
+Cote d'Ivoire,CIV,2010,0.467
+Cote d'Ivoire,CIV,2011,0.529
+Cote d'Ivoire,CIV,2012,0.572
+Cote d'Ivoire,CIV,2013,0.581
+Cote d'Ivoire,CIV,2014,0.58
+Cote d'Ivoire,CIV,2015,0.588
+Cote d'Ivoire,CIV,2016,0.581
+Cote d'Ivoire,CIV,2017,0.537
+Cote d'Ivoire,CIV,2018,0.539
+Cote d'Ivoire,CIV,2019,0.477
+Cote d'Ivoire,CIV,2020,0.391
+Croatia,HRV,2000,0.777
+Croatia,HRV,2001,0.787
+Croatia,HRV,2002,0.79
+Croatia,HRV,2003,0.776
+Croatia,HRV,2004,0.686
+Croatia,HRV,2005,0.685
+Croatia,HRV,2006,0.685
+Croatia,HRV,2007,0.682
+Croatia,HRV,2008,0.691
+Croatia,HRV,2009,0.755
+Croatia,HRV,2010,0.829
+Croatia,HRV,2011,0.842
+Croatia,HRV,2012,0.846
+Croatia,HRV,2013,0.819
+Croatia,HRV,2014,0.812
+Croatia,HRV,2015,0.812
+Croatia,HRV,2016,0.789
+Croatia,HRV,2017,0.779
+Croatia,HRV,2018,0.777
+Croatia,HRV,2019,0.784
+Croatia,HRV,2020,0.819
+Cuba,CUB,2000,0.148
+Cuba,CUB,2001,0.148
+Cuba,CUB,2002,0.148
+Cuba,CUB,2003,0.143
+Cuba,CUB,2004,0.143
+Cuba,CUB,2005,0.143
+Cuba,CUB,2006,0.143
+Cuba,CUB,2007,0.143
+Cuba,CUB,2008,0.145
+Cuba,CUB,2009,0.144
+Cuba,CUB,2010,0.144
+Cuba,CUB,2011,0.144
+Cuba,CUB,2012,0.144
+Cuba,CUB,2013,0.15
+Cuba,CUB,2014,0.15
+Cuba,CUB,2015,0.142
+Cuba,CUB,2016,0.16
+Cuba,CUB,2017,0.138
+Cuba,CUB,2018,0.148
+Cuba,CUB,2019,0.15
+Cuba,CUB,2020,0.144
+Cyprus,CYP,2000,0.861
+Cyprus,CYP,2001,0.861
+Cyprus,CYP,2002,0.861
+Cyprus,CYP,2003,0.861
+Cyprus,CYP,2004,0.902
+Cyprus,CYP,2005,0.904
+Cyprus,CYP,2006,0.904
+Cyprus,CYP,2007,0.907
+Cyprus,CYP,2008,0.907
+Cyprus,CYP,2009,0.907
+Cyprus,CYP,2010,0.909
+Cyprus,CYP,2011,0.911
+Cyprus,CYP,2012,0.911
+Cyprus,CYP,2013,0.897
+Cyprus,CYP,2014,0.896
+Cyprus,CYP,2015,0.896
+Cyprus,CYP,2016,0.897
+Cyprus,CYP,2017,0.904
+Cyprus,CYP,2018,0.9
+Cyprus,CYP,2019,0.885
+Cyprus,CYP,2020,0.876
+Czechia,CZE,2000,0.856
+Czechia,CZE,2001,0.856
+Czechia,CZE,2002,0.856
+Czechia,CZE,2003,0.856
+Czechia,CZE,2004,0.856
+Czechia,CZE,2005,0.859
+Czechia,CZE,2006,0.863
+Czechia,CZE,2007,0.867
+Czechia,CZE,2008,0.868
+Czechia,CZE,2009,0.869
+Czechia,CZE,2010,0.87
+Czechia,CZE,2011,0.867
+Czechia,CZE,2012,0.876
+Czechia,CZE,2013,0.877
+Czechia,CZE,2014,0.888
+Czechia,CZE,2015,0.889
+Czechia,CZE,2016,0.883
+Czechia,CZE,2017,0.853
+Czechia,CZE,2018,0.848
+Czechia,CZE,2019,0.842
+Czechia,CZE,2020,0.844
+Democratic Republic of Congo,COD,2000,0.077
+Democratic Republic of Congo,COD,2001,0.078
+Democratic Republic of Congo,COD,2002,0.078
+Democratic Republic of Congo,COD,2003,0.082
+Democratic Republic of Congo,COD,2004,0.083
+Democratic Republic of Congo,COD,2005,0.083
+Democratic Republic of Congo,COD,2006,0.091
+Democratic Republic of Congo,COD,2007,0.092
+Democratic Republic of Congo,COD,2008,0.092
+Democratic Republic of Congo,COD,2009,0.094
+Democratic Republic of Congo,COD,2010,0.096
+Democratic Republic of Congo,COD,2011,0.096
+Democratic Republic of Congo,COD,2012,0.098
+Democratic Republic of Congo,COD,2013,0.079
+Democratic Republic of Congo,COD,2014,0.079
+Democratic Republic of Congo,COD,2015,0.072
+Democratic Republic of Congo,COD,2016,0.072
+Democratic Republic of Congo,COD,2017,0.061
+Democratic Republic of Congo,COD,2018,0.072
+Democratic Republic of Congo,COD,2019,0.111
+Democratic Republic of Congo,COD,2020,0.147
+Denmark,DNK,2000,0.999
+Denmark,DNK,2001,0.999
+Denmark,DNK,2002,0.999
+Denmark,DNK,2003,0.999
+Denmark,DNK,2004,0.999
+Denmark,DNK,2005,0.999
+Denmark,DNK,2006,0.999
+Denmark,DNK,2007,0.999
+Denmark,DNK,2008,0.999
+Denmark,DNK,2009,0.999
+Denmark,DNK,2010,0.999
+Denmark,DNK,2011,0.999
+Denmark,DNK,2012,0.999
+Denmark,DNK,2013,0.999
+Denmark,DNK,2014,0.999
+Denmark,DNK,2015,0.999
+Denmark,DNK,2016,0.999
+Denmark,DNK,2017,0.998
+Denmark,DNK,2018,0.998
+Denmark,DNK,2019,0.998
+Denmark,DNK,2020,0.997
+Djibouti,DJI,2000,0.292
+Djibouti,DJI,2001,0.292
+Djibouti,DJI,2002,0.292
+Djibouti,DJI,2003,0.298
+Djibouti,DJI,2004,0.298
+Djibouti,DJI,2005,0.298
+Djibouti,DJI,2006,0.298
+Djibouti,DJI,2007,0.298
+Djibouti,DJI,2008,0.298
+Djibouti,DJI,2009,0.298
+Djibouti,DJI,2010,0.298
+Djibouti,DJI,2011,0.298
+Djibouti,DJI,2012,0.298
+Djibouti,DJI,2013,0.298
+Djibouti,DJI,2014,0.298
+Djibouti,DJI,2015,0.298
+Djibouti,DJI,2016,0.298
+Djibouti,DJI,2017,0.298
+Djibouti,DJI,2018,0.294
+Djibouti,DJI,2019,0.322
+Djibouti,DJI,2020,0.322
+Dominican Republic,DOM,2000,0.356
+Dominican Republic,DOM,2001,0.356
+Dominican Republic,DOM,2002,0.346
+Dominican Republic,DOM,2003,0.327
+Dominican Republic,DOM,2004,0.321
+Dominican Republic,DOM,2005,0.321
+Dominican Republic,DOM,2006,0.321
+Dominican Republic,DOM,2007,0.318
+Dominican Republic,DOM,2008,0.318
+Dominican Republic,DOM,2009,0.318
+Dominican Republic,DOM,2010,0.32
+Dominican Republic,DOM,2011,0.325
+Dominican Republic,DOM,2012,0.332
+Dominican Republic,DOM,2013,0.333
+Dominican Republic,DOM,2014,0.331
+Dominican Republic,DOM,2015,0.337
+Dominican Republic,DOM,2016,0.341
+Dominican Republic,DOM,2017,0.307
+Dominican Republic,DOM,2018,0.278
+Dominican Republic,DOM,2019,0.256
+Dominican Republic,DOM,2020,0.589
+East Timor,TLS,2000,0.831
+East Timor,TLS,2001,0.736
+East Timor,TLS,2002,0.685
+East Timor,TLS,2003,0.655
+East Timor,TLS,2004,0.655
+East Timor,TLS,2005,0.697
+East Timor,TLS,2006,0.678
+East Timor,TLS,2007,0.707
+East Timor,TLS,2008,0.702
+East Timor,TLS,2009,0.697
+East Timor,TLS,2010,0.698
+East Timor,TLS,2011,0.698
+East Timor,TLS,2012,0.699
+East Timor,TLS,2013,0.695
+East Timor,TLS,2014,0.669
+East Timor,TLS,2015,0.65
+East Timor,TLS,2016,0.668
+East Timor,TLS,2017,0.678
+East Timor,TLS,2018,0.677
+East Timor,TLS,2019,0.69
+East Timor,TLS,2020,0.7
+Ecuador,ECU,2000,0.388
+Ecuador,ECU,2001,0.388
+Ecuador,ECU,2002,0.388
+Ecuador,ECU,2003,0.374
+Ecuador,ECU,2004,0.378
+Ecuador,ECU,2005,0.372
+Ecuador,ECU,2006,0.38
+Ecuador,ECU,2007,0.414
+Ecuador,ECU,2008,0.395
+Ecuador,ECU,2009,0.4
+Ecuador,ECU,2010,0.386
+Ecuador,ECU,2011,0.38
+Ecuador,ECU,2012,0.382
+Ecuador,ECU,2013,0.359
+Ecuador,ECU,2014,0.347
+Ecuador,ECU,2015,0.347
+Ecuador,ECU,2016,0.339
+Ecuador,ECU,2017,0.44
+Ecuador,ECU,2018,0.514
+Ecuador,ECU,2019,0.526
+Ecuador,ECU,2020,0.528
+Egypt,EGY,2000,0.322
+Egypt,EGY,2001,0.309
+Egypt,EGY,2002,0.309
+Egypt,EGY,2003,0.309
+Egypt,EGY,2004,0.309
+Egypt,EGY,2005,0.309
+Egypt,EGY,2006,0.309
+Egypt,EGY,2007,0.309
+Egypt,EGY,2008,0.309
+Egypt,EGY,2009,0.309
+Egypt,EGY,2010,0.312
+Egypt,EGY,2011,0.36
+Egypt,EGY,2012,0.348
+Egypt,EGY,2013,0.331
+Egypt,EGY,2014,0.34
+Egypt,EGY,2015,0.34
+Egypt,EGY,2016,0.339
+Egypt,EGY,2017,0.323
+Egypt,EGY,2018,0.317
+Egypt,EGY,2019,0.319
+Egypt,EGY,2020,0.328
+El Salvador,SLV,2000,0.388
+El Salvador,SLV,2001,0.388
+El Salvador,SLV,2002,0.386
+El Salvador,SLV,2003,0.383
+El Salvador,SLV,2004,0.355
+El Salvador,SLV,2005,0.344
+El Salvador,SLV,2006,0.347
+El Salvador,SLV,2007,0.347
+El Salvador,SLV,2008,0.373
+El Salvador,SLV,2009,0.391
+El Salvador,SLV,2010,0.413
+El Salvador,SLV,2011,0.413
+El Salvador,SLV,2012,0.422
+El Salvador,SLV,2013,0.477
+El Salvador,SLV,2014,0.495
+El Salvador,SLV,2015,0.495
+El Salvador,SLV,2016,0.485
+El Salvador,SLV,2017,0.454
+El Salvador,SLV,2018,0.39
+El Salvador,SLV,2019,0.406
+El Salvador,SLV,2020,0.309
+Equatorial Guinea,GNQ,2000,0.071
+Equatorial Guinea,GNQ,2001,0.071
+Equatorial Guinea,GNQ,2002,0.071
+Equatorial Guinea,GNQ,2003,0.071
+Equatorial Guinea,GNQ,2004,0.071
+Equatorial Guinea,GNQ,2005,0.071
+Equatorial Guinea,GNQ,2006,0.071
+Equatorial Guinea,GNQ,2007,0.071
+Equatorial Guinea,GNQ,2008,0.071
+Equatorial Guinea,GNQ,2009,0.071
+Equatorial Guinea,GNQ,2010,0.059
+Equatorial Guinea,GNQ,2011,0.059
+Equatorial Guinea,GNQ,2012,0.059
+Equatorial Guinea,GNQ,2013,0.059
+Equatorial Guinea,GNQ,2014,0.059
+Equatorial Guinea,GNQ,2015,0.048
+Equatorial Guinea,GNQ,2016,0.048
+Equatorial Guinea,GNQ,2017,0.047
+Equatorial Guinea,GNQ,2018,0.049
+Equatorial Guinea,GNQ,2019,0.046
+Equatorial Guinea,GNQ,2020,0.044
+Eritrea,ERI,2000,0.177
+Eritrea,ERI,2001,0.099
+Eritrea,ERI,2002,0.044
+Eritrea,ERI,2003,0.044
+Eritrea,ERI,2004,0.044
+Eritrea,ERI,2005,0.044
+Eritrea,ERI,2006,0.044
+Eritrea,ERI,2007,0.044
+Eritrea,ERI,2008,0.044
+Eritrea,ERI,2009,0.044
+Eritrea,ERI,2010,0.044
+Eritrea,ERI,2011,0.045
+Eritrea,ERI,2012,0.04
+Eritrea,ERI,2013,0.051
+Eritrea,ERI,2014,0.051
+Eritrea,ERI,2015,0.051
+Eritrea,ERI,2016,0.043
+Eritrea,ERI,2017,0.054
+Eritrea,ERI,2018,0.057
+Eritrea,ERI,2019,0.079
+Eritrea,ERI,2020,0.095
+Estonia,EST,2000,0.965
+Estonia,EST,2001,0.965
+Estonia,EST,2002,0.965
+Estonia,EST,2003,0.965
+Estonia,EST,2004,0.969
+Estonia,EST,2005,0.972
+Estonia,EST,2006,0.972
+Estonia,EST,2007,0.974
+Estonia,EST,2008,0.977
+Estonia,EST,2009,0.978
+Estonia,EST,2010,0.98
+Estonia,EST,2011,0.98
+Estonia,EST,2012,0.98
+Estonia,EST,2013,0.983
+Estonia,EST,2014,0.983
+Estonia,EST,2015,0.983
+Estonia,EST,2016,0.983
+Estonia,EST,2017,0.984
+Estonia,EST,2018,0.984
+Estonia,EST,2019,0.98
+Estonia,EST,2020,0.98
+Eswatini,SWZ,2000,0.306
+Eswatini,SWZ,2001,0.306
+Eswatini,SWZ,2002,0.306
+Eswatini,SWZ,2003,0.306
+Eswatini,SWZ,2004,0.306
+Eswatini,SWZ,2005,0.264
+Eswatini,SWZ,2006,0.267
+Eswatini,SWZ,2007,0.267
+Eswatini,SWZ,2008,0.269
+Eswatini,SWZ,2009,0.276
+Eswatini,SWZ,2010,0.268
+Eswatini,SWZ,2011,0.268
+Eswatini,SWZ,2012,0.268
+Eswatini,SWZ,2013,0.276
+Eswatini,SWZ,2014,0.276
+Eswatini,SWZ,2015,0.276
+Eswatini,SWZ,2016,0.276
+Eswatini,SWZ,2017,0.312
+Eswatini,SWZ,2018,0.334
+Eswatini,SWZ,2019,0.304
+Eswatini,SWZ,2020,0.31
+Ethiopia,ETH,2000,0.319
+Ethiopia,ETH,2001,0.319
+Ethiopia,ETH,2002,0.319
+Ethiopia,ETH,2003,0.319
+Ethiopia,ETH,2004,0.319
+Ethiopia,ETH,2005,0.319
+Ethiopia,ETH,2006,0.326
+Ethiopia,ETH,2007,0.347
+Ethiopia,ETH,2008,0.337
+Ethiopia,ETH,2009,0.331
+Ethiopia,ETH,2010,0.336
+Ethiopia,ETH,2011,0.336
+Ethiopia,ETH,2012,0.335
+Ethiopia,ETH,2013,0.333
+Ethiopia,ETH,2014,0.336
+Ethiopia,ETH,2015,0.324
+Ethiopia,ETH,2016,0.315
+Ethiopia,ETH,2017,0.325
+Ethiopia,ETH,2018,0.383
+Ethiopia,ETH,2019,0.444
+Ethiopia,ETH,2020,0.462
+Fiji,FJI,2000,0.606
+Fiji,FJI,2001,0.644
+Fiji,FJI,2002,0.677
+Fiji,FJI,2003,0.677
+Fiji,FJI,2004,0.677
+Fiji,FJI,2005,0.677
+Fiji,FJI,2006,0.589
+Fiji,FJI,2007,0.563
+Fiji,FJI,2008,0.565
+Fiji,FJI,2009,0.517
+Fiji,FJI,2010,0.545
+Fiji,FJI,2011,0.545
+Fiji,FJI,2012,0.54
+Fiji,FJI,2013,0.577
+Fiji,FJI,2014,0.635
+Fiji,FJI,2015,0.654
+Fiji,FJI,2016,0.664
+Fiji,FJI,2017,0.668
+Fiji,FJI,2018,0.655
+Fiji,FJI,2019,0.651
+Fiji,FJI,2020,0.647
+Finland,FIN,2000,0.991
+Finland,FIN,2001,0.991
+Finland,FIN,2002,0.991
+Finland,FIN,2003,0.991
+Finland,FIN,2004,0.991
+Finland,FIN,2005,0.991
+Finland,FIN,2006,0.991
+Finland,FIN,2007,0.991
+Finland,FIN,2008,0.991
+Finland,FIN,2009,0.991
+Finland,FIN,2010,0.991
+Finland,FIN,2011,0.991
+Finland,FIN,2012,0.991
+Finland,FIN,2013,0.991
+Finland,FIN,2014,0.991
+Finland,FIN,2015,0.991
+Finland,FIN,2016,0.991
+Finland,FIN,2017,0.989
+Finland,FIN,2018,0.993
+Finland,FIN,2019,0.989
+Finland,FIN,2020,0.992
+France,FRA,2000,0.966
+France,FRA,2001,0.966
+France,FRA,2002,0.966
+France,FRA,2003,0.966
+France,FRA,2004,0.966
+France,FRA,2005,0.969
+France,FRA,2006,0.967
+France,FRA,2007,0.967
+France,FRA,2008,0.967
+France,FRA,2009,0.968
+France,FRA,2010,0.968
+France,FRA,2011,0.968
+France,FRA,2012,0.968
+France,FRA,2013,0.968
+France,FRA,2014,0.968
+France,FRA,2015,0.968
+France,FRA,2016,0.968
+France,FRA,2017,0.968
+France,FRA,2018,0.961
+France,FRA,2019,0.961
+France,FRA,2020,0.961
+Gabon,GAB,2000,0.318
+Gabon,GAB,2001,0.318
+Gabon,GAB,2002,0.318
+Gabon,GAB,2003,0.318
+Gabon,GAB,2004,0.318
+Gabon,GAB,2005,0.318
+Gabon,GAB,2006,0.318
+Gabon,GAB,2007,0.318
+Gabon,GAB,2008,0.318
+Gabon,GAB,2009,0.318
+Gabon,GAB,2010,0.29
+Gabon,GAB,2011,0.29
+Gabon,GAB,2012,0.29
+Gabon,GAB,2013,0.415
+Gabon,GAB,2014,0.415
+Gabon,GAB,2015,0.415
+Gabon,GAB,2016,0.415
+Gabon,GAB,2017,0.364
+Gabon,GAB,2018,0.347
+Gabon,GAB,2019,0.308
+Gabon,GAB,2020,0.339
+Gambia,GMB,2000,0.294
+Gambia,GMB,2001,0.294
+Gambia,GMB,2002,0.283
+Gambia,GMB,2003,0.271
+Gambia,GMB,2004,0.267
+Gambia,GMB,2005,0.267
+Gambia,GMB,2006,0.267
+Gambia,GMB,2007,0.267
+Gambia,GMB,2008,0.267
+Gambia,GMB,2009,0.267
+Gambia,GMB,2010,0.267
+Gambia,GMB,2011,0.267
+Gambia,GMB,2012,0.267
+Gambia,GMB,2013,0.234
+Gambia,GMB,2014,0.226
+Gambia,GMB,2015,0.235
+Gambia,GMB,2016,0.245
+Gambia,GMB,2017,0.755
+Gambia,GMB,2018,0.762
+Gambia,GMB,2019,0.715
+Gambia,GMB,2020,0.721
+Georgia,GEO,2000,0.179
+Georgia,GEO,2001,0.179
+Georgia,GEO,2002,0.179
+Georgia,GEO,2003,0.179
+Georgia,GEO,2004,0.682
+Georgia,GEO,2005,0.767
+Georgia,GEO,2006,0.792
+Georgia,GEO,2007,0.789
+Georgia,GEO,2008,0.786
+Georgia,GEO,2009,0.797
+Georgia,GEO,2010,0.791
+Georgia,GEO,2011,0.795
+Georgia,GEO,2012,0.807
+Georgia,GEO,2013,0.815
+Georgia,GEO,2014,0.813
+Georgia,GEO,2015,0.808
+Georgia,GEO,2016,0.814
+Georgia,GEO,2017,0.802
+Georgia,GEO,2018,0.795
+Georgia,GEO,2019,0.777
+Georgia,GEO,2020,0.784
+Germany,DEU,2000,0.995
+Germany,DEU,2001,0.995
+Germany,DEU,2002,0.995
+Germany,DEU,2003,0.995
+Germany,DEU,2004,0.995
+Germany,DEU,2005,0.995
+Germany,DEU,2006,0.995
+Germany,DEU,2007,0.995
+Germany,DEU,2008,0.995
+Germany,DEU,2009,0.995
+Germany,DEU,2010,0.995
+Germany,DEU,2011,0.995
+Germany,DEU,2012,0.995
+Germany,DEU,2013,0.995
+Germany,DEU,2014,0.995
+Germany,DEU,2015,0.995
+Germany,DEU,2016,0.995
+Germany,DEU,2017,0.994
+Germany,DEU,2018,0.993
+Germany,DEU,2019,0.993
+Germany,DEU,2020,0.993
+Ghana,GHA,2000,0.613
+Ghana,GHA,2001,0.613
+Ghana,GHA,2002,0.594
+Ghana,GHA,2003,0.611
+Ghana,GHA,2004,0.611
+Ghana,GHA,2005,0.611
+Ghana,GHA,2006,0.611
+Ghana,GHA,2007,0.607
+Ghana,GHA,2008,0.607
+Ghana,GHA,2009,0.607
+Ghana,GHA,2010,0.613
+Ghana,GHA,2011,0.613
+Ghana,GHA,2012,0.608
+Ghana,GHA,2013,0.583
+Ghana,GHA,2014,0.583
+Ghana,GHA,2015,0.563
+Ghana,GHA,2016,0.558
+Ghana,GHA,2017,0.595
+Ghana,GHA,2018,0.575
+Ghana,GHA,2019,0.579
+Ghana,GHA,2020,0.592
+Greece,GRC,2000,0.866
+Greece,GRC,2001,0.866
+Greece,GRC,2002,0.866
+Greece,GRC,2003,0.866
+Greece,GRC,2004,0.866
+Greece,GRC,2005,0.866
+Greece,GRC,2006,0.866
+Greece,GRC,2007,0.866
+Greece,GRC,2008,0.858
+Greece,GRC,2009,0.874
+Greece,GRC,2010,0.865
+Greece,GRC,2011,0.876
+Greece,GRC,2012,0.876
+Greece,GRC,2013,0.886
+Greece,GRC,2014,0.882
+Greece,GRC,2015,0.875
+Greece,GRC,2016,0.873
+Greece,GRC,2017,0.874
+Greece,GRC,2018,0.872
+Greece,GRC,2019,0.875
+Greece,GRC,2020,0.876
+Guatemala,GTM,2000,0.299
+Guatemala,GTM,2001,0.299
+Guatemala,GTM,2002,0.301
+Guatemala,GTM,2003,0.301
+Guatemala,GTM,2004,0.345
+Guatemala,GTM,2005,0.345
+Guatemala,GTM,2006,0.345
+Guatemala,GTM,2007,0.345
+Guatemala,GTM,2008,0.365
+Guatemala,GTM,2009,0.355
+Guatemala,GTM,2010,0.361
+Guatemala,GTM,2011,0.363
+Guatemala,GTM,2012,0.369
+Guatemala,GTM,2013,0.388
+Guatemala,GTM,2014,0.391
+Guatemala,GTM,2015,0.436
+Guatemala,GTM,2016,0.464
+Guatemala,GTM,2017,0.466
+Guatemala,GTM,2018,0.376
+Guatemala,GTM,2019,0.359
+Guatemala,GTM,2020,0.369
+Guinea,GIN,2000,0.08
+Guinea,GIN,2001,0.08
+Guinea,GIN,2002,0.08
+Guinea,GIN,2003,0.08
+Guinea,GIN,2004,0.08
+Guinea,GIN,2005,0.079
+Guinea,GIN,2006,0.079
+Guinea,GIN,2007,0.083
+Guinea,GIN,2008,0.068
+Guinea,GIN,2009,0.075
+Guinea,GIN,2010,0.114
+Guinea,GIN,2011,0.149
+Guinea,GIN,2012,0.152
+Guinea,GIN,2013,0.168
+Guinea,GIN,2014,0.168
+Guinea,GIN,2015,0.172
+Guinea,GIN,2016,0.164
+Guinea,GIN,2017,0.159
+Guinea,GIN,2018,0.14
+Guinea,GIN,2019,0.137
+Guinea,GIN,2020,0.141
+Guinea-Bissau,GNB,2000,0.162
+Guinea-Bissau,GNB,2001,0.166
+Guinea-Bissau,GNB,2002,0.154
+Guinea-Bissau,GNB,2003,0.156
+Guinea-Bissau,GNB,2004,0.255
+Guinea-Bissau,GNB,2005,0.255
+Guinea-Bissau,GNB,2006,0.252
+Guinea-Bissau,GNB,2007,0.251
+Guinea-Bissau,GNB,2008,0.254
+Guinea-Bissau,GNB,2009,0.254
+Guinea-Bissau,GNB,2010,0.258
+Guinea-Bissau,GNB,2011,0.253
+Guinea-Bissau,GNB,2012,0.182
+Guinea-Bissau,GNB,2013,0.283
+Guinea-Bissau,GNB,2014,0.308
+Guinea-Bissau,GNB,2015,0.302
+Guinea-Bissau,GNB,2016,0.284
+Guinea-Bissau,GNB,2017,0.29
+Guinea-Bissau,GNB,2018,0.283
+Guinea-Bissau,GNB,2019,0.254
+Guinea-Bissau,GNB,2020,0.274
+Guyana,GUY,2000,0.505
+Guyana,GUY,2001,0.485
+Guyana,GUY,2002,0.484
+Guyana,GUY,2003,0.484
+Guyana,GUY,2004,0.484
+Guyana,GUY,2005,0.477
+Guyana,GUY,2006,0.477
+Guyana,GUY,2007,0.477
+Guyana,GUY,2008,0.477
+Guyana,GUY,2009,0.477
+Guyana,GUY,2010,0.464
+Guyana,GUY,2011,0.464
+Guyana,GUY,2012,0.47
+Guyana,GUY,2013,0.478
+Guyana,GUY,2014,0.478
+Guyana,GUY,2015,0.647
+Guyana,GUY,2016,0.666
+Guyana,GUY,2017,0.663
+Guyana,GUY,2018,0.663
+Guyana,GUY,2019,0.672
+Guyana,GUY,2020,0.627
+Haiti,HTI,2000,0.297
+Haiti,HTI,2001,0.283
+Haiti,HTI,2002,0.285
+Haiti,HTI,2003,0.262
+Haiti,HTI,2004,0.182
+Haiti,HTI,2005,0.147
+Haiti,HTI,2006,0.191
+Haiti,HTI,2007,0.219
+Haiti,HTI,2008,0.221
+Haiti,HTI,2009,0.22
+Haiti,HTI,2010,0.171
+Haiti,HTI,2011,0.173
+Haiti,HTI,2012,0.17
+Haiti,HTI,2013,0.175
+Haiti,HTI,2014,0.171
+Haiti,HTI,2015,0.169
+Haiti,HTI,2016,0.175
+Haiti,HTI,2017,0.172
+Haiti,HTI,2018,0.143
+Haiti,HTI,2019,0.131
+Haiti,HTI,2020,0.148
+Honduras,HND,2000,0.321
+Honduras,HND,2001,0.321
+Honduras,HND,2002,0.323
+Honduras,HND,2003,0.323
+Honduras,HND,2004,0.323
+Honduras,HND,2005,0.323
+Honduras,HND,2006,0.332
+Honduras,HND,2007,0.328
+Honduras,HND,2008,0.328
+Honduras,HND,2009,0.285
+Honduras,HND,2010,0.276
+Honduras,HND,2011,0.289
+Honduras,HND,2012,0.265
+Honduras,HND,2013,0.295
+Honduras,HND,2014,0.31
+Honduras,HND,2015,0.252
+Honduras,HND,2016,0.277
+Honduras,HND,2017,0.266
+Honduras,HND,2018,0.288
+Honduras,HND,2019,0.275
+Honduras,HND,2020,0.282
+Hong Kong,HKG,2000,0.942
+Hong Kong,HKG,2001,0.942
+Hong Kong,HKG,2002,0.942
+Hong Kong,HKG,2003,0.937
+Hong Kong,HKG,2004,0.937
+Hong Kong,HKG,2005,0.937
+Hong Kong,HKG,2006,0.937
+Hong Kong,HKG,2007,0.937
+Hong Kong,HKG,2008,0.937
+Hong Kong,HKG,2009,0.937
+Hong Kong,HKG,2010,0.933
+Hong Kong,HKG,2011,0.933
+Hong Kong,HKG,2012,0.918
+Hong Kong,HKG,2013,0.918
+Hong Kong,HKG,2014,0.906
+Hong Kong,HKG,2015,0.902
+Hong Kong,HKG,2016,0.9
+Hong Kong,HKG,2017,0.901
+Hong Kong,HKG,2018,0.892
+Hong Kong,HKG,2019,0.864
+Hong Kong,HKG,2020,0.793
+Hungary,HUN,2000,0.888
+Hungary,HUN,2001,0.889
+Hungary,HUN,2002,0.889
+Hungary,HUN,2003,0.886
+Hungary,HUN,2004,0.886
+Hungary,HUN,2005,0.875
+Hungary,HUN,2006,0.86
+Hungary,HUN,2007,0.876
+Hungary,HUN,2008,0.876
+Hungary,HUN,2009,0.882
+Hungary,HUN,2010,0.792
+Hungary,HUN,2011,0.769
+Hungary,HUN,2012,0.746
+Hungary,HUN,2013,0.701
+Hungary,HUN,2014,0.693
+Hungary,HUN,2015,0.693
+Hungary,HUN,2016,0.696
+Hungary,HUN,2017,0.7
+Hungary,HUN,2018,0.683
+Hungary,HUN,2019,0.675
+Hungary,HUN,2020,0.636
+Iceland,ISL,2000,0.981
+Iceland,ISL,2001,0.981
+Iceland,ISL,2002,0.981
+Iceland,ISL,2003,0.981
+Iceland,ISL,2004,0.981
+Iceland,ISL,2005,0.981
+Iceland,ISL,2006,0.981
+Iceland,ISL,2007,0.981
+Iceland,ISL,2008,0.981
+Iceland,ISL,2009,0.982
+Iceland,ISL,2010,0.982
+Iceland,ISL,2011,0.981
+Iceland,ISL,2012,0.983
+Iceland,ISL,2013,0.983
+Iceland,ISL,2014,0.983
+Iceland,ISL,2015,0.983
+Iceland,ISL,2016,0.983
+Iceland,ISL,2017,0.983
+Iceland,ISL,2018,0.983
+Iceland,ISL,2019,0.983
+Iceland,ISL,2020,0.981
+India,IND,2000,0.614
+India,IND,2001,0.614
+India,IND,2002,0.614
+India,IND,2003,0.614
+India,IND,2004,0.614
+India,IND,2005,0.614
+India,IND,2006,0.614
+India,IND,2007,0.614
+India,IND,2008,0.614
+India,IND,2009,0.614
+India,IND,2010,0.632
+India,IND,2011,0.633
+India,IND,2012,0.624
+India,IND,2013,0.636
+India,IND,2014,0.633
+India,IND,2015,0.588
+India,IND,2016,0.582
+India,IND,2017,0.559
+India,IND,2018,0.552
+India,IND,2019,0.549
+India,IND,2020,0.526
+Indonesia,IDN,2000,0.516
+Indonesia,IDN,2001,0.516
+Indonesia,IDN,2002,0.513
+Indonesia,IDN,2003,0.521
+Indonesia,IDN,2004,0.527
+Indonesia,IDN,2005,0.534
+Indonesia,IDN,2006,0.537
+Indonesia,IDN,2007,0.535
+Indonesia,IDN,2008,0.532
+Indonesia,IDN,2009,0.542
+Indonesia,IDN,2010,0.568
+Indonesia,IDN,2011,0.56
+Indonesia,IDN,2012,0.554
+Indonesia,IDN,2013,0.54
+Indonesia,IDN,2014,0.528
+Indonesia,IDN,2015,0.581
+Indonesia,IDN,2016,0.577
+Indonesia,IDN,2017,0.577
+Indonesia,IDN,2018,0.556
+Indonesia,IDN,2019,0.526
+Indonesia,IDN,2020,0.466
+Iran,IRN,2000,0.387
+Iran,IRN,2001,0.387
+Iran,IRN,2002,0.387
+Iran,IRN,2003,0.387
+Iran,IRN,2004,0.383
+Iran,IRN,2005,0.289
+Iran,IRN,2006,0.289
+Iran,IRN,2007,0.289
+Iran,IRN,2008,0.289
+Iran,IRN,2009,0.254
+Iran,IRN,2010,0.264
+Iran,IRN,2011,0.264
+Iran,IRN,2012,0.264
+Iran,IRN,2013,0.29
+Iran,IRN,2014,0.288
+Iran,IRN,2015,0.288
+Iran,IRN,2016,0.296
+Iran,IRN,2017,0.274
+Iran,IRN,2018,0.269
+Iran,IRN,2019,0.264
+Iran,IRN,2020,0.264
+Iraq,IRQ,2000,0.138
+Iraq,IRQ,2001,0.138
+Iraq,IRQ,2002,0.141
+Iraq,IRQ,2003,0.228
+Iraq,IRQ,2004,0.294
+Iraq,IRQ,2005,0.254
+Iraq,IRQ,2006,0.248
+Iraq,IRQ,2007,0.248
+Iraq,IRQ,2008,0.259
+Iraq,IRQ,2009,0.257
+Iraq,IRQ,2010,0.257
+Iraq,IRQ,2011,0.243
+Iraq,IRQ,2012,0.243
+Iraq,IRQ,2013,0.189
+Iraq,IRQ,2014,0.2
+Iraq,IRQ,2015,0.21
+Iraq,IRQ,2016,0.224
+Iraq,IRQ,2017,0.228
+Iraq,IRQ,2018,0.244
+Iraq,IRQ,2019,0.216
+Iraq,IRQ,2020,0.172
+Ireland,IRL,2000,0.968
+Ireland,IRL,2001,0.968
+Ireland,IRL,2002,0.968
+Ireland,IRL,2003,0.968
+Ireland,IRL,2004,0.968
+Ireland,IRL,2005,0.968
+Ireland,IRL,2006,0.968
+Ireland,IRL,2007,0.968
+Ireland,IRL,2008,0.968
+Ireland,IRL,2009,0.972
+Ireland,IRL,2010,0.972
+Ireland,IRL,2011,0.976
+Ireland,IRL,2012,0.976
+Ireland,IRL,2013,0.978
+Ireland,IRL,2014,0.978
+Ireland,IRL,2015,0.978
+Ireland,IRL,2016,0.978
+Ireland,IRL,2017,0.982
+Ireland,IRL,2018,0.984
+Ireland,IRL,2019,0.982
+Ireland,IRL,2020,0.981
+Israel,ISR,2000,0.933
+Israel,ISR,2001,0.933
+Israel,ISR,2002,0.933
+Israel,ISR,2003,0.933
+Israel,ISR,2004,0.933
+Israel,ISR,2005,0.933
+Israel,ISR,2006,0.932
+Israel,ISR,2007,0.932
+Israel,ISR,2008,0.932
+Israel,ISR,2009,0.932
+Israel,ISR,2010,0.927
+Israel,ISR,2011,0.927
+Israel,ISR,2012,0.927
+Israel,ISR,2013,0.922
+Israel,ISR,2014,0.922
+Israel,ISR,2015,0.923
+Israel,ISR,2016,0.917
+Israel,ISR,2017,0.912
+Israel,ISR,2018,0.91
+Israel,ISR,2019,0.901
+Israel,ISR,2020,0.908
+Italy,ITA,2000,0.889
+Italy,ITA,2001,0.871
+Italy,ITA,2002,0.87
+Italy,ITA,2003,0.877
+Italy,ITA,2004,0.877
+Italy,ITA,2005,0.877
+Italy,ITA,2006,0.906
+Italy,ITA,2007,0.905
+Italy,ITA,2008,0.866
+Italy,ITA,2009,0.873
+Italy,ITA,2010,0.887
+Italy,ITA,2011,0.907
+Italy,ITA,2012,0.901
+Italy,ITA,2013,0.899
+Italy,ITA,2014,0.897
+Italy,ITA,2015,0.897
+Italy,ITA,2016,0.898
+Italy,ITA,2017,0.909
+Italy,ITA,2018,0.903
+Italy,ITA,2019,0.903
+Italy,ITA,2020,0.903
+Jamaica,JAM,2000,0.864
+Jamaica,JAM,2001,0.864
+Jamaica,JAM,2002,0.864
+Jamaica,JAM,2003,0.864
+Jamaica,JAM,2004,0.864
+Jamaica,JAM,2005,0.864
+Jamaica,JAM,2006,0.864
+Jamaica,JAM,2007,0.864
+Jamaica,JAM,2008,0.864
+Jamaica,JAM,2009,0.864
+Jamaica,JAM,2010,0.864
+Jamaica,JAM,2011,0.864
+Jamaica,JAM,2012,0.865
+Jamaica,JAM,2013,0.869
+Jamaica,JAM,2014,0.869
+Jamaica,JAM,2015,0.869
+Jamaica,JAM,2016,0.875
+Jamaica,JAM,2017,0.881
+Jamaica,JAM,2018,0.876
+Jamaica,JAM,2019,0.896
+Jamaica,JAM,2020,0.878
+Japan,JPN,2000,0.957
+Japan,JPN,2001,0.957
+Japan,JPN,2002,0.957
+Japan,JPN,2003,0.957
+Japan,JPN,2004,0.957
+Japan,JPN,2005,0.957
+Japan,JPN,2006,0.957
+Japan,JPN,2007,0.957
+Japan,JPN,2008,0.957
+Japan,JPN,2009,0.957
+Japan,JPN,2010,0.957
+Japan,JPN,2011,0.957
+Japan,JPN,2012,0.957
+Japan,JPN,2013,0.954
+Japan,JPN,2014,0.95
+Japan,JPN,2015,0.951
+Japan,JPN,2016,0.947
+Japan,JPN,2017,0.947
+Japan,JPN,2018,0.947
+Japan,JPN,2019,0.947
+Japan,JPN,2020,0.944
+Jordan,JOR,2000,0.614
+Jordan,JOR,2001,0.583
+Jordan,JOR,2002,0.583
+Jordan,JOR,2003,0.583
+Jordan,JOR,2004,0.583
+Jordan,JOR,2005,0.576
+Jordan,JOR,2006,0.576
+Jordan,JOR,2007,0.576
+Jordan,JOR,2008,0.576
+Jordan,JOR,2009,0.576
+Jordan,JOR,2010,0.594
+Jordan,JOR,2011,0.598
+Jordan,JOR,2012,0.603
+Jordan,JOR,2013,0.589
+Jordan,JOR,2014,0.593
+Jordan,JOR,2015,0.593
+Jordan,JOR,2016,0.628
+Jordan,JOR,2017,0.642
+Jordan,JOR,2018,0.662
+Jordan,JOR,2019,0.654
+Jordan,JOR,2020,0.667
+Kazakhstan,KAZ,2000,0.188
+Kazakhstan,KAZ,2001,0.194
+Kazakhstan,KAZ,2002,0.186
+Kazakhstan,KAZ,2003,0.174
+Kazakhstan,KAZ,2004,0.182
+Kazakhstan,KAZ,2005,0.18
+Kazakhstan,KAZ,2006,0.177
+Kazakhstan,KAZ,2007,0.172
+Kazakhstan,KAZ,2008,0.174
+Kazakhstan,KAZ,2009,0.174
+Kazakhstan,KAZ,2010,0.174
+Kazakhstan,KAZ,2011,0.176
+Kazakhstan,KAZ,2012,0.173
+Kazakhstan,KAZ,2013,0.172
+Kazakhstan,KAZ,2014,0.172
+Kazakhstan,KAZ,2015,0.175
+Kazakhstan,KAZ,2016,0.177
+Kazakhstan,KAZ,2017,0.175
+Kazakhstan,KAZ,2018,0.174
+Kazakhstan,KAZ,2019,0.186
+Kazakhstan,KAZ,2020,0.209
+Kenya,KEN,2000,0.27
+Kenya,KEN,2001,0.27
+Kenya,KEN,2002,0.318
+Kenya,KEN,2003,0.357
+Kenya,KEN,2004,0.356
+Kenya,KEN,2005,0.374
+Kenya,KEN,2006,0.374
+Kenya,KEN,2007,0.383
+Kenya,KEN,2008,0.396
+Kenya,KEN,2009,0.398
+Kenya,KEN,2010,0.568
+Kenya,KEN,2011,0.574
+Kenya,KEN,2012,0.579
+Kenya,KEN,2013,0.578
+Kenya,KEN,2014,0.575
+Kenya,KEN,2015,0.575
+Kenya,KEN,2016,0.562
+Kenya,KEN,2017,0.587
+Kenya,KEN,2018,0.572
+Kenya,KEN,2019,0.598
+Kenya,KEN,2020,0.59
+Kosovo,OWID_KOS,2000,0.555
+Kosovo,OWID_KOS,2001,0.591
+Kosovo,OWID_KOS,2002,0.622
+Kosovo,OWID_KOS,2003,0.64
+Kosovo,OWID_KOS,2004,0.616
+Kosovo,OWID_KOS,2005,0.576
+Kosovo,OWID_KOS,2006,0.576
+Kosovo,OWID_KOS,2007,0.576
+Kosovo,OWID_KOS,2008,0.546
+Kosovo,OWID_KOS,2009,0.568
+Kosovo,OWID_KOS,2010,0.576
+Kosovo,OWID_KOS,2011,0.581
+Kosovo,OWID_KOS,2012,0.594
+Kosovo,OWID_KOS,2013,0.503
+Kosovo,OWID_KOS,2014,0.533
+Kosovo,OWID_KOS,2015,0.54
+Kosovo,OWID_KOS,2016,0.583
+Kosovo,OWID_KOS,2017,0.64
+Kosovo,OWID_KOS,2018,0.648
+Kosovo,OWID_KOS,2019,0.688
+Kosovo,OWID_KOS,2020,0.681
+Kuwait,KWT,2000,0.635
+Kuwait,KWT,2001,0.635
+Kuwait,KWT,2002,0.633
+Kuwait,KWT,2003,0.633
+Kuwait,KWT,2004,0.615
+Kuwait,KWT,2005,0.623
+Kuwait,KWT,2006,0.62
+Kuwait,KWT,2007,0.62
+Kuwait,KWT,2008,0.62
+Kuwait,KWT,2009,0.62
+Kuwait,KWT,2010,0.616
+Kuwait,KWT,2011,0.607
+Kuwait,KWT,2012,0.607
+Kuwait,KWT,2013,0.607
+Kuwait,KWT,2014,0.607
+Kuwait,KWT,2015,0.607
+Kuwait,KWT,2016,0.607
+Kuwait,KWT,2017,0.62
+Kuwait,KWT,2018,0.62
+Kuwait,KWT,2019,0.655
+Kuwait,KWT,2020,0.662
+Kyrgyzstan,KGZ,2000,0.142
+Kyrgyzstan,KGZ,2001,0.152
+Kyrgyzstan,KGZ,2002,0.138
+Kyrgyzstan,KGZ,2003,0.138
+Kyrgyzstan,KGZ,2004,0.138
+Kyrgyzstan,KGZ,2005,0.138
+Kyrgyzstan,KGZ,2006,0.138
+Kyrgyzstan,KGZ,2007,0.133
+Kyrgyzstan,KGZ,2008,0.13
+Kyrgyzstan,KGZ,2009,0.133
+Kyrgyzstan,KGZ,2010,0.286
+Kyrgyzstan,KGZ,2011,0.376
+Kyrgyzstan,KGZ,2012,0.37
+Kyrgyzstan,KGZ,2013,0.408
+Kyrgyzstan,KGZ,2014,0.408
+Kyrgyzstan,KGZ,2015,0.37
+Kyrgyzstan,KGZ,2016,0.382
+Kyrgyzstan,KGZ,2017,0.394
+Kyrgyzstan,KGZ,2018,0.409
+Kyrgyzstan,KGZ,2019,0.423
+Kyrgyzstan,KGZ,2020,0.398
+Laos,LAO,2000,0.273
+Laos,LAO,2001,0.273
+Laos,LAO,2002,0.27
+Laos,LAO,2003,0.27
+Laos,LAO,2004,0.27
+Laos,LAO,2005,0.27
+Laos,LAO,2006,0.27
+Laos,LAO,2007,0.27
+Laos,LAO,2008,0.27
+Laos,LAO,2009,0.27
+Laos,LAO,2010,0.264
+Laos,LAO,2011,0.264
+Laos,LAO,2012,0.264
+Laos,LAO,2013,0.267
+Laos,LAO,2014,0.267
+Laos,LAO,2015,0.267
+Laos,LAO,2016,0.267
+Laos,LAO,2017,0.282
+Laos,LAO,2018,0.292
+Laos,LAO,2019,0.296
+Laos,LAO,2020,0.321
+Latvia,LVA,2000,0.89
+Latvia,LVA,2001,0.89
+Latvia,LVA,2002,0.895
+Latvia,LVA,2003,0.902
+Latvia,LVA,2004,0.904
+Latvia,LVA,2005,0.904
+Latvia,LVA,2006,0.899
+Latvia,LVA,2007,0.908
+Latvia,LVA,2008,0.915
+Latvia,LVA,2009,0.925
+Latvia,LVA,2010,0.941
+Latvia,LVA,2011,0.943
+Latvia,LVA,2012,0.948
+Latvia,LVA,2013,0.949
+Latvia,LVA,2014,0.95
+Latvia,LVA,2015,0.952
+Latvia,LVA,2016,0.935
+Latvia,LVA,2017,0.939
+Latvia,LVA,2018,0.946
+Latvia,LVA,2019,0.95
+Latvia,LVA,2020,0.95
+Lebanon,LBN,2000,0.229
+Lebanon,LBN,2001,0.229
+Lebanon,LBN,2002,0.229
+Lebanon,LBN,2003,0.229
+Lebanon,LBN,2004,0.229
+Lebanon,LBN,2005,0.272
+Lebanon,LBN,2006,0.275
+Lebanon,LBN,2007,0.284
+Lebanon,LBN,2008,0.284
+Lebanon,LBN,2009,0.289
+Lebanon,LBN,2010,0.292
+Lebanon,LBN,2011,0.292
+Lebanon,LBN,2012,0.299
+Lebanon,LBN,2013,0.334
+Lebanon,LBN,2014,0.334
+Lebanon,LBN,2015,0.315
+Lebanon,LBN,2016,0.317
+Lebanon,LBN,2017,0.324
+Lebanon,LBN,2018,0.313
+Lebanon,LBN,2019,0.307
+Lebanon,LBN,2020,0.296
+Lesotho,LSO,2000,0.588
+Lesotho,LSO,2001,0.588
+Lesotho,LSO,2002,0.588
+Lesotho,LSO,2003,0.593
+Lesotho,LSO,2004,0.593
+Lesotho,LSO,2005,0.599
+Lesotho,LSO,2006,0.599
+Lesotho,LSO,2007,0.599
+Lesotho,LSO,2008,0.607
+Lesotho,LSO,2009,0.607
+Lesotho,LSO,2010,0.608
+Lesotho,LSO,2011,0.601
+Lesotho,LSO,2012,0.597
+Lesotho,LSO,2013,0.679
+Lesotho,LSO,2014,0.673
+Lesotho,LSO,2015,0.602
+Lesotho,LSO,2016,0.614
+Lesotho,LSO,2017,0.651
+Lesotho,LSO,2018,0.591
+Lesotho,LSO,2019,0.644
+Lesotho,LSO,2020,0.656
+Liberia,LBR,2000,0.074
+Liberia,LBR,2001,0.074
+Liberia,LBR,2002,0.074
+Liberia,LBR,2003,0.074
+Liberia,LBR,2004,0.295
+Liberia,LBR,2005,0.358
+Liberia,LBR,2006,0.424
+Liberia,LBR,2007,0.424
+Liberia,LBR,2008,0.424
+Liberia,LBR,2009,0.424
+Liberia,LBR,2010,0.402
+Liberia,LBR,2011,0.402
+Liberia,LBR,2012,0.402
+Liberia,LBR,2013,0.394
+Liberia,LBR,2014,0.394
+Liberia,LBR,2015,0.394
+Liberia,LBR,2016,0.394
+Liberia,LBR,2017,0.449
+Liberia,LBR,2018,0.394
+Liberia,LBR,2019,0.379
+Liberia,LBR,2020,0.408
+Libya,LBY,2000,0.095
+Libya,LBY,2001,0.095
+Libya,LBY,2002,0.095
+Libya,LBY,2003,0.083
+Libya,LBY,2004,0.083
+Libya,LBY,2005,0.083
+Libya,LBY,2006,0.083
+Libya,LBY,2007,0.083
+Libya,LBY,2008,0.083
+Libya,LBY,2009,0.083
+Libya,LBY,2010,0.087
+Libya,LBY,2011,0.151
+Libya,LBY,2012,0.269
+Libya,LBY,2013,0.257
+Libya,LBY,2014,0.24
+Libya,LBY,2015,0.228
+Libya,LBY,2016,0.209
+Libya,LBY,2017,0.195
+Libya,LBY,2018,0.145
+Libya,LBY,2019,0.128
+Libya,LBY,2020,0.134
+Lithuania,LTU,2000,0.938
+Lithuania,LTU,2001,0.947
+Lithuania,LTU,2002,0.947
+Lithuania,LTU,2003,0.928
+Lithuania,LTU,2004,0.945
+Lithuania,LTU,2005,0.946
+Lithuania,LTU,2006,0.947
+Lithuania,LTU,2007,0.951
+Lithuania,LTU,2008,0.949
+Lithuania,LTU,2009,0.954
+Lithuania,LTU,2010,0.956
+Lithuania,LTU,2011,0.956
+Lithuania,LTU,2012,0.954
+Lithuania,LTU,2013,0.959
+Lithuania,LTU,2014,0.96
+Lithuania,LTU,2015,0.963
+Lithuania,LTU,2016,0.958
+Lithuania,LTU,2017,0.954
+Lithuania,LTU,2018,0.951
+Lithuania,LTU,2019,0.953
+Lithuania,LTU,2020,0.954
+Luxembourg,LUX,2000,0.977
+Luxembourg,LUX,2001,0.977
+Luxembourg,LUX,2002,0.977
+Luxembourg,LUX,2003,0.977
+Luxembourg,LUX,2004,0.977
+Luxembourg,LUX,2005,0.977
+Luxembourg,LUX,2006,0.977
+Luxembourg,LUX,2007,0.977
+Luxembourg,LUX,2008,0.977
+Luxembourg,LUX,2009,0.977
+Luxembourg,LUX,2010,0.979
+Luxembourg,LUX,2011,0.979
+Luxembourg,LUX,2012,0.979
+Luxembourg,LUX,2013,0.979
+Luxembourg,LUX,2014,0.979
+Luxembourg,LUX,2015,0.979
+Luxembourg,LUX,2016,0.979
+Luxembourg,LUX,2017,0.979
+Luxembourg,LUX,2018,0.979
+Luxembourg,LUX,2019,0.979
+Luxembourg,LUX,2020,0.976
+Madagascar,MDG,2000,0.285
+Madagascar,MDG,2001,0.285
+Madagascar,MDG,2002,0.365
+Madagascar,MDG,2003,0.353
+Madagascar,MDG,2004,0.366
+Madagascar,MDG,2005,0.366
+Madagascar,MDG,2006,0.366
+Madagascar,MDG,2007,0.371
+Madagascar,MDG,2008,0.371
+Madagascar,MDG,2009,0.107
+Madagascar,MDG,2010,0.084
+Madagascar,MDG,2011,0.088
+Madagascar,MDG,2012,0.088
+Madagascar,MDG,2013,0.124
+Madagascar,MDG,2014,0.219
+Madagascar,MDG,2015,0.257
+Madagascar,MDG,2016,0.257
+Madagascar,MDG,2017,0.26
+Madagascar,MDG,2018,0.336
+Madagascar,MDG,2019,0.273
+Madagascar,MDG,2020,0.274
+Malawi,MWI,2000,0.516
+Malawi,MWI,2001,0.523
+Malawi,MWI,2002,0.524
+Malawi,MWI,2003,0.524
+Malawi,MWI,2004,0.524
+Malawi,MWI,2005,0.534
+Malawi,MWI,2006,0.54
+Malawi,MWI,2007,0.537
+Malawi,MWI,2008,0.544
+Malawi,MWI,2009,0.54
+Malawi,MWI,2010,0.491
+Malawi,MWI,2011,0.499
+Malawi,MWI,2012,0.495
+Malawi,MWI,2013,0.501
+Malawi,MWI,2014,0.512
+Malawi,MWI,2015,0.55
+Malawi,MWI,2016,0.532
+Malawi,MWI,2017,0.572
+Malawi,MWI,2018,0.544
+Malawi,MWI,2019,0.51
+Malawi,MWI,2020,0.635
+Malaysia,MYS,2000,0.389
+Malaysia,MYS,2001,0.389
+Malaysia,MYS,2002,0.378
+Malaysia,MYS,2003,0.375
+Malaysia,MYS,2004,0.404
+Malaysia,MYS,2005,0.419
+Malaysia,MYS,2006,0.419
+Malaysia,MYS,2007,0.419
+Malaysia,MYS,2008,0.419
+Malaysia,MYS,2009,0.423
+Malaysia,MYS,2010,0.419
+Malaysia,MYS,2011,0.429
+Malaysia,MYS,2012,0.429
+Malaysia,MYS,2013,0.432
+Malaysia,MYS,2014,0.432
+Malaysia,MYS,2015,0.429
+Malaysia,MYS,2016,0.429
+Malaysia,MYS,2017,0.481
+Malaysia,MYS,2018,0.713
+Malaysia,MYS,2019,0.711
+Malaysia,MYS,2020,0.632
+Maldives,MDV,2000,0.102
+Maldives,MDV,2001,0.102
+Maldives,MDV,2002,0.102
+Maldives,MDV,2003,0.11
+Maldives,MDV,2004,0.11
+Maldives,MDV,2005,0.164
+Maldives,MDV,2006,0.188
+Maldives,MDV,2007,0.188
+Maldives,MDV,2008,0.32
+Maldives,MDV,2009,0.498
+Maldives,MDV,2010,0.492
+Maldives,MDV,2011,0.494
+Maldives,MDV,2012,0.389
+Maldives,MDV,2013,0.287
+Maldives,MDV,2014,0.274
+Maldives,MDV,2015,0.236
+Maldives,MDV,2016,0.275
+Maldives,MDV,2017,0.264
+Maldives,MDV,2018,0.281
+Maldives,MDV,2019,0.646
+Maldives,MDV,2020,0.7
+Mali,MLI,2000,0.403
+Mali,MLI,2001,0.403
+Mali,MLI,2002,0.413
+Mali,MLI,2003,0.397
+Mali,MLI,2004,0.397
+Mali,MLI,2005,0.397
+Mali,MLI,2006,0.397
+Mali,MLI,2007,0.405
+Mali,MLI,2008,0.402
+Mali,MLI,2009,0.402
+Mali,MLI,2010,0.39
+Mali,MLI,2011,0.398
+Mali,MLI,2012,0.387
+Mali,MLI,2013,0.402
+Mali,MLI,2014,0.402
+Mali,MLI,2015,0.402
+Mali,MLI,2016,0.402
+Mali,MLI,2017,0.373
+Mali,MLI,2018,0.373
+Mali,MLI,2019,0.419
+Mali,MLI,2020,0.427
+Malta,MLT,2000,0.869
+Malta,MLT,2001,0.869
+Malta,MLT,2002,0.869
+Malta,MLT,2003,0.869
+Malta,MLT,2004,0.869
+Malta,MLT,2005,0.869
+Malta,MLT,2006,0.869
+Malta,MLT,2007,0.869
+Malta,MLT,2008,0.869
+Malta,MLT,2009,0.869
+Malta,MLT,2010,0.869
+Malta,MLT,2011,0.869
+Malta,MLT,2012,0.869
+Malta,MLT,2013,0.832
+Malta,MLT,2014,0.825
+Malta,MLT,2015,0.817
+Malta,MLT,2016,0.805
+Malta,MLT,2017,0.805
+Malta,MLT,2018,0.805
+Malta,MLT,2019,0.79
+Malta,MLT,2020,0.838
+Mauritania,MRT,2000,0.16
+Mauritania,MRT,2001,0.16
+Mauritania,MRT,2002,0.166
+Mauritania,MRT,2003,0.156
+Mauritania,MRT,2004,0.156
+Mauritania,MRT,2005,0.165
+Mauritania,MRT,2006,0.305
+Mauritania,MRT,2007,0.32
+Mauritania,MRT,2008,0.293
+Mauritania,MRT,2009,0.284
+Mauritania,MRT,2010,0.284
+Mauritania,MRT,2011,0.284
+Mauritania,MRT,2012,0.284
+Mauritania,MRT,2013,0.151
+Mauritania,MRT,2014,0.151
+Mauritania,MRT,2015,0.152
+Mauritania,MRT,2016,0.152
+Mauritania,MRT,2017,0.165
+Mauritania,MRT,2018,0.212
+Mauritania,MRT,2019,0.246
+Mauritania,MRT,2020,0.196
+Mauritius,MUS,2000,0.799
+Mauritius,MUS,2001,0.799
+Mauritius,MUS,2002,0.799
+Mauritius,MUS,2003,0.799
+Mauritius,MUS,2004,0.799
+Mauritius,MUS,2005,0.799
+Mauritius,MUS,2006,0.799
+Mauritius,MUS,2007,0.799
+Mauritius,MUS,2008,0.799
+Mauritius,MUS,2009,0.799
+Mauritius,MUS,2010,0.818
+Mauritius,MUS,2011,0.819
+Mauritius,MUS,2012,0.819
+Mauritius,MUS,2013,0.788
+Mauritius,MUS,2014,0.75
+Mauritius,MUS,2015,0.734
+Mauritius,MUS,2016,0.734
+Mauritius,MUS,2017,0.713
+Mauritius,MUS,2018,0.711
+Mauritius,MUS,2019,0.711
+Mauritius,MUS,2020,0.63
+Mexico,MEX,2000,0.623
+Mexico,MEX,2001,0.622
+Mexico,MEX,2002,0.622
+Mexico,MEX,2003,0.589
+Mexico,MEX,2004,0.589
+Mexico,MEX,2005,0.589
+Mexico,MEX,2006,0.596
+Mexico,MEX,2007,0.579
+Mexico,MEX,2008,0.584
+Mexico,MEX,2009,0.584
+Mexico,MEX,2010,0.581
+Mexico,MEX,2011,0.581
+Mexico,MEX,2012,0.562
+Mexico,MEX,2013,0.464
+Mexico,MEX,2014,0.464
+Mexico,MEX,2015,0.468
+Mexico,MEX,2016,0.468
+Mexico,MEX,2017,0.47
+Mexico,MEX,2018,0.479
+Mexico,MEX,2019,0.54
+Mexico,MEX,2020,0.509
+Moldova,MDA,2000,0.494
+Moldova,MDA,2001,0.482
+Moldova,MDA,2002,0.472
+Moldova,MDA,2003,0.472
+Moldova,MDA,2004,0.472
+Moldova,MDA,2005,0.477
+Moldova,MDA,2006,0.477
+Moldova,MDA,2007,0.482
+Moldova,MDA,2008,0.478
+Moldova,MDA,2009,0.496
+Moldova,MDA,2010,0.631
+Moldova,MDA,2011,0.642
+Moldova,MDA,2012,0.65
+Moldova,MDA,2013,0.599
+Moldova,MDA,2014,0.599
+Moldova,MDA,2015,0.526
+Moldova,MDA,2016,0.45
+Moldova,MDA,2017,0.505
+Moldova,MDA,2018,0.474
+Moldova,MDA,2019,0.526
+Moldova,MDA,2020,0.577
+Mongolia,MNG,2000,0.669
+Mongolia,MNG,2001,0.669
+Mongolia,MNG,2002,0.66
+Mongolia,MNG,2003,0.671
+Mongolia,MNG,2004,0.663
+Mongolia,MNG,2005,0.648
+Mongolia,MNG,2006,0.649
+Mongolia,MNG,2007,0.649
+Mongolia,MNG,2008,0.649
+Mongolia,MNG,2009,0.655
+Mongolia,MNG,2010,0.654
+Mongolia,MNG,2011,0.66
+Mongolia,MNG,2012,0.658
+Mongolia,MNG,2013,0.639
+Mongolia,MNG,2014,0.629
+Mongolia,MNG,2015,0.625
+Mongolia,MNG,2016,0.625
+Mongolia,MNG,2017,0.616
+Mongolia,MNG,2018,0.618
+Mongolia,MNG,2019,0.615
+Mongolia,MNG,2020,0.62
+Montenegro,MNE,2000,0.632
+Montenegro,MNE,2001,0.631
+Montenegro,MNE,2002,0.631
+Montenegro,MNE,2003,0.631
+Montenegro,MNE,2004,0.631
+Montenegro,MNE,2005,0.631
+Montenegro,MNE,2006,0.632
+Montenegro,MNE,2007,0.649
+Montenegro,MNE,2008,0.668
+Montenegro,MNE,2009,0.674
+Montenegro,MNE,2010,0.674
+Montenegro,MNE,2011,0.681
+Montenegro,MNE,2012,0.681
+Montenegro,MNE,2013,0.684
+Montenegro,MNE,2014,0.684
+Montenegro,MNE,2015,0.684
+Montenegro,MNE,2016,0.684
+Montenegro,MNE,2017,0.686
+Montenegro,MNE,2018,0.668
+Montenegro,MNE,2019,0.681
+Montenegro,MNE,2020,0.724
+Morocco,MAR,2000,0.395
+Morocco,MAR,2001,0.395
+Morocco,MAR,2002,0.395
+Morocco,MAR,2003,0.396
+Morocco,MAR,2004,0.396
+Morocco,MAR,2005,0.455
+Morocco,MAR,2006,0.455
+Morocco,MAR,2007,0.455
+Morocco,MAR,2008,0.455
+Morocco,MAR,2009,0.455
+Morocco,MAR,2010,0.467
+Morocco,MAR,2011,0.494
+Morocco,MAR,2012,0.502
+Morocco,MAR,2013,0.485
+Morocco,MAR,2014,0.491
+Morocco,MAR,2015,0.48
+Morocco,MAR,2016,0.487
+Morocco,MAR,2017,0.532
+Morocco,MAR,2018,0.532
+Morocco,MAR,2019,0.532
+Morocco,MAR,2020,0.526
+Mozambique,MOZ,2000,0.508
+Mozambique,MOZ,2001,0.508
+Mozambique,MOZ,2002,0.499
+Mozambique,MOZ,2003,0.501
+Mozambique,MOZ,2004,0.502
+Mozambique,MOZ,2005,0.49
+Mozambique,MOZ,2006,0.49
+Mozambique,MOZ,2007,0.49
+Mozambique,MOZ,2008,0.487
+Mozambique,MOZ,2009,0.48
+Mozambique,MOZ,2010,0.494
+Mozambique,MOZ,2011,0.494
+Mozambique,MOZ,2012,0.494
+Mozambique,MOZ,2013,0.486
+Mozambique,MOZ,2014,0.486
+Mozambique,MOZ,2015,0.48
+Mozambique,MOZ,2016,0.481
+Mozambique,MOZ,2017,0.465
+Mozambique,MOZ,2018,0.433
+Mozambique,MOZ,2019,0.406
+Mozambique,MOZ,2020,0.426
+Myanmar,MMR,2000,0.048
+Myanmar,MMR,2001,0.048
+Myanmar,MMR,2002,0.048
+Myanmar,MMR,2003,0.048
+Myanmar,MMR,2004,0.048
+Myanmar,MMR,2005,0.048
+Myanmar,MMR,2006,0.048
+Myanmar,MMR,2007,0.048
+Myanmar,MMR,2008,0.048
+Myanmar,MMR,2009,0.052
+Myanmar,MMR,2010,0.107
+Myanmar,MMR,2011,0.223
+Myanmar,MMR,2012,0.234
+Myanmar,MMR,2013,0.362
+Myanmar,MMR,2014,0.373
+Myanmar,MMR,2015,0.439
+Myanmar,MMR,2016,0.538
+Myanmar,MMR,2017,0.55
+Myanmar,MMR,2018,0.582
+Myanmar,MMR,2019,0.597
+Myanmar,MMR,2020,0.602
+Namibia,NAM,2000,0.856
+Namibia,NAM,2001,0.856
+Namibia,NAM,2002,0.85
+Namibia,NAM,2003,0.859
+Namibia,NAM,2004,0.849
+Namibia,NAM,2005,0.859
+Namibia,NAM,2006,0.859
+Namibia,NAM,2007,0.859
+Namibia,NAM,2008,0.859
+Namibia,NAM,2009,0.859
+Namibia,NAM,2010,0.859
+Namibia,NAM,2011,0.858
+Namibia,NAM,2012,0.86
+Namibia,NAM,2013,0.858
+Namibia,NAM,2014,0.858
+Namibia,NAM,2015,0.856
+Namibia,NAM,2016,0.856
+Namibia,NAM,2017,0.849
+Namibia,NAM,2018,0.856
+Namibia,NAM,2019,0.791
+Namibia,NAM,2020,0.795
+Nepal,NPL,2000,0.472
+Nepal,NPL,2001,0.442
+Nepal,NPL,2002,0.421
+Nepal,NPL,2003,0.421
+Nepal,NPL,2004,0.418
+Nepal,NPL,2005,0.453
+Nepal,NPL,2006,0.48
+Nepal,NPL,2007,0.566
+Nepal,NPL,2008,0.566
+Nepal,NPL,2009,0.568
+Nepal,NPL,2010,0.562
+Nepal,NPL,2011,0.584
+Nepal,NPL,2012,0.571
+Nepal,NPL,2013,0.552
+Nepal,NPL,2014,0.561
+Nepal,NPL,2015,0.582
+Nepal,NPL,2016,0.591
+Nepal,NPL,2017,0.588
+Nepal,NPL,2018,0.622
+Nepal,NPL,2019,0.537
+Nepal,NPL,2020,0.534
+Netherlands,NLD,2000,0.984
+Netherlands,NLD,2001,0.984
+Netherlands,NLD,2002,0.982
+Netherlands,NLD,2003,0.987
+Netherlands,NLD,2004,0.987
+Netherlands,NLD,2005,0.987
+Netherlands,NLD,2006,0.987
+Netherlands,NLD,2007,0.987
+Netherlands,NLD,2008,0.987
+Netherlands,NLD,2009,0.987
+Netherlands,NLD,2010,0.987
+Netherlands,NLD,2011,0.987
+Netherlands,NLD,2012,0.987
+Netherlands,NLD,2013,0.981
+Netherlands,NLD,2014,0.981
+Netherlands,NLD,2015,0.983
+Netherlands,NLD,2016,0.983
+Netherlands,NLD,2017,0.986
+Netherlands,NLD,2018,0.984
+Netherlands,NLD,2019,0.988
+Netherlands,NLD,2020,0.985
+New Zealand,NZL,2000,0.993
+New Zealand,NZL,2001,0.993
+New Zealand,NZL,2002,0.993
+New Zealand,NZL,2003,0.993
+New Zealand,NZL,2004,0.993
+New Zealand,NZL,2005,0.993
+New Zealand,NZL,2006,0.993
+New Zealand,NZL,2007,0.993
+New Zealand,NZL,2008,0.993
+New Zealand,NZL,2009,0.993
+New Zealand,NZL,2010,0.993
+New Zealand,NZL,2011,0.993
+New Zealand,NZL,2012,0.993
+New Zealand,NZL,2013,0.993
+New Zealand,NZL,2014,0.993
+New Zealand,NZL,2015,0.993
+New Zealand,NZL,2016,0.993
+New Zealand,NZL,2017,0.993
+New Zealand,NZL,2018,0.993
+New Zealand,NZL,2019,0.993
+New Zealand,NZL,2020,0.992
+Nicaragua,NIC,2000,0.244
+Nicaragua,NIC,2001,0.291
+Nicaragua,NIC,2002,0.299
+Nicaragua,NIC,2003,0.299
+Nicaragua,NIC,2004,0.298
+Nicaragua,NIC,2005,0.298
+Nicaragua,NIC,2006,0.225
+Nicaragua,NIC,2007,0.135
+Nicaragua,NIC,2008,0.117
+Nicaragua,NIC,2009,0.116
+Nicaragua,NIC,2010,0.112
+Nicaragua,NIC,2011,0.112
+Nicaragua,NIC,2012,0.109
+Nicaragua,NIC,2013,0.089
+Nicaragua,NIC,2014,0.089
+Nicaragua,NIC,2015,0.089
+Nicaragua,NIC,2016,0.091
+Nicaragua,NIC,2017,0.076
+Nicaragua,NIC,2018,0.033
+Nicaragua,NIC,2019,0.029
+Nicaragua,NIC,2020,0.017
+Niger,NER,2000,0.56
+Niger,NER,2001,0.56
+Niger,NER,2002,0.56
+Niger,NER,2003,0.56
+Niger,NER,2004,0.56
+Niger,NER,2005,0.56
+Niger,NER,2006,0.56
+Niger,NER,2007,0.573
+Niger,NER,2008,0.573
+Niger,NER,2009,0.542
+Niger,NER,2010,0.644
+Niger,NER,2011,0.638
+Niger,NER,2012,0.647
+Niger,NER,2013,0.636
+Niger,NER,2014,0.639
+Niger,NER,2015,0.633
+Niger,NER,2016,0.633
+Niger,NER,2017,0.601
+Niger,NER,2018,0.582
+Niger,NER,2019,0.556
+Niger,NER,2020,0.54
+Nigeria,NGA,2000,0.236
+Nigeria,NGA,2001,0.236
+Nigeria,NGA,2002,0.236
+Nigeria,NGA,2003,0.236
+Nigeria,NGA,2004,0.236
+Nigeria,NGA,2005,0.236
+Nigeria,NGA,2006,0.236
+Nigeria,NGA,2007,0.248
+Nigeria,NGA,2008,0.249
+Nigeria,NGA,2009,0.249
+Nigeria,NGA,2010,0.242
+Nigeria,NGA,2011,0.248
+Nigeria,NGA,2012,0.248
+Nigeria,NGA,2013,0.269
+Nigeria,NGA,2014,0.266
+Nigeria,NGA,2015,0.298
+Nigeria,NGA,2016,0.308
+Nigeria,NGA,2017,0.326
+Nigeria,NGA,2018,0.291
+Nigeria,NGA,2019,0.29
+Nigeria,NGA,2020,0.283
+North Korea,PRK,2000,0.027
+North Korea,PRK,2001,0.027
+North Korea,PRK,2002,0.027
+North Korea,PRK,2003,0.027
+North Korea,PRK,2004,0.027
+North Korea,PRK,2005,0.027
+North Korea,PRK,2006,0.027
+North Korea,PRK,2007,0.027
+North Korea,PRK,2008,0.027
+North Korea,PRK,2009,0.027
+North Korea,PRK,2010,0.027
+North Korea,PRK,2011,0.027
+North Korea,PRK,2012,0.03
+North Korea,PRK,2013,0.03
+North Korea,PRK,2014,0.03
+North Korea,PRK,2015,0.03
+North Korea,PRK,2016,0.029
+North Korea,PRK,2017,0.029
+North Korea,PRK,2018,0.029
+North Korea,PRK,2019,0.033
+North Korea,PRK,2020,0.032
+North Macedonia,MKD,2000,0.587
+North Macedonia,MKD,2001,0.572
+North Macedonia,MKD,2002,0.604
+North Macedonia,MKD,2003,0.619
+North Macedonia,MKD,2004,0.629
+North Macedonia,MKD,2005,0.618
+North Macedonia,MKD,2006,0.617
+North Macedonia,MKD,2007,0.601
+North Macedonia,MKD,2008,0.55
+North Macedonia,MKD,2009,0.517
+North Macedonia,MKD,2010,0.492
+North Macedonia,MKD,2011,0.447
+North Macedonia,MKD,2012,0.403
+North Macedonia,MKD,2013,0.348
+North Macedonia,MKD,2014,0.322
+North Macedonia,MKD,2015,0.315
+North Macedonia,MKD,2016,0.318
+North Macedonia,MKD,2017,0.507
+North Macedonia,MKD,2018,0.438
+North Macedonia,MKD,2019,0.449
+North Macedonia,MKD,2020,0.437
+Norway,NOR,2000,0.995
+Norway,NOR,2001,0.995
+Norway,NOR,2002,0.995
+Norway,NOR,2003,0.995
+Norway,NOR,2004,0.995
+Norway,NOR,2005,0.995
+Norway,NOR,2006,0.995
+Norway,NOR,2007,0.995
+Norway,NOR,2008,0.995
+Norway,NOR,2009,0.995
+Norway,NOR,2010,0.995
+Norway,NOR,2011,0.995
+Norway,NOR,2012,0.995
+Norway,NOR,2013,0.995
+Norway,NOR,2014,0.995
+Norway,NOR,2015,0.995
+Norway,NOR,2016,0.995
+Norway,NOR,2017,0.994
+Norway,NOR,2018,0.993
+Norway,NOR,2019,0.992
+Norway,NOR,2020,0.992
+Oman,OMN,2000,0.63
+Oman,OMN,2001,0.651
+Oman,OMN,2002,0.651
+Oman,OMN,2003,0.633
+Oman,OMN,2004,0.633
+Oman,OMN,2005,0.633
+Oman,OMN,2006,0.64
+Oman,OMN,2007,0.641
+Oman,OMN,2008,0.641
+Oman,OMN,2009,0.641
+Oman,OMN,2010,0.638
+Oman,OMN,2011,0.654
+Oman,OMN,2012,0.654
+Oman,OMN,2013,0.654
+Oman,OMN,2014,0.66
+Oman,OMN,2015,0.66
+Oman,OMN,2016,0.66
+Oman,OMN,2017,0.634
+Oman,OMN,2018,0.634
+Oman,OMN,2019,0.644
+Oman,OMN,2020,0.637
+Pakistan,PAK,2000,0.277
+Pakistan,PAK,2001,0.272
+Pakistan,PAK,2002,0.249
+Pakistan,PAK,2003,0.256
+Pakistan,PAK,2004,0.271
+Pakistan,PAK,2005,0.259
+Pakistan,PAK,2006,0.256
+Pakistan,PAK,2007,0.257
+Pakistan,PAK,2008,0.199
+Pakistan,PAK,2009,0.237
+Pakistan,PAK,2010,0.25
+Pakistan,PAK,2011,0.252
+Pakistan,PAK,2012,0.246
+Pakistan,PAK,2013,0.29
+Pakistan,PAK,2014,0.317
+Pakistan,PAK,2015,0.308
+Pakistan,PAK,2016,0.303
+Pakistan,PAK,2017,0.275
+Pakistan,PAK,2018,0.291
+Pakistan,PAK,2019,0.269
+Pakistan,PAK,2020,0.308
+Panama,PAN,2000,0.591
+Panama,PAN,2001,0.591
+Panama,PAN,2002,0.591
+Panama,PAN,2003,0.591
+Panama,PAN,2004,0.603
+Panama,PAN,2005,0.603
+Panama,PAN,2006,0.603
+Panama,PAN,2007,0.603
+Panama,PAN,2008,0.603
+Panama,PAN,2009,0.603
+Panama,PAN,2010,0.603
+Panama,PAN,2011,0.603
+Panama,PAN,2012,0.603
+Panama,PAN,2013,0.611
+Panama,PAN,2014,0.611
+Panama,PAN,2015,0.611
+Panama,PAN,2016,0.611
+Panama,PAN,2017,0.622
+Panama,PAN,2018,0.625
+Panama,PAN,2019,0.62
+Panama,PAN,2020,0.626
+Papua New Guinea,PNG,2000,0.551
+Papua New Guinea,PNG,2001,0.551
+Papua New Guinea,PNG,2002,0.551
+Papua New Guinea,PNG,2003,0.551
+Papua New Guinea,PNG,2004,0.551
+Papua New Guinea,PNG,2005,0.551
+Papua New Guinea,PNG,2006,0.551
+Papua New Guinea,PNG,2007,0.551
+Papua New Guinea,PNG,2008,0.551
+Papua New Guinea,PNG,2009,0.551
+Papua New Guinea,PNG,2010,0.52
+Papua New Guinea,PNG,2011,0.493
+Papua New Guinea,PNG,2012,0.48
+Papua New Guinea,PNG,2013,0.48
+Papua New Guinea,PNG,2014,0.475
+Papua New Guinea,PNG,2015,0.475
+Papua New Guinea,PNG,2016,0.475
+Papua New Guinea,PNG,2017,0.46
+Papua New Guinea,PNG,2018,0.47
+Papua New Guinea,PNG,2019,0.467
+Papua New Guinea,PNG,2020,0.51
+Paraguay,PRY,2000,0.337
+Paraguay,PRY,2001,0.337
+Paraguay,PRY,2002,0.337
+Paraguay,PRY,2003,0.385
+Paraguay,PRY,2004,0.408
+Paraguay,PRY,2005,0.408
+Paraguay,PRY,2006,0.413
+Paraguay,PRY,2007,0.434
+Paraguay,PRY,2008,0.513
+Paraguay,PRY,2009,0.513
+Paraguay,PRY,2010,0.513
+Paraguay,PRY,2011,0.513
+Paraguay,PRY,2012,0.478
+Paraguay,PRY,2013,0.399
+Paraguay,PRY,2014,0.416
+Paraguay,PRY,2015,0.395
+Paraguay,PRY,2016,0.387
+Paraguay,PRY,2017,0.379
+Paraguay,PRY,2018,0.428
+Paraguay,PRY,2019,0.437
+Paraguay,PRY,2020,0.441
+Peru,PER,2000,0.187
+Peru,PER,2001,0.702
+Peru,PER,2002,0.678
+Peru,PER,2003,0.678
+Peru,PER,2004,0.678
+Peru,PER,2005,0.689
+Peru,PER,2006,0.676
+Peru,PER,2007,0.663
+Peru,PER,2008,0.663
+Peru,PER,2009,0.663
+Peru,PER,2010,0.665
+Peru,PER,2011,0.709
+Peru,PER,2012,0.719
+Peru,PER,2013,0.676
+Peru,PER,2014,0.676
+Peru,PER,2015,0.7
+Peru,PER,2016,0.7
+Peru,PER,2017,0.698
+Peru,PER,2018,0.72
+Peru,PER,2019,0.722
+Peru,PER,2020,0.732
+Philippines,PHL,2000,0.51
+Philippines,PHL,2001,0.513
+Philippines,PHL,2002,0.517
+Philippines,PHL,2003,0.517
+Philippines,PHL,2004,0.479
+Philippines,PHL,2005,0.477
+Philippines,PHL,2006,0.474
+Philippines,PHL,2007,0.477
+Philippines,PHL,2008,0.477
+Philippines,PHL,2009,0.477
+Philippines,PHL,2010,0.598
+Philippines,PHL,2011,0.61
+Philippines,PHL,2012,0.61
+Philippines,PHL,2013,0.592
+Philippines,PHL,2014,0.592
+Philippines,PHL,2015,0.6
+Philippines,PHL,2016,0.574
+Philippines,PHL,2017,0.518
+Philippines,PHL,2018,0.507
+Philippines,PHL,2019,0.471
+Philippines,PHL,2020,0.472
+Poland,POL,2000,0.951
+Poland,POL,2001,0.951
+Poland,POL,2002,0.951
+Poland,POL,2003,0.951
+Poland,POL,2004,0.951
+Poland,POL,2005,0.95
+Poland,POL,2006,0.949
+Poland,POL,2007,0.951
+Poland,POL,2008,0.954
+Poland,POL,2009,0.954
+Poland,POL,2010,0.955
+Poland,POL,2011,0.957
+Poland,POL,2012,0.957
+Poland,POL,2013,0.948
+Poland,POL,2014,0.941
+Poland,POL,2015,0.937
+Poland,POL,2016,0.897
+Poland,POL,2017,0.861
+Poland,POL,2018,0.817
+Poland,POL,2019,0.809
+Poland,POL,2020,0.803
+Portugal,PRT,2000,0.964
+Portugal,PRT,2001,0.964
+Portugal,PRT,2002,0.964
+Portugal,PRT,2003,0.964
+Portugal,PRT,2004,0.964
+Portugal,PRT,2005,0.958
+Portugal,PRT,2006,0.954
+Portugal,PRT,2007,0.954
+Portugal,PRT,2008,0.954
+Portugal,PRT,2009,0.954
+Portugal,PRT,2010,0.951
+Portugal,PRT,2011,0.954
+Portugal,PRT,2012,0.957
+Portugal,PRT,2013,0.95
+Portugal,PRT,2014,0.95
+Portugal,PRT,2015,0.964
+Portugal,PRT,2016,0.955
+Portugal,PRT,2017,0.968
+Portugal,PRT,2018,0.962
+Portugal,PRT,2019,0.965
+Portugal,PRT,2020,0.915
+Qatar,QAT,2000,0.504
+Qatar,QAT,2001,0.504
+Qatar,QAT,2002,0.504
+Qatar,QAT,2003,0.53
+Qatar,QAT,2004,0.547
+Qatar,QAT,2005,0.547
+Qatar,QAT,2006,0.547
+Qatar,QAT,2007,0.547
+Qatar,QAT,2008,0.547
+Qatar,QAT,2009,0.551
+Qatar,QAT,2010,0.549
+Qatar,QAT,2011,0.549
+Qatar,QAT,2012,0.547
+Qatar,QAT,2013,0.526
+Qatar,QAT,2014,0.526
+Qatar,QAT,2015,0.526
+Qatar,QAT,2016,0.526
+Qatar,QAT,2017,0.528
+Qatar,QAT,2018,0.547
+Qatar,QAT,2019,0.519
+Qatar,QAT,2020,0.522
+Romania,ROU,2000,0.381
+Romania,ROU,2001,0.382
+Romania,ROU,2002,0.387
+Romania,ROU,2003,0.419
+Romania,ROU,2004,0.473
+Romania,ROU,2005,0.521
+Romania,ROU,2006,0.533
+Romania,ROU,2007,0.582
+Romania,ROU,2008,0.587
+Romania,ROU,2009,0.599
+Romania,ROU,2010,0.637
+Romania,ROU,2011,0.637
+Romania,ROU,2012,0.63
+Romania,ROU,2013,0.738
+Romania,ROU,2014,0.769
+Romania,ROU,2015,0.786
+Romania,ROU,2016,0.869
+Romania,ROU,2017,0.654
+Romania,ROU,2018,0.514
+Romania,ROU,2019,0.632
+Romania,ROU,2020,0.768
+Russia,RUS,2000,0.237
+Russia,RUS,2001,0.225
+Russia,RUS,2002,0.229
+Russia,RUS,2003,0.205
+Russia,RUS,2004,0.236
+Russia,RUS,2005,0.244
+Russia,RUS,2006,0.244
+Russia,RUS,2007,0.247
+Russia,RUS,2008,0.246
+Russia,RUS,2009,0.246
+Russia,RUS,2010,0.233
+Russia,RUS,2011,0.236
+Russia,RUS,2012,0.21
+Russia,RUS,2013,0.203
+Russia,RUS,2014,0.197
+Russia,RUS,2015,0.201
+Russia,RUS,2016,0.199
+Russia,RUS,2017,0.186
+Russia,RUS,2018,0.192
+Russia,RUS,2019,0.186
+Russia,RUS,2020,0.186
+Rwanda,RWA,2000,0.46
+Rwanda,RWA,2001,0.496
+Rwanda,RWA,2002,0.496
+Rwanda,RWA,2003,0.496
+Rwanda,RWA,2004,0.497
+Rwanda,RWA,2005,0.497
+Rwanda,RWA,2006,0.502
+Rwanda,RWA,2007,0.499
+Rwanda,RWA,2008,0.499
+Rwanda,RWA,2009,0.508
+Rwanda,RWA,2010,0.51
+Rwanda,RWA,2011,0.513
+Rwanda,RWA,2012,0.513
+Rwanda,RWA,2013,0.535
+Rwanda,RWA,2014,0.535
+Rwanda,RWA,2015,0.53
+Rwanda,RWA,2016,0.504
+Rwanda,RWA,2017,0.484
+Rwanda,RWA,2018,0.471
+Rwanda,RWA,2019,0.492
+Rwanda,RWA,2020,0.506
+Sao Tome and Principe,STP,2000,0.707
+Sao Tome and Principe,STP,2001,0.707
+Sao Tome and Principe,STP,2002,0.707
+Sao Tome and Principe,STP,2003,0.707
+Sao Tome and Principe,STP,2004,0.707
+Sao Tome and Principe,STP,2005,0.727
+Sao Tome and Principe,STP,2006,0.727
+Sao Tome and Principe,STP,2007,0.727
+Sao Tome and Principe,STP,2008,0.727
+Sao Tome and Principe,STP,2009,0.727
+Sao Tome and Principe,STP,2010,0.737
+Sao Tome and Principe,STP,2011,0.737
+Sao Tome and Principe,STP,2012,0.735
+Sao Tome and Principe,STP,2013,0.742
+Sao Tome and Principe,STP,2014,0.748
+Sao Tome and Principe,STP,2015,0.748
+Sao Tome and Principe,STP,2016,0.748
+Sao Tome and Principe,STP,2017,0.741
+Sao Tome and Principe,STP,2018,0.723
+Sao Tome and Principe,STP,2019,0.751
+Sao Tome and Principe,STP,2020,0.748
+Saudi Arabia,SAU,2000,0.274
+Saudi Arabia,SAU,2001,0.274
+Saudi Arabia,SAU,2002,0.279
+Saudi Arabia,SAU,2003,0.279
+Saudi Arabia,SAU,2004,0.279
+Saudi Arabia,SAU,2005,0.288
+Saudi Arabia,SAU,2006,0.288
+Saudi Arabia,SAU,2007,0.293
+Saudi Arabia,SAU,2008,0.301
+Saudi Arabia,SAU,2009,0.301
+Saudi Arabia,SAU,2010,0.302
+Saudi Arabia,SAU,2011,0.302
+Saudi Arabia,SAU,2012,0.302
+Saudi Arabia,SAU,2013,0.284
+Saudi Arabia,SAU,2014,0.284
+Saudi Arabia,SAU,2015,0.284
+Saudi Arabia,SAU,2016,0.294
+Saudi Arabia,SAU,2017,0.283
+Saudi Arabia,SAU,2018,0.301
+Saudi Arabia,SAU,2019,0.339
+Saudi Arabia,SAU,2020,0.358
+Senegal,SEN,2000,0.685
+Senegal,SEN,2001,0.694
+Senegal,SEN,2002,0.694
+Senegal,SEN,2003,0.694
+Senegal,SEN,2004,0.694
+Senegal,SEN,2005,0.694
+Senegal,SEN,2006,0.694
+Senegal,SEN,2007,0.694
+Senegal,SEN,2008,0.694
+Senegal,SEN,2009,0.694
+Senegal,SEN,2010,0.7
+Senegal,SEN,2011,0.7
+Senegal,SEN,2012,0.716
+Senegal,SEN,2013,0.808
+Senegal,SEN,2014,0.808
+Senegal,SEN,2015,0.79
+Senegal,SEN,2016,0.79
+Senegal,SEN,2017,0.745
+Senegal,SEN,2018,0.739
+Senegal,SEN,2019,0.75
+Senegal,SEN,2020,0.751
+Serbia,SRB,2000,0.354
+Serbia,SRB,2001,0.576
+Serbia,SRB,2002,0.581
+Serbia,SRB,2003,0.551
+Serbia,SRB,2004,0.548
+Serbia,SRB,2005,0.548
+Serbia,SRB,2006,0.573
+Serbia,SRB,2007,0.595
+Serbia,SRB,2008,0.595
+Serbia,SRB,2009,0.594
+Serbia,SRB,2010,0.575
+Serbia,SRB,2011,0.575
+Serbia,SRB,2012,0.573
+Serbia,SRB,2013,0.517
+Serbia,SRB,2014,0.526
+Serbia,SRB,2015,0.519
+Serbia,SRB,2016,0.49
+Serbia,SRB,2017,0.468
+Serbia,SRB,2018,0.51
+Serbia,SRB,2019,0.515
+Serbia,SRB,2020,0.485
+Seychelles,SYC,2000,0.653
+Seychelles,SYC,2001,0.653
+Seychelles,SYC,2002,0.664
+Seychelles,SYC,2003,0.749
+Seychelles,SYC,2004,0.754
+Seychelles,SYC,2005,0.778
+Seychelles,SYC,2006,0.776
+Seychelles,SYC,2007,0.79
+Seychelles,SYC,2008,0.782
+Seychelles,SYC,2009,0.784
+Seychelles,SYC,2010,0.789
+Seychelles,SYC,2011,0.79
+Seychelles,SYC,2012,0.789
+Seychelles,SYC,2013,0.812
+Seychelles,SYC,2014,0.821
+Seychelles,SYC,2015,0.838
+Seychelles,SYC,2016,0.863
+Seychelles,SYC,2017,0.881
+Seychelles,SYC,2018,0.904
+Seychelles,SYC,2019,0.897
+Seychelles,SYC,2020,0.932
+Sierra Leone,SLE,2000,0.261
+Sierra Leone,SLE,2001,0.261
+Sierra Leone,SLE,2002,0.414
+Sierra Leone,SLE,2003,0.425
+Sierra Leone,SLE,2004,0.434
+Sierra Leone,SLE,2005,0.429
+Sierra Leone,SLE,2006,0.396
+Sierra Leone,SLE,2007,0.404
+Sierra Leone,SLE,2008,0.385
+Sierra Leone,SLE,2009,0.392
+Sierra Leone,SLE,2010,0.404
+Sierra Leone,SLE,2011,0.404
+Sierra Leone,SLE,2012,0.404
+Sierra Leone,SLE,2013,0.328
+Sierra Leone,SLE,2014,0.328
+Sierra Leone,SLE,2015,0.328
+Sierra Leone,SLE,2016,0.315
+Sierra Leone,SLE,2017,0.36
+Sierra Leone,SLE,2018,0.5
+Sierra Leone,SLE,2019,0.497
+Sierra Leone,SLE,2020,0.602
+Singapore,SGP,2000,0.977
+Singapore,SGP,2001,0.977
+Singapore,SGP,2002,0.977
+Singapore,SGP,2003,0.977
+Singapore,SGP,2004,0.977
+Singapore,SGP,2005,0.977
+Singapore,SGP,2006,0.977
+Singapore,SGP,2007,0.977
+Singapore,SGP,2008,0.977
+Singapore,SGP,2009,0.977
+Singapore,SGP,2010,0.977
+Singapore,SGP,2011,0.977
+Singapore,SGP,2012,0.977
+Singapore,SGP,2013,0.977
+Singapore,SGP,2014,0.977
+Singapore,SGP,2015,0.977
+Singapore,SGP,2016,0.977
+Singapore,SGP,2017,0.975
+Singapore,SGP,2018,0.975
+Singapore,SGP,2019,0.975
+Singapore,SGP,2020,0.973
+Slovakia,SVK,2000,0.846
+Slovakia,SVK,2001,0.846
+Slovakia,SVK,2002,0.846
+Slovakia,SVK,2003,0.846
+Slovakia,SVK,2004,0.846
+Slovakia,SVK,2005,0.846
+Slovakia,SVK,2006,0.84
+Slovakia,SVK,2007,0.835
+Slovakia,SVK,2008,0.828
+Slovakia,SVK,2009,0.828
+Slovakia,SVK,2010,0.849
+Slovakia,SVK,2011,0.852
+Slovakia,SVK,2012,0.827
+Slovakia,SVK,2013,0.816
+Slovakia,SVK,2014,0.811
+Slovakia,SVK,2015,0.813
+Slovakia,SVK,2016,0.816
+Slovakia,SVK,2017,0.813
+Slovakia,SVK,2018,0.818
+Slovakia,SVK,2019,0.827
+Slovakia,SVK,2020,0.886
+Slovenia,SVN,2000,0.92
+Slovenia,SVN,2001,0.92
+Slovenia,SVN,2002,0.92
+Slovenia,SVN,2003,0.915
+Slovenia,SVN,2004,0.898
+Slovenia,SVN,2005,0.897
+Slovenia,SVN,2006,0.897
+Slovenia,SVN,2007,0.898
+Slovenia,SVN,2008,0.9
+Slovenia,SVN,2009,0.913
+Slovenia,SVN,2010,0.913
+Slovenia,SVN,2011,0.913
+Slovenia,SVN,2012,0.904
+Slovenia,SVN,2013,0.922
+Slovenia,SVN,2014,0.935
+Slovenia,SVN,2015,0.937
+Slovenia,SVN,2016,0.943
+Slovenia,SVN,2017,0.938
+Slovenia,SVN,2018,0.943
+Slovenia,SVN,2019,0.941
+Slovenia,SVN,2020,0.862
+Solomon Islands,SLB,2000,0.633
+Solomon Islands,SLB,2001,0.635
+Solomon Islands,SLB,2002,0.662
+Solomon Islands,SLB,2003,0.662
+Solomon Islands,SLB,2004,0.616
+Solomon Islands,SLB,2005,0.574
+Solomon Islands,SLB,2006,0.556
+Solomon Islands,SLB,2007,0.556
+Solomon Islands,SLB,2008,0.565
+Solomon Islands,SLB,2009,0.561
+Solomon Islands,SLB,2010,0.577
+Solomon Islands,SLB,2011,0.577
+Solomon Islands,SLB,2012,0.571
+Solomon Islands,SLB,2013,0.571
+Solomon Islands,SLB,2014,0.568
+Solomon Islands,SLB,2015,0.565
+Solomon Islands,SLB,2016,0.561
+Solomon Islands,SLB,2017,0.581
+Solomon Islands,SLB,2018,0.581
+Solomon Islands,SLB,2019,0.586
+Solomon Islands,SLB,2020,0.593
+Somalia,SOM,2000,0.025
+Somalia,SOM,2001,0.028
+Somalia,SOM,2002,0.029
+Somalia,SOM,2003,0.029
+Somalia,SOM,2004,0.034
+Somalia,SOM,2005,0.039
+Somalia,SOM,2006,0.042
+Somalia,SOM,2007,0.041
+Somalia,SOM,2008,0.042
+Somalia,SOM,2009,0.043
+Somalia,SOM,2010,0.05
+Somalia,SOM,2011,0.052
+Somalia,SOM,2012,0.059
+Somalia,SOM,2013,0.113
+Somalia,SOM,2014,0.113
+Somalia,SOM,2015,0.113
+Somalia,SOM,2016,0.087
+Somalia,SOM,2017,0.134
+Somalia,SOM,2018,0.104
+Somalia,SOM,2019,0.104
+Somalia,SOM,2020,0.092
+Somaliland,OWID_SML,2000,0.305
+Somaliland,OWID_SML,2001,0.31
+Somaliland,OWID_SML,2002,0.31
+Somaliland,OWID_SML,2003,0.31
+Somaliland,OWID_SML,2004,0.31
+Somaliland,OWID_SML,2005,0.31
+Somaliland,OWID_SML,2006,0.31
+Somaliland,OWID_SML,2007,0.31
+Somaliland,OWID_SML,2008,0.31
+Somaliland,OWID_SML,2009,0.31
+Somaliland,OWID_SML,2010,0.31
+Somaliland,OWID_SML,2011,0.325
+Somaliland,OWID_SML,2012,0.332
+Somaliland,OWID_SML,2013,0.344
+Somaliland,OWID_SML,2014,0.344
+Somaliland,OWID_SML,2015,0.344
+Somaliland,OWID_SML,2016,0.342
+Somaliland,OWID_SML,2017,0.353
+Somaliland,OWID_SML,2018,0.343
+Somaliland,OWID_SML,2019,0.331
+Somaliland,OWID_SML,2020,0.355
+South Africa,ZAF,2000,0.796
+South Africa,ZAF,2001,0.796
+South Africa,ZAF,2002,0.796
+South Africa,ZAF,2003,0.793
+South Africa,ZAF,2004,0.793
+South Africa,ZAF,2005,0.793
+South Africa,ZAF,2006,0.789
+South Africa,ZAF,2007,0.797
+South Africa,ZAF,2008,0.79
+South Africa,ZAF,2009,0.763
+South Africa,ZAF,2010,0.766
+South Africa,ZAF,2011,0.764
+South Africa,ZAF,2012,0.761
+South Africa,ZAF,2013,0.731
+South Africa,ZAF,2014,0.726
+South Africa,ZAF,2015,0.708
+South Africa,ZAF,2016,0.708
+South Africa,ZAF,2017,0.682
+South Africa,ZAF,2018,0.698
+South Africa,ZAF,2019,0.726
+South Africa,ZAF,2020,0.754
+South Korea,KOR,2000,0.934
+South Korea,KOR,2001,0.934
+South Korea,KOR,2002,0.942
+South Korea,KOR,2003,0.95
+South Korea,KOR,2004,0.954
+South Korea,KOR,2005,0.954
+South Korea,KOR,2006,0.954
+South Korea,KOR,2007,0.953
+South Korea,KOR,2008,0.911
+South Korea,KOR,2009,0.911
+South Korea,KOR,2010,0.908
+South Korea,KOR,2011,0.908
+South Korea,KOR,2012,0.901
+South Korea,KOR,2013,0.865
+South Korea,KOR,2014,0.865
+South Korea,KOR,2015,0.841
+South Korea,KOR,2016,0.841
+South Korea,KOR,2017,0.953
+South Korea,KOR,2018,0.948
+South Korea,KOR,2019,0.95
+South Korea,KOR,2020,0.949
+South Sudan,SSD,2000,0.044
+South Sudan,SSD,2001,0.044
+South Sudan,SSD,2002,0.044
+South Sudan,SSD,2003,0.044
+South Sudan,SSD,2004,0.044
+South Sudan,SSD,2005,0.159
+South Sudan,SSD,2006,0.162
+South Sudan,SSD,2007,0.163
+South Sudan,SSD,2008,0.163
+South Sudan,SSD,2009,0.163
+South Sudan,SSD,2010,0.167
+South Sudan,SSD,2011,0.148
+South Sudan,SSD,2012,0.152
+South Sudan,SSD,2013,0.087
+South Sudan,SSD,2014,0.07
+South Sudan,SSD,2015,0.059
+South Sudan,SSD,2016,0.053
+South Sudan,SSD,2017,0.067
+South Sudan,SSD,2018,0.042
+South Sudan,SSD,2019,0.053
+South Sudan,SSD,2020,0.077
+Spain,ESP,2000,0.987
+Spain,ESP,2001,0.987
+Spain,ESP,2002,0.987
+Spain,ESP,2003,0.987
+Spain,ESP,2004,0.987
+Spain,ESP,2005,0.987
+Spain,ESP,2006,0.987
+Spain,ESP,2007,0.987
+Spain,ESP,2008,0.987
+Spain,ESP,2009,0.987
+Spain,ESP,2010,0.988
+Spain,ESP,2011,0.985
+Spain,ESP,2012,0.972
+Spain,ESP,2013,0.966
+Spain,ESP,2014,0.966
+Spain,ESP,2015,0.965
+Spain,ESP,2016,0.97
+Spain,ESP,2017,0.967
+Spain,ESP,2018,0.976
+Spain,ESP,2019,0.981
+Spain,ESP,2020,0.983
+Sri Lanka,LKA,2000,0.619
+Sri Lanka,LKA,2001,0.618
+Sri Lanka,LKA,2002,0.618
+Sri Lanka,LKA,2003,0.618
+Sri Lanka,LKA,2004,0.609
+Sri Lanka,LKA,2005,0.535
+Sri Lanka,LKA,2006,0.517
+Sri Lanka,LKA,2007,0.517
+Sri Lanka,LKA,2008,0.516
+Sri Lanka,LKA,2009,0.506
+Sri Lanka,LKA,2010,0.422
+Sri Lanka,LKA,2011,0.422
+Sri Lanka,LKA,2012,0.456
+Sri Lanka,LKA,2013,0.452
+Sri Lanka,LKA,2014,0.455
+Sri Lanka,LKA,2015,0.685
+Sri Lanka,LKA,2016,0.736
+Sri Lanka,LKA,2017,0.719
+Sri Lanka,LKA,2018,0.71
+Sri Lanka,LKA,2019,0.678
+Sri Lanka,LKA,2020,0.477
+Sudan,SDN,2000,0.044
+Sudan,SDN,2001,0.044
+Sudan,SDN,2002,0.044
+Sudan,SDN,2003,0.044
+Sudan,SDN,2004,0.044
+Sudan,SDN,2005,0.159
+Sudan,SDN,2006,0.162
+Sudan,SDN,2007,0.163
+Sudan,SDN,2008,0.163
+Sudan,SDN,2009,0.163
+Sudan,SDN,2010,0.167
+Sudan,SDN,2011,0.111
+Sudan,SDN,2012,0.11
+Sudan,SDN,2013,0.11
+Sudan,SDN,2014,0.109
+Sudan,SDN,2015,0.112
+Sudan,SDN,2016,0.119
+Sudan,SDN,2017,0.217
+Sudan,SDN,2018,0.226
+Sudan,SDN,2019,0.407
+Sudan,SDN,2020,0.389
+Suriname,SUR,2000,0.785
+Suriname,SUR,2001,0.785
+Suriname,SUR,2002,0.785
+Suriname,SUR,2003,0.785
+Suriname,SUR,2004,0.785
+Suriname,SUR,2005,0.785
+Suriname,SUR,2006,0.785
+Suriname,SUR,2007,0.785
+Suriname,SUR,2008,0.785
+Suriname,SUR,2009,0.786
+Suriname,SUR,2010,0.767
+Suriname,SUR,2011,0.767
+Suriname,SUR,2012,0.767
+Suriname,SUR,2013,0.749
+Suriname,SUR,2014,0.749
+Suriname,SUR,2015,0.749
+Suriname,SUR,2016,0.729
+Suriname,SUR,2017,0.714
+Suriname,SUR,2018,0.699
+Suriname,SUR,2019,0.678
+Suriname,SUR,2020,0.769
+Sweden,SWE,2000,0.996
+Sweden,SWE,2001,0.996
+Sweden,SWE,2002,0.996
+Sweden,SWE,2003,0.996
+Sweden,SWE,2004,0.996
+Sweden,SWE,2005,0.996
+Sweden,SWE,2006,0.995
+Sweden,SWE,2007,0.995
+Sweden,SWE,2008,0.995
+Sweden,SWE,2009,0.995
+Sweden,SWE,2010,0.995
+Sweden,SWE,2011,0.995
+Sweden,SWE,2012,0.996
+Sweden,SWE,2013,0.995
+Sweden,SWE,2014,0.995
+Sweden,SWE,2015,0.994
+Sweden,SWE,2016,0.994
+Sweden,SWE,2017,0.994
+Sweden,SWE,2018,0.995
+Sweden,SWE,2019,0.994
+Sweden,SWE,2020,0.995
+Switzerland,CHE,2000,0.994
+Switzerland,CHE,2001,0.994
+Switzerland,CHE,2002,0.994
+Switzerland,CHE,2003,0.994
+Switzerland,CHE,2004,0.994
+Switzerland,CHE,2005,0.994
+Switzerland,CHE,2006,0.994
+Switzerland,CHE,2007,0.994
+Switzerland,CHE,2008,0.994
+Switzerland,CHE,2009,0.994
+Switzerland,CHE,2010,0.994
+Switzerland,CHE,2011,0.994
+Switzerland,CHE,2012,0.994
+Switzerland,CHE,2013,0.994
+Switzerland,CHE,2014,0.994
+Switzerland,CHE,2015,0.995
+Switzerland,CHE,2016,0.995
+Switzerland,CHE,2017,0.994
+Switzerland,CHE,2018,0.995
+Switzerland,CHE,2019,0.995
+Switzerland,CHE,2020,0.994
+Syria,SYR,2000,0.096
+Syria,SYR,2001,0.096
+Syria,SYR,2002,0.096
+Syria,SYR,2003,0.096
+Syria,SYR,2004,0.096
+Syria,SYR,2005,0.095
+Syria,SYR,2006,0.096
+Syria,SYR,2007,0.092
+Syria,SYR,2008,0.092
+Syria,SYR,2009,0.094
+Syria,SYR,2010,0.097
+Syria,SYR,2011,0.075
+Syria,SYR,2012,0.048
+Syria,SYR,2013,0.034
+Syria,SYR,2014,0.034
+Syria,SYR,2015,0.034
+Syria,SYR,2016,0.031
+Syria,SYR,2017,0.033
+Syria,SYR,2018,0.034
+Syria,SYR,2019,0.04
+Syria,SYR,2020,0.049
+Taiwan,TWN,2000,0.878
+Taiwan,TWN,2001,0.881
+Taiwan,TWN,2002,0.881
+Taiwan,TWN,2003,0.881
+Taiwan,TWN,2004,0.881
+Taiwan,TWN,2005,0.877
+Taiwan,TWN,2006,0.877
+Taiwan,TWN,2007,0.876
+Taiwan,TWN,2008,0.874
+Taiwan,TWN,2009,0.842
+Taiwan,TWN,2010,0.841
+Taiwan,TWN,2011,0.843
+Taiwan,TWN,2012,0.846
+Taiwan,TWN,2013,0.852
+Taiwan,TWN,2014,0.852
+Taiwan,TWN,2015,0.859
+Taiwan,TWN,2016,0.906
+Taiwan,TWN,2017,0.921
+Taiwan,TWN,2018,0.921
+Taiwan,TWN,2019,0.922
+Taiwan,TWN,2020,0.927
+Tajikistan,TJK,2000,0.064
+Tajikistan,TJK,2001,0.062
+Tajikistan,TJK,2002,0.059
+Tajikistan,TJK,2003,0.06
+Tajikistan,TJK,2004,0.06
+Tajikistan,TJK,2005,0.057
+Tajikistan,TJK,2006,0.053
+Tajikistan,TJK,2007,0.054
+Tajikistan,TJK,2008,0.054
+Tajikistan,TJK,2009,0.054
+Tajikistan,TJK,2010,0.052
+Tajikistan,TJK,2011,0.05
+Tajikistan,TJK,2012,0.053
+Tajikistan,TJK,2013,0.038
+Tajikistan,TJK,2014,0.038
+Tajikistan,TJK,2015,0.034
+Tajikistan,TJK,2016,0.039
+Tajikistan,TJK,2017,0.041
+Tajikistan,TJK,2018,0.093
+Tajikistan,TJK,2019,0.071
+Tajikistan,TJK,2020,0.08
+Tanzania,TZA,2000,0.647
+Tanzania,TZA,2001,0.653
+Tanzania,TZA,2002,0.653
+Tanzania,TZA,2003,0.653
+Tanzania,TZA,2004,0.653
+Tanzania,TZA,2005,0.653
+Tanzania,TZA,2006,0.666
+Tanzania,TZA,2007,0.666
+Tanzania,TZA,2008,0.666
+Tanzania,TZA,2009,0.666
+Tanzania,TZA,2010,0.672
+Tanzania,TZA,2011,0.672
+Tanzania,TZA,2012,0.672
+Tanzania,TZA,2013,0.642
+Tanzania,TZA,2014,0.641
+Tanzania,TZA,2015,0.7
+Tanzania,TZA,2016,0.766
+Tanzania,TZA,2017,0.787
+Tanzania,TZA,2018,0.776
+Tanzania,TZA,2019,0.783
+Tanzania,TZA,2020,0.833
+Thailand,THA,2000,0.5
+Thailand,THA,2001,0.5
+Thailand,THA,2002,0.5
+Thailand,THA,2003,0.5
+Thailand,THA,2004,0.5
+Thailand,THA,2005,0.487
+Thailand,THA,2006,0.453
+Thailand,THA,2007,0.484
+Thailand,THA,2008,0.528
+Thailand,THA,2009,0.504
+Thailand,THA,2010,0.484
+Thailand,THA,2011,0.506
+Thailand,THA,2012,0.525
+Thailand,THA,2013,0.52
+Thailand,THA,2014,0.285
+Thailand,THA,2015,0.266
+Thailand,THA,2016,0.275
+Thailand,THA,2017,0.271
+Thailand,THA,2018,0.307
+Thailand,THA,2019,0.314
+Thailand,THA,2020,0.306
+Togo,TGO,2000,0.142
+Togo,TGO,2001,0.142
+Togo,TGO,2002,0.142
+Togo,TGO,2003,0.142
+Togo,TGO,2004,0.142
+Togo,TGO,2005,0.184
+Togo,TGO,2006,0.212
+Togo,TGO,2007,0.216
+Togo,TGO,2008,0.228
+Togo,TGO,2009,0.228
+Togo,TGO,2010,0.249
+Togo,TGO,2011,0.258
+Togo,TGO,2012,0.258
+Togo,TGO,2013,0.247
+Togo,TGO,2014,0.247
+Togo,TGO,2015,0.256
+Togo,TGO,2016,0.259
+Togo,TGO,2017,0.243
+Togo,TGO,2018,0.24
+Togo,TGO,2019,0.231
+Togo,TGO,2020,0.283
+Trinidad and Tobago,TTO,2000,0.86
+Trinidad and Tobago,TTO,2001,0.86
+Trinidad and Tobago,TTO,2002,0.868
+Trinidad and Tobago,TTO,2003,0.868
+Trinidad and Tobago,TTO,2004,0.868
+Trinidad and Tobago,TTO,2005,0.871
+Trinidad and Tobago,TTO,2006,0.871
+Trinidad and Tobago,TTO,2007,0.871
+Trinidad and Tobago,TTO,2008,0.871
+Trinidad and Tobago,TTO,2009,0.871
+Trinidad and Tobago,TTO,2010,0.855
+Trinidad and Tobago,TTO,2011,0.855
+Trinidad and Tobago,TTO,2012,0.855
+Trinidad and Tobago,TTO,2013,0.855
+Trinidad and Tobago,TTO,2014,0.855
+Trinidad and Tobago,TTO,2015,0.86
+Trinidad and Tobago,TTO,2016,0.906
+Trinidad and Tobago,TTO,2017,0.903
+Trinidad and Tobago,TTO,2018,0.902
+Trinidad and Tobago,TTO,2019,0.902
+Trinidad and Tobago,TTO,2020,0.898
+Tunisia,TUN,2000,0.159
+Tunisia,TUN,2001,0.159
+Tunisia,TUN,2002,0.159
+Tunisia,TUN,2003,0.159
+Tunisia,TUN,2004,0.159
+Tunisia,TUN,2005,0.159
+Tunisia,TUN,2006,0.159
+Tunisia,TUN,2007,0.159
+Tunisia,TUN,2008,0.159
+Tunisia,TUN,2009,0.159
+Tunisia,TUN,2010,0.204
+Tunisia,TUN,2011,0.776
+Tunisia,TUN,2012,0.776
+Tunisia,TUN,2013,0.76
+Tunisia,TUN,2014,0.767
+Tunisia,TUN,2015,0.795
+Tunisia,TUN,2016,0.786
+Tunisia,TUN,2017,0.819
+Tunisia,TUN,2018,0.826
+Tunisia,TUN,2019,0.836
+Tunisia,TUN,2020,0.839
+Turkey,TUR,2000,0.74
+Turkey,TUR,2001,0.743
+Turkey,TUR,2002,0.78
+Turkey,TUR,2003,0.769
+Turkey,TUR,2004,0.763
+Turkey,TUR,2005,0.743
+Turkey,TUR,2006,0.741
+Turkey,TUR,2007,0.735
+Turkey,TUR,2008,0.701
+Turkey,TUR,2009,0.707
+Turkey,TUR,2010,0.596
+Turkey,TUR,2011,0.578
+Turkey,TUR,2012,0.568
+Turkey,TUR,2013,0.514
+Turkey,TUR,2014,0.451
+Turkey,TUR,2015,0.434
+Turkey,TUR,2016,0.29
+Turkey,TUR,2017,0.177
+Turkey,TUR,2018,0.178
+Turkey,TUR,2019,0.178
+Turkey,TUR,2020,0.18
+Turkmenistan,TKM,2000,0.043
+Turkmenistan,TKM,2001,0.036
+Turkmenistan,TKM,2002,0.036
+Turkmenistan,TKM,2003,0.036
+Turkmenistan,TKM,2004,0.036
+Turkmenistan,TKM,2005,0.036
+Turkmenistan,TKM,2006,0.036
+Turkmenistan,TKM,2007,0.044
+Turkmenistan,TKM,2008,0.045
+Turkmenistan,TKM,2009,0.038
+Turkmenistan,TKM,2010,0.035
+Turkmenistan,TKM,2011,0.035
+Turkmenistan,TKM,2012,0.035
+Turkmenistan,TKM,2013,0.043
+Turkmenistan,TKM,2014,0.047
+Turkmenistan,TKM,2015,0.047
+Turkmenistan,TKM,2016,0.047
+Turkmenistan,TKM,2017,0.057
+Turkmenistan,TKM,2018,0.065
+Turkmenistan,TKM,2019,0.071
+Turkmenistan,TKM,2020,0.065
+Uganda,UGA,2000,0.394
+Uganda,UGA,2001,0.392
+Uganda,UGA,2002,0.392
+Uganda,UGA,2003,0.379
+Uganda,UGA,2004,0.366
+Uganda,UGA,2005,0.395
+Uganda,UGA,2006,0.385
+Uganda,UGA,2007,0.396
+Uganda,UGA,2008,0.399
+Uganda,UGA,2009,0.399
+Uganda,UGA,2010,0.4
+Uganda,UGA,2011,0.396
+Uganda,UGA,2012,0.391
+Uganda,UGA,2013,0.387
+Uganda,UGA,2014,0.385
+Uganda,UGA,2015,0.372
+Uganda,UGA,2016,0.361
+Uganda,UGA,2017,0.347
+Uganda,UGA,2018,0.348
+Uganda,UGA,2019,0.336
+Uganda,UGA,2020,0.349
+Ukraine,UKR,2000,0.217
+Ukraine,UKR,2001,0.213
+Ukraine,UKR,2002,0.224
+Ukraine,UKR,2003,0.212
+Ukraine,UKR,2004,0.237
+Ukraine,UKR,2005,0.232
+Ukraine,UKR,2006,0.247
+Ukraine,UKR,2007,0.273
+Ukraine,UKR,2008,0.268
+Ukraine,UKR,2009,0.247
+Ukraine,UKR,2010,0.177
+Ukraine,UKR,2011,0.184
+Ukraine,UKR,2012,0.186
+Ukraine,UKR,2013,0.197
+Ukraine,UKR,2014,0.194
+Ukraine,UKR,2015,0.219
+Ukraine,UKR,2016,0.242
+Ukraine,UKR,2017,0.264
+Ukraine,UKR,2018,0.306
+Ukraine,UKR,2019,0.349
+Ukraine,UKR,2020,0.318
+United Arab Emirates,ARE,2000,0.671
+United Arab Emirates,ARE,2001,0.671
+United Arab Emirates,ARE,2002,0.671
+United Arab Emirates,ARE,2003,0.658
+United Arab Emirates,ARE,2004,0.644
+United Arab Emirates,ARE,2005,0.644
+United Arab Emirates,ARE,2006,0.659
+United Arab Emirates,ARE,2007,0.702
+United Arab Emirates,ARE,2008,0.708
+United Arab Emirates,ARE,2009,0.708
+United Arab Emirates,ARE,2010,0.708
+United Arab Emirates,ARE,2011,0.704
+United Arab Emirates,ARE,2012,0.716
+United Arab Emirates,ARE,2013,0.701
+United Arab Emirates,ARE,2014,0.707
+United Arab Emirates,ARE,2015,0.707
+United Arab Emirates,ARE,2016,0.707
+United Arab Emirates,ARE,2017,0.718
+United Arab Emirates,ARE,2018,0.724
+United Arab Emirates,ARE,2019,0.709
+United Arab Emirates,ARE,2020,0.712
+United Kingdom,GBR,2000,0.981
+United Kingdom,GBR,2001,0.978
+United Kingdom,GBR,2002,0.978
+United Kingdom,GBR,2003,0.978
+United Kingdom,GBR,2004,0.978
+United Kingdom,GBR,2005,0.978
+United Kingdom,GBR,2006,0.978
+United Kingdom,GBR,2007,0.977
+United Kingdom,GBR,2008,0.977
+United Kingdom,GBR,2009,0.977
+United Kingdom,GBR,2010,0.976
+United Kingdom,GBR,2011,0.976
+United Kingdom,GBR,2012,0.976
+United Kingdom,GBR,2013,0.978
+United Kingdom,GBR,2014,0.978
+United Kingdom,GBR,2015,0.978
+United Kingdom,GBR,2016,0.978
+United Kingdom,GBR,2017,0.981
+United Kingdom,GBR,2018,0.98
+United Kingdom,GBR,2019,0.975
+United Kingdom,GBR,2020,0.971
+United States,USA,2000,0.981
+United States,USA,2001,0.982
+United States,USA,2002,0.982
+United States,USA,2003,0.982
+United States,USA,2004,0.982
+United States,USA,2005,0.982
+United States,USA,2006,0.982
+United States,USA,2007,0.981
+United States,USA,2008,0.982
+United States,USA,2009,0.984
+United States,USA,2010,0.985
+United States,USA,2011,0.985
+United States,USA,2012,0.984
+United States,USA,2013,0.983
+United States,USA,2014,0.983
+United States,USA,2015,0.983
+United States,USA,2016,0.976
+United States,USA,2017,0.939
+United States,USA,2018,0.946
+United States,USA,2019,0.946
+United States,USA,2020,0.945
+Uruguay,URY,2000,0.954
+Uruguay,URY,2001,0.958
+Uruguay,URY,2002,0.958
+Uruguay,URY,2003,0.948
+Uruguay,URY,2004,0.956
+Uruguay,URY,2005,0.962
+Uruguay,URY,2006,0.962
+Uruguay,URY,2007,0.962
+Uruguay,URY,2008,0.962
+Uruguay,URY,2009,0.962
+Uruguay,URY,2010,0.959
+Uruguay,URY,2011,0.959
+Uruguay,URY,2012,0.959
+Uruguay,URY,2013,0.952
+Uruguay,URY,2014,0.957
+Uruguay,URY,2015,0.96
+Uruguay,URY,2016,0.96
+Uruguay,URY,2017,0.96
+Uruguay,URY,2018,0.959
+Uruguay,URY,2019,0.959
+Uruguay,URY,2020,0.962
+Uzbekistan,UZB,2000,0.037
+Uzbekistan,UZB,2001,0.037
+Uzbekistan,UZB,2002,0.039
+Uzbekistan,UZB,2003,0.041
+Uzbekistan,UZB,2004,0.042
+Uzbekistan,UZB,2005,0.04
+Uzbekistan,UZB,2006,0.041
+Uzbekistan,UZB,2007,0.041
+Uzbekistan,UZB,2008,0.043
+Uzbekistan,UZB,2009,0.044
+Uzbekistan,UZB,2010,0.045
+Uzbekistan,UZB,2011,0.045
+Uzbekistan,UZB,2012,0.046
+Uzbekistan,UZB,2013,0.044
+Uzbekistan,UZB,2014,0.046
+Uzbekistan,UZB,2015,0.045
+Uzbekistan,UZB,2016,0.047
+Uzbekistan,UZB,2017,0.089
+Uzbekistan,UZB,2018,0.112
+Uzbekistan,UZB,2019,0.162
+Uzbekistan,UZB,2020,0.185
+Vanuatu,VUT,2000,0.734
+Vanuatu,VUT,2001,0.734
+Vanuatu,VUT,2002,0.734
+Vanuatu,VUT,2003,0.734
+Vanuatu,VUT,2004,0.734
+Vanuatu,VUT,2005,0.734
+Vanuatu,VUT,2006,0.734
+Vanuatu,VUT,2007,0.734
+Vanuatu,VUT,2008,0.734
+Vanuatu,VUT,2009,0.734
+Vanuatu,VUT,2010,0.739
+Vanuatu,VUT,2011,0.739
+Vanuatu,VUT,2012,0.739
+Vanuatu,VUT,2013,0.739
+Vanuatu,VUT,2014,0.739
+Vanuatu,VUT,2015,0.753
+Vanuatu,VUT,2016,0.753
+Vanuatu,VUT,2017,0.77
+Vanuatu,VUT,2018,0.786
+Vanuatu,VUT,2019,0.772
+Vanuatu,VUT,2020,0.809
+Venezuela,VEN,2000,0.21
+Venezuela,VEN,2001,0.204
+Venezuela,VEN,2002,0.196
+Venezuela,VEN,2003,0.191
+Venezuela,VEN,2004,0.146
+Venezuela,VEN,2005,0.074
+Venezuela,VEN,2006,0.075
+Venezuela,VEN,2007,0.065
+Venezuela,VEN,2008,0.066
+Venezuela,VEN,2009,0.059
+Venezuela,VEN,2010,0.053
+Venezuela,VEN,2011,0.052
+Venezuela,VEN,2012,0.052
+Venezuela,VEN,2013,0.029
+Venezuela,VEN,2014,0.026
+Venezuela,VEN,2015,0.025
+Venezuela,VEN,2016,0.021
+Venezuela,VEN,2017,0.015
+Venezuela,VEN,2018,0.01
+Venezuela,VEN,2019,0.009
+Venezuela,VEN,2020,0.009
+Vietnam,VNM,2000,0.273
+Vietnam,VNM,2001,0.273
+Vietnam,VNM,2002,0.273
+Vietnam,VNM,2003,0.273
+Vietnam,VNM,2004,0.261
+Vietnam,VNM,2005,0.332
+Vietnam,VNM,2006,0.328
+Vietnam,VNM,2007,0.328
+Vietnam,VNM,2008,0.328
+Vietnam,VNM,2009,0.328
+Vietnam,VNM,2010,0.33
+Vietnam,VNM,2011,0.33
+Vietnam,VNM,2012,0.33
+Vietnam,VNM,2013,0.378
+Vietnam,VNM,2014,0.378
+Vietnam,VNM,2015,0.378
+Vietnam,VNM,2016,0.385
+Vietnam,VNM,2017,0.377
+Vietnam,VNM,2018,0.361
+Vietnam,VNM,2019,0.351
+Vietnam,VNM,2020,0.344
+World,OWID_WRL,2000,0.52470225
+World,OWID_WRL,2001,0.52870226
+World,OWID_WRL,2002,0.53088766
+World,OWID_WRL,2003,0.5311236
+World,OWID_WRL,2004,0.5353427
+World,OWID_WRL,2005,0.53679776
+World,OWID_WRL,2006,0.5370843
+World,OWID_WRL,2007,0.5382402
+World,OWID_WRL,2008,0.538
+World,OWID_WRL,2009,0.53664804
+World,OWID_WRL,2010,0.539743
+World,OWID_WRL,2011,0.5453911
+World,OWID_WRL,2012,0.54552513
+World,OWID_WRL,2013,0.54343015
+World,OWID_WRL,2014,0.54340225
+World,OWID_WRL,2015,0.5438156
+World,OWID_WRL,2016,0.54521227
+World,OWID_WRL,2017,0.5483855
+World,OWID_WRL,2018,0.550419
+World,OWID_WRL,2019,0.5527486
+World,OWID_WRL,2020,0.55444133
+Yemen,YEM,2000,0.115
+Yemen,YEM,2001,0.115
+Yemen,YEM,2002,0.123
+Yemen,YEM,2003,0.123
+Yemen,YEM,2004,0.123
+Yemen,YEM,2005,0.123
+Yemen,YEM,2006,0.123
+Yemen,YEM,2007,0.126
+Yemen,YEM,2008,0.123
+Yemen,YEM,2009,0.123
+Yemen,YEM,2010,0.121
+Yemen,YEM,2011,0.119
+Yemen,YEM,2012,0.151
+Yemen,YEM,2013,0.14
+Yemen,YEM,2014,0.12
+Yemen,YEM,2015,0.058
+Yemen,YEM,2016,0.054
+Yemen,YEM,2017,0.055
+Yemen,YEM,2018,0.057
+Yemen,YEM,2019,0.065
+Yemen,YEM,2020,0.052
+Zambia,ZMB,2000,0.617
+Zambia,ZMB,2001,0.652
+Zambia,ZMB,2002,0.773
+Zambia,ZMB,2003,0.773
+Zambia,ZMB,2004,0.773
+Zambia,ZMB,2005,0.835
+Zambia,ZMB,2006,0.835
+Zambia,ZMB,2007,0.835
+Zambia,ZMB,2008,0.721
+Zambia,ZMB,2009,0.702
+Zambia,ZMB,2010,0.702
+Zambia,ZMB,2011,0.726
+Zambia,ZMB,2012,0.826
+Zambia,ZMB,2013,0.722
+Zambia,ZMB,2014,0.722
+Zambia,ZMB,2015,0.711
+Zambia,ZMB,2016,0.659
+Zambia,ZMB,2017,0.575
+Zambia,ZMB,2018,0.543
+Zambia,ZMB,2019,0.481
+Zambia,ZMB,2020,0.439
+Zanzibar,OWID_ZAN,2000,0.252
+Zanzibar,OWID_ZAN,2001,0.283
+Zanzibar,OWID_ZAN,2002,0.283
+Zanzibar,OWID_ZAN,2003,0.283
+Zanzibar,OWID_ZAN,2004,0.283
+Zanzibar,OWID_ZAN,2005,0.301
+Zanzibar,OWID_ZAN,2006,0.316
+Zanzibar,OWID_ZAN,2007,0.324
+Zanzibar,OWID_ZAN,2008,0.328
+Zanzibar,OWID_ZAN,2009,0.326
+Zanzibar,OWID_ZAN,2010,0.341
+Zanzibar,OWID_ZAN,2011,0.332
+Zanzibar,OWID_ZAN,2012,0.344
+Zanzibar,OWID_ZAN,2013,0.354
+Zanzibar,OWID_ZAN,2014,0.35
+Zanzibar,OWID_ZAN,2015,0.326
+Zanzibar,OWID_ZAN,2016,0.298
+Zanzibar,OWID_ZAN,2017,0.286
+Zanzibar,OWID_ZAN,2018,0.314
+Zanzibar,OWID_ZAN,2019,0.31
+Zanzibar,OWID_ZAN,2020,0.316
+Zimbabwe,ZWE,2000,0.278
+Zimbabwe,ZWE,2001,0.225
+Zimbabwe,ZWE,2002,0.225
+Zimbabwe,ZWE,2003,0.188
+Zimbabwe,ZWE,2004,0.188
+Zimbabwe,ZWE,2005,0.188
+Zimbabwe,ZWE,2006,0.188
+Zimbabwe,ZWE,2007,0.188
+Zimbabwe,ZWE,2008,0.188
+Zimbabwe,ZWE,2009,0.253
+Zimbabwe,ZWE,2010,0.324
+Zimbabwe,ZWE,2011,0.324
+Zimbabwe,ZWE,2012,0.326
+Zimbabwe,ZWE,2013,0.341
+Zimbabwe,ZWE,2014,0.32
+Zimbabwe,ZWE,2015,0.314
+Zimbabwe,ZWE,2016,0.288
+Zimbabwe,ZWE,2017,0.28
+Zimbabwe,ZWE,2018,0.267
+Zimbabwe,ZWE,2019,0.237
+Zimbabwe,ZWE,2020,0.245
