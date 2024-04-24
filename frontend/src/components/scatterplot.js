@@ -125,7 +125,8 @@ function Scatterplot({ xAxisFeature, yAxisFeature }) {
 			.attr('height', height + margin.top + margin.bottom)
 			.append('g')
 			.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-		svg.append("text")
+		svg.append('g')
+			.append("text")
 			.attr("x", width / 2)
 			.attr("y", 0 - (margin.top / 2))
 			.attr("text-anchor", "middle")
@@ -216,7 +217,8 @@ function Scatterplot({ xAxisFeature, yAxisFeature }) {
 					.style("font", "bold 16px Comic Sans MS")
 			}
 
-			svg.append("text")
+			svg.append('g')
+				.append("text")
 				.attr("transform", "rotate(-90)")
 				.attr("y", 0 - margin.left)
 				.attr("x", 0 - (height / 2))
@@ -243,7 +245,7 @@ function Scatterplot({ xAxisFeature, yAxisFeature }) {
 				.selectAll("dot")
 				.data(scatterplotData['data'].filter(function(d) {
 					// Check that both required features are non-null
-					return d[xAxisFeature] != null && d[yAxisFeature] != null;
+					return d[xAxisFeature] != null && d[yAxisFeature] != null && d['Year'] == 2020;
 			}))
 				.enter()
 				.append("circle")
@@ -265,7 +267,7 @@ function Scatterplot({ xAxisFeature, yAxisFeature }) {
 					// Return position with optional jitter
 					return y(d[yAxisFeature]) + (isFeatureCategorical[yAxisFeature] ? jitter : 0);
 				})
-				.attr("r", 4)
+				.attr("r", 7)
 				.attr('opacity', 0.5)
 				.style("fill", "#69b3a2")
 				.on('mouseover', function (event, data) {
@@ -285,18 +287,24 @@ function Scatterplot({ xAxisFeature, yAxisFeature }) {
 					tooltip.html(``).style('visibility', 'hidden');
 					d3.select(this).transition().attr('fill', 'steelblue');
 				})
+
+			function brushed(event) {
+				if (!event.selection) return;
+				let extent = event.selection;
+
+				svg.selectAll('circle')
+					.style("opacity", d => isBrushed(extent, x(d[xAxisFeature]), y(d[yAxisFeature])) ? 1 : 0.5)
+					.style("fill", d => isBrushed(extent, x(d[xAxisFeature]), y(d[yAxisFeature])) ? "purple" : "#69b3a2")
+					.style("stroke", d => isBrushed(extent, x(d[xAxisFeature]), y(d[yAxisFeature])) ? "black" : null)
+					.style("stroke-width", d => isBrushed(extent, x(d[xAxisFeature]), y(d[yAxisFeature])) ? 1 : 0)
+			}
+
+			svg.append('g')
+				.call(d3.brush()
+					.extent([[0, 0], [width, height]])
+					.on("start brush", event => brushed(event))
+				)
 		})
-
-		function updateChart() {
-			extent = d3.event.selection
-			myCircle.classed("selected", function(d){ return isBrushed(extent, x(d.Sepal_Length), y(d.Petal_Length) ) } )
-		}
-
-		svg
-    .call( d3.brush()                 // Add the brush feature using the d3.brush function
-      .extent( [ [0,0], [width,height] ] ) // initialise the brush area: start at 0,0 and finishes at width,height: it means I select the whole graph area
-      .on("start brush", updateChart) // Each time the brush selection changes, trigger the 'updateChart' function
-    )
 
 	}, [xAxisFeature, yAxisFeature])
 
