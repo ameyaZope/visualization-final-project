@@ -16,15 +16,7 @@ app.config.from_pyfile("settings.py")
 
 data = pd.read_csv('../data/final_data.csv')
 
-with urlopen('https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/world.geojson') as response:
-    geo_data = json.load(response)
-
-geo_df = pd.json_normalize(geo_data['features'])
-geo_df.drop(columns=['type'], inplace=True)
-geo_df.rename(columns={'id': 'Code', 'properties.name': 'Entity'}, inplace=True)
-df_final = pd.merge(data, geo_df,  how='left', left_on=['Entity','Code'], right_on = ['Entity','Code'])
-
-
+print(data.head())
 
 @app.route("/apis/data/scatterplot", methods=['GET'])
 def get_mds_data_plot():
