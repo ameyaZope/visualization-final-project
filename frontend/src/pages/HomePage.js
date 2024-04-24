@@ -8,6 +8,7 @@ function HomePage() {
 		<>
 			<Container>
 				<Scatterplot xAxisFeature={"Secondary_school_enrollment"} yAxisFeature={"Corruption_index"} />
+				<Chloromap xAxisFeature={"Secondary_school_enrollment"} yAxisFeature={"Corruption_index"} />
 			</Container>
 		</>
 	);
