@@ -1,5 +1,5 @@
 from json import loads
-from flask import Flask,jsonify
+from flask import Flask
 import numpy as np
 import pandas as pd
 import json
@@ -24,13 +24,11 @@ def get_mds_data_plot():
 
 @app.route("/apis/data/choromap",methods=['GET'])
 def get_choro_plot():
-    try:
-        return {
+    return {
         # TODO : Remove the first 10 data instances, this is just for testing
         'data': loads(data.to_json(orient="records"))
     } 
-    except Exception as e:
-        return jsonify({'error': str(e)})
+    
 
 if __name__ == '__main__':
     # Make the server publicly available
