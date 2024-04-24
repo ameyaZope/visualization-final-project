@@ -22,7 +22,7 @@ print(data.head())
 def get_mds_data_plot():
     return {
         # TODO : Remove the first 10 data instances, this is just for testing
-        'data': loads(df_final.to_json(orient="records"))
+        'data': loads(data.to_json(orient="records"))
     } 
 
 @app.route("/apis/data/choromap",methods=['GET'])
@@ -30,7 +30,7 @@ def get_choro_plot():
     try:
         return {
         # TODO : Remove the first 10 data instances, this is just for testing
-        'data': loads(df_final.to_json(orient="records"))
+        'data': loads(data.to_json(orient="records"))
     } 
     except Exception as e:
         return jsonify({'error': str(e)})
