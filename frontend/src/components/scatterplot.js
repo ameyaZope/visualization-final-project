@@ -135,7 +135,6 @@ function Scatterplot({ xAxisFeature, yAxisFeature }) {
 			.text(`${ylabel} vs ${xlabel}`);
 
 		d3.json('/apis/data/scatterplot').then(function (scatterplotData) {
-			console.log(scatterplotData)
 			let x, y;
 			// create and place the x axis
 			if (isFeatureCategorical[xAxisFeature]) {
