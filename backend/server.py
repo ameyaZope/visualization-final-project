@@ -29,6 +29,11 @@ def get_choro_plot():
         'data': loads(data.to_json(orient="records"))
     } 
     
+@app.route("/apis/data/barchart",methods=['GET'])
+def get_bar_chart():
+    return{
+        'data':loads(data.to_json(orient="records"))
+    }
 
 if __name__ == '__main__':
     # Make the server publicly available
