@@ -2,7 +2,6 @@ from json import loads
 from flask import Flask
 import numpy as np
 import pandas as pd
-import json
 from sklearn.preprocessing import StandardScaler
 from sklearn.decomposition import PCA
 from sklearn.cluster import KMeans
@@ -21,19 +20,6 @@ def get_mds_data_plot():
         # TODO : Remove the first 10 data instances, this is just for testing
         'data': loads(data.to_json(orient="records"))
     } 
-
-@app.route("/apis/data/choromap",methods=['GET'])
-def get_choro_plot():
-    return {
-        # TODO : Remove the first 10 data instances, this is just for testing
-        'data': loads(data.to_json(orient="records"))
-    } 
-    
-@app.route("/apis/data/barchart",methods=['GET'])
-def get_bar_chart():
-    return{
-        'data':loads(data.to_json(orient="records"))
-    }
 
 if __name__ == '__main__':
     # Make the server publicly available
