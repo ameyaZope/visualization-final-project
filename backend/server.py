@@ -87,6 +87,13 @@ def get_world_polygons_map_data():
 def get_world_lines_map_data():
     return world_polygons_topo_json
 
+@app.route("/apis/data/barchart", methods=['GET'])
+def get_barchart_data_plot():
+    return {
+        # TODO : Remove the first 10 data instances, this is just for testing
+        'data': loads(data.to_json(orient="records"))
+    } 
+
 
 @app.route("/apis/data/pcp", defaults={'year': None}, methods=['GET'])
 @app.route("/apis/data/pcp/<int:year>", methods=['GET'])
