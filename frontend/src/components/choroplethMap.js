@@ -4,7 +4,7 @@ import { legendColor } from 'd3-svg-legend';
 import { useEffect, useRef } from "react";
 import { feature } from 'topojson-client';
 
-function ChoroplethMap() {
+function ChoroplethMap({ year }) {
 	const d3 = Object.assign(d3Base, { legendColor, lineChunked })
 	const choroplethMapSvgRef = useRef();
 
@@ -63,7 +63,9 @@ function ChoroplethMap() {
 			const data = {};
 			choroplethMapData = choroplethMapData['data']
 			for (let i = 0; i < choroplethMapData.length; i++) {
-				data[choroplethMapData[i]['Code']] = +choroplethMapData[i]['Corruption_index']
+				if (choroplethMapData[i]['Year'] == year) {
+					data[choroplethMapData[i]['Code']] = +choroplethMapData[i]['Corruption_index']
+				}
 			}
 
 			const mouseover = function (d) {
@@ -191,7 +193,7 @@ function ChoroplethMap() {
 						.style("opacity", 1);
 				});
 		})
-	}, [])
+	}, [year])
 
 	return (
 		<svg width={500} height={300} id="choroplethMap" ref={choroplethMapSvgRef}></svg>

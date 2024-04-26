@@ -11,7 +11,7 @@ function isBrushed(brush_coords, cx, cy) {
 }
 
 
-function Scatterplot({ xAxisFeature, yAxisFeature }) {
+function Scatterplot({ xAxisFeature, yAxisFeature, year }) {
 	const scatterPlotSvgRef = useRef();
 
 	useEffect(() => {
@@ -135,11 +135,17 @@ function Scatterplot({ xAxisFeature, yAxisFeature }) {
 			.text(`${ylabel} vs ${xlabel}`);
 
 		d3.json('/apis/data/scatterplot').then(function (scatterplotData) {
+			let extractedScatterplotData = []
+			for(let i=0;i<scatterplotData['data'].length;i++) {
+				if(scatterplotData['data'][i]['Year']==year) {
+					extractedScatterplotData.push(scatterplotData['data'][i])
+				}
+			}
 			let x, y;
 			// create and place the x axis
 			if (isFeatureCategorical[xAxisFeature]) {
 				x = d3.scaleBand()
-					.domain(Array.from(new Set(scatterplotData['data'].map(d => d[xAxisFeature]))))
+					.domain(Array.from(new Set(extractedScatterplotData.map(d => d[xAxisFeature]))))
 					.range([0, width])
 					.padding(0.2)
 				const xAxis = svg.append('g')
@@ -155,7 +161,7 @@ function Scatterplot({ xAxisFeature, yAxisFeature }) {
 			}
 			else {
 				let maxVal = 0
-				for (const item of scatterplotData['data']) {
+				for (const item of extractedScatterplotData) {
 					maxVal = Math.max(maxVal, item[xAxisFeature])
 				}
 				x = d3.scaleLinear()
@@ -186,7 +192,7 @@ function Scatterplot({ xAxisFeature, yAxisFeature }) {
 			//create and place the y axis. 
 			if (isFeatureCategorical[yAxisFeature]) {
 				y = d3.scaleBand()
-					.domain(Array.from(new Set(scatterplotData['data'].map(d => d[yAxisFeature]))))
+					.domain(Array.from(new Set(extractedScatterplotData.map(d => d[yAxisFeature]))))
 					.range([height, 0])
 					.padding(0.2)
 				const yAxis = svg.append('g')
@@ -200,7 +206,7 @@ function Scatterplot({ xAxisFeature, yAxisFeature }) {
 			}
 			else {
 				let maxVal = 0;
-				for (const item of scatterplotData['data']) {
+				for (const item of extractedScatterplotData) {
 					maxVal = Math.max(maxVal, item[yAxisFeature])
 				}
 				y = d3.scaleLinear()
@@ -242,9 +248,9 @@ function Scatterplot({ xAxisFeature, yAxisFeature }) {
 			// Add dots
 			svg.append('g')
 				.selectAll("dot")
-				.data(scatterplotData['data'].filter(function(d) {
+				.data(extractedScatterplotData.filter(function(d) {
 					// Check that both required features are non-null
-					return d[xAxisFeature] != null && d[yAxisFeature] != null && d['Year'] == 2020;
+					return d[xAxisFeature] != null && d[yAxisFeature] != null;
 			}))
 				.enter()
 				.append("circle")

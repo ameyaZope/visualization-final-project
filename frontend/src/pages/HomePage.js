@@ -12,8 +12,8 @@ function HomePage() {
 	return (
 		<>
 			<Container>
-				<Scatterplot xAxisFeature={"Secondary_school_enrollment"} yAxisFeature={"Corruption_index"} />
-				<ChoroplethMap />
+				<Scatterplot xAxisFeature={"Secondary_school_enrollment"} yAxisFeature={"Corruption_index"} year={year} />
+				<ChoroplethMap year={year} />
 				<ParallelCoordinatePlot year={year}/>
 			</Container>
 		</>
