@@ -87,7 +87,7 @@ function ChoroplethMap() {
 					.duration(100)
 					.style("opacity", 1)
 			};
-			poly
+			const countries = poly
 				.selectAll("path")
 				.data(feature(topology, topology.objects.world_polygons_simplified).features)
 				.join("path")
@@ -153,12 +153,43 @@ function ChoroplethMap() {
 					}
 					return generatedLabels[i]
 				})
-				.labelOffset(3)
-				.shapePadding(0)
+				.shapePadding(2)
+				.orient('horizontal')
+				.shapeWidth(60)
 				.scale(color);
 
-			svg.select(".legendThreshold")
-				.call(legend);
+			const legendG = svg.append("g")
+				.attr("class", "legendThreshold")
+				.attr("transform", `translate(100,${height})`)
+				.call(legend)
+			legendG.selectAll("text")
+				.style("text-anchor", "start")
+				.style("font", "bold 16px Comic Sans MS")
+				.attr("transform", "rotate(15) translate(10, 30)")
+
+			legendG.selectAll("rect")
+				.data(color.range().map(color.invertExtent))
+				.on("mouseover", function (e, d) {
+					const [min, max] = d;
+					d3.selectAll(".countries").transition()
+						.duration(100)
+						.style("opacity", b => { 
+							if(min != undefined && max!=undefined) {
+								return (data[b.properties.color_code] >= min && data[b.properties.color_code] < max) ? 1 : 0.3
+							}
+							else if(min == undefined) {
+								return (data[b.properties.color_code] < max) ? 1 : 0.3
+							}
+							else if(max==undefined) {
+								return (data[b.properties.color_code] >= min) ? 1 : 0.3
+							}
+						});
+				})
+				.on("mouseout", function () {
+					d3.selectAll(".countries").transition()
+						.duration(100)
+						.style("opacity", 1);
+				});
 		})
 	}, [])
 
