@@ -1,7 +1,7 @@
 import * as d3 from "d3";
 import { useEffect, useRef } from "react";
 
-function ParallelCoordinatePlot({ year }) {
+function ParallelCoordinatePlot({ year, selectedCountries, handleCountrySelection, handleCountriesDefault }) {
 	let numClusters = 3;
 	const pcpSvgRef = useRef();
 	const brushSelections = {}; // Object to store selections for each dimension
@@ -185,7 +185,7 @@ function ParallelCoordinatePlot({ year }) {
 								return Object.keys(brushSelections).every(dim => {
 									const test = brushSelections[dim];
 									return test ? test(d) : true; // If no selection for a dimension, consider it as passing the test
-								}) ? 1 : 0.05;
+								}) ? 1 : 0;
 							});
 
 						}
@@ -193,7 +193,7 @@ function ParallelCoordinatePlot({ year }) {
 						function brushended(event) {
 							if (!event.selection) {
 								svg.selectAll("path.line")
-									.style("stroke-opacity", 0.5);
+									.style("stroke-opacity", 0);
 							}
 
 							if (!event.selection) {
@@ -229,7 +229,7 @@ function ParallelCoordinatePlot({ year }) {
 				.attr("d", path)
 				.style("fill", "none")
 				.style("stroke", d => { return color(d['clusterId']) })
-				.style("opacity", 0.5);
+				.style("opacity", d => selectedCountries.includes(d.Code) ? 1 : 0);
 
 			// Draw the axis and apply drag behavior
 			svg.selectAll(".axis")
@@ -282,7 +282,7 @@ function ParallelCoordinatePlot({ year }) {
 						return Object.keys(brushSelections).every(dim => {
 							const test = brushSelections[dim];
 							return test ? test(d) : true; // If no selection for a dimension, consider it as passing the test
-						}) ? 1 : 0.05;
+						}) ? 1 : 0;
 					});
 
 				}
@@ -310,7 +310,7 @@ function ParallelCoordinatePlot({ year }) {
 					.call(brush);
 			});
 		});
-	}, []);
+	}, [year, selectedCountries]);
 
 	return <svg width={1200} height={250} id='pcpPlot' ref={pcpSvgRef}></svg>;
 }

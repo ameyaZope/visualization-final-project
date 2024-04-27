@@ -11,7 +11,7 @@ function isBrushed(brush_coords, cx, cy) {
 }
 
 
-function Scatterplot({ xAxisFeature, yAxisFeature, year }) {
+function Scatterplot({ xAxisFeature, yAxisFeature, year, selectedCountries, handleCountrySelection, handleCountriesDefault }) {
 	const scatterPlotSvgRef = useRef();
 
 	useEffect(() => {
@@ -294,14 +294,23 @@ function Scatterplot({ xAxisFeature, yAxisFeature, year }) {
 				})
 
 			function brushed(event) {
-				if (!event.selection) return;
+				if (!event.selection) {
+					handleCountriesDefault();
+					return;
+				}
 				let extent = event.selection;
 
 				svg.selectAll('circle')
 					.style("opacity", d => isBrushed(extent, x(d[xAxisFeature]), y(d[yAxisFeature])) ? 1 : 0.5)
 					.style("fill", d => isBrushed(extent, x(d[xAxisFeature]), y(d[yAxisFeature])) ? "purple" : "#69b3a2")
 					.style("stroke", d => isBrushed(extent, x(d[xAxisFeature]), y(d[yAxisFeature])) ? "black" : null)
-					.style("stroke-width", d => isBrushed(extent, x(d[xAxisFeature]), y(d[yAxisFeature])) ? 1 : 0)
+					.style("stroke-width", d => isBrushed(extent, x(d[xAxisFeature]), y(d[yAxisFeature])) ? 1 : 0);
+
+				const brushedCountries = extractedScatterplotData.filter(d =>
+					isBrushed(extent, x(d[xAxisFeature]), y(d[yAxisFeature]))
+				).map(d => d.Code);
+				console.log(brushedCountries)
+				handleCountrySelection(brushedCountries)
 			}
 
 			svg.append('g')
@@ -311,7 +320,7 @@ function Scatterplot({ xAxisFeature, yAxisFeature, year }) {
 				)
 		})
 
-	}, [xAxisFeature, yAxisFeature])
+	}, [xAxisFeature, yAxisFeature, year])
 
 	return (
 		<svg width={500} height={300} id="scatterplot" ref={scatterPlotSvgRef}></svg>

@@ -4,7 +4,7 @@ import { legendColor } from 'd3-svg-legend';
 import { useEffect, useRef } from "react";
 import { feature } from 'topojson-client';
 
-function ChoroplethMap({ year }) {
+function ChoroplethMap({ year, selectedCountries, handleCountrySelection, handleCountriesDefault }) {
 	const d3 = Object.assign(d3Base, { legendColor, lineChunked })
 	const choroplethMapSvgRef = useRef();
 
@@ -72,7 +72,7 @@ function ChoroplethMap({ year }) {
 				d3.selectAll(".countries")
 					.transition()
 					.duration(100)
-					.style("opacity", .3)
+					.style("opacity", 0.3)
 				d3.select(this)
 					.transition()
 					.duration(100)
@@ -81,13 +81,9 @@ function ChoroplethMap({ year }) {
 
 			const mouseleave = function (d) {
 				d3.selectAll(".countries")
-					.transition()
-					.duration(100)
-					.style("opacity", 1)
-				d3.select(this)
-					.transition()
-					.duration(100)
-					.style("opacity", 1)
+						.transition()
+						.duration(100)
+						.style("opacity", d => selectedCountries.includes(d.properties.color_code) ? 1 : 0.3);
 			};
 			const countries = poly
 				.selectAll("path")
@@ -103,7 +99,7 @@ function ChoroplethMap({ year }) {
 				.append("title")
 				.text(function (d) {
 					return `Country: ${d['properties']['gis_name']}\nCorruption Index: ${d3.format(",")(d['Corruption_index'])}`
-				})
+				});
 
 			d3.json(polylinesUrl).then(function (topology) {
 				line
@@ -188,12 +184,17 @@ function ChoroplethMap({ year }) {
 						});
 				})
 				.on("mouseout", function () {
-					d3.selectAll(".countries").transition()
+					d3.selectAll(".countries")
+						.transition()
 						.duration(100)
-						.style("opacity", 1);
+						.style("opacity", d => selectedCountries.includes(d.properties.color_code) ? 1 : 0.3);
 				});
+			d3.selectAll(".countries")
+				.transition()
+				.duration(100)
+				.style("opacity", d => selectedCountries.includes(d.properties.color_code) ? 1 : 0.3);
 		})
-	}, [year])
+	}, [year, selectedCountries])
 
 	return (
 		<svg width={500} height={300} id="choroplethMap" ref={choroplethMapSvgRef}></svg>
