@@ -7,6 +7,7 @@ import { feature } from 'topojson-client';
 function ChoroplethMap({ year, selectedCountries, handleCountrySelection, handleCountriesDefault, handleCountriesAppend }) {
 	const d3 = Object.assign(d3Base, { legendColor, lineChunked })
 	const choroplethMapSvgRef = useRef();
+	const selectedCountriesRef = useRef(selectedCountries);
 
 	useEffect(() => {
 		var svgSelected = d3.select('#choroplethMap');
@@ -81,7 +82,7 @@ function ChoroplethMap({ year, selectedCountries, handleCountrySelection, handle
 				d3.selectAll(".countries")
 						.transition()
 						.duration(100)
-						.style("opacity", d => selectedCountries.includes(d.properties.color_code) ? 1 : 0.3);
+						.style("opacity", d => selectedCountriesRef.current.includes(d.properties.color_code) ? 1 : 0.3);
 			};
 			const countries = poly
 				.selectAll("path")
@@ -94,14 +95,14 @@ function ChoroplethMap({ year, selectedCountries, handleCountrySelection, handle
 				.attr("class", function (d) { return "countries" })
 				.on("click", function(event, d) {
 					const code = d.properties.color_code;
-					handleCountriesAppend(code);  // Add this country to selectedCountries
+					handleCountriesAppend(code);  
 					svg.selectAll(".country")
 							.transition().duration(100)
-							.style("opacity", 0.3);  // Dim all countries
+						.style("opacity", 0.3);  
 					d3.select(this)
 							.transition().duration(100)
-							.style("opacity", 1);  // Highlight the clicked country
-			})
+						.style("opacity", 1);
+				})
 				.on("mouseover", mouseover)
 				.on("mouseleave", mouseleave)
 				.append("title")
@@ -195,12 +196,13 @@ function ChoroplethMap({ year, selectedCountries, handleCountrySelection, handle
 					d3.selectAll(".countries")
 						.transition()
 						.duration(100)
-						.style("opacity", d => selectedCountries.includes(d.properties.color_code) ? 1 : 0.3);
+						.style("opacity", d => selectedCountriesRef.current.includes(d.properties.color_code) ? 1 : 0.3);
 				});
 		})
 	}, [year])
 
 	useEffect(() => {
+		selectedCountriesRef.current = selectedCountries;
 		d3.selectAll(".countries")
 			.transition()
 			.duration(100)
