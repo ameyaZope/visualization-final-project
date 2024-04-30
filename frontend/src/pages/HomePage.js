@@ -31,21 +31,26 @@ function HomePage() {
 		'SYR', 'TJK', 'TZA', 'THA', 'TGO', 'TON', 'TTO', 'TUN', 'TUR',
 		'TKM', 'TCA', 'TUV', 'UGA', 'UKR', 'ARE', 'GBR', 'USA', 'URY',
 		'UZB', 'VUT', 'VEN', 'VNM', 'YEM', 'ZMB', 'ZWE']
-	const [selectedCountries, setSelectedCountries] = React.useState(all_countries)
+	const [selectedCountries, setSelectedCountries] = React.useState([...all_countries])
 	const handleCountrySelection = (selected) => {
 		setSelectedCountries(selected);
 	};
 
 	const handleCountriesDefault = () => {
+		console.log('Handling Countries Default to []')
+		setSelectedCountries([])
+	}
 
+	const handleCountriesAppend = (newCountry) => {
+		setSelectedCountries([newCountry])
 	}
 
 	return (
 		<>
 			<Container>
-				<Scatterplot xAxisFeature={"Secondary_school_enrollment"} yAxisFeature={"Corruption_index"} year={year} selectedCountries={selectedCountries} handleCountrySelection={handleCountrySelection} handleCountriesDefault={handleCountriesDefault} />
-				<ChoroplethMap year={year} selectedCountries={selectedCountries} handleCountrySelection={handleCountrySelection} handleCountriesDefault={handleCountriesDefault} />
-				<ParallelCoordinatePlot year={year} selectedCountries={selectedCountries} handleCountrySelection={handleCountrySelection} handleCountriesDefault={handleCountriesDefault} />
+				<Scatterplot xAxisFeature={"Secondary_school_enrollment"} yAxisFeature={"Corruption_index"} year={year} selectedCountries={selectedCountries} handleCountrySelection={handleCountrySelection} handleCountriesDefault={handleCountriesDefault} handleCountriesAppend={handleCountriesAppend} />
+				<ChoroplethMap year={year} selectedCountries={selectedCountries} handleCountrySelection={handleCountrySelection} handleCountriesDefault={handleCountriesDefault} handleCountriesAppend={handleCountriesAppend} />
+				<ParallelCoordinatePlot year={year} selectedCountries={selectedCountries} handleCountrySelection={handleCountrySelection} handleCountriesDefault={handleCountriesDefault} handleCountriesAppend={handleCountriesAppend} />
 			</Container>
 		</>
 	);

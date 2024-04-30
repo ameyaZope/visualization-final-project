@@ -303,7 +303,6 @@ function Scatterplot({ xAxisFeature, yAxisFeature, year, selectedCountries, hand
 				const brushedCountries = scatterplotData['data'].filter(d =>
 					isBrushed(extent, x(d[xAxisFeature]), y(d[yAxisFeature]))
 				).map(d => d.Code);
-				console.log(brushedCountries)
 				handleCountrySelection(brushedCountries)
 			}
 
@@ -311,10 +310,23 @@ function Scatterplot({ xAxisFeature, yAxisFeature, year, selectedCountries, hand
 				.call(d3.brush()
 					.extent([[0, 0], [width, height]])
 					.on("start brush", event => brushed(event))
+					.on("end", (event) => {
+						if (!event.selection) {
+							handleCountriesDefault()
+						}
+					})
 				)
 		})
 
 	}, [xAxisFeature, yAxisFeature, year])
+
+	useEffect(() => {
+		d3.selectAll('circle')
+			.style("opacity", d => selectedCountries.includes(d['Code']) ? 1 : 0.5)
+			.style("fill", d => selectedCountries.includes(d['Code']) ? "purple" : "#69b3a2")
+			.style("stroke", d => selectedCountries.includes(d['Code']) ? "black" : null)
+			.style("stroke-width", d => selectedCountries.includes(d['Code']) ? 1 : 0);
+	}, [selectedCountries])
 
 	return (
 		<svg width={500} height={300} id="scatterplot" ref={scatterPlotSvgRef}></svg>

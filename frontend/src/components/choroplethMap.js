@@ -4,7 +4,7 @@ import { legendColor } from 'd3-svg-legend';
 import { useEffect, useRef } from "react";
 import { feature } from 'topojson-client';
 
-function ChoroplethMap({ year, selectedCountries, handleCountrySelection, handleCountriesDefault }) {
+function ChoroplethMap({ year, selectedCountries, handleCountrySelection, handleCountriesDefault, handleCountriesAppend }) {
 	const d3 = Object.assign(d3Base, { legendColor, lineChunked })
 	const choroplethMapSvgRef = useRef();
 
@@ -92,6 +92,16 @@ function ChoroplethMap({ year, selectedCountries, handleCountrySelection, handle
 				})
 				.attr("d", path)
 				.attr("class", function (d) { return "countries" })
+				.on("click", function(event, d) {
+					const code = d.properties.color_code;
+					handleCountriesAppend(code);  // Add this country to selectedCountries
+					svg.selectAll(".country")
+							.transition().duration(100)
+							.style("opacity", 0.3);  // Dim all countries
+					d3.select(this)
+							.transition().duration(100)
+							.style("opacity", 1);  // Highlight the clicked country
+			})
 				.on("mouseover", mouseover)
 				.on("mouseleave", mouseleave)
 				.append("title")

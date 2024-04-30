@@ -1,6 +1,14 @@
 import * as d3 from "d3";
 import { useEffect, useRef } from "react";
 
+function isBrushed(brush_coords, cx, cy) {
+	var x0 = brush_coords[0][0],
+		x1 = brush_coords[1][0],
+		y0 = brush_coords[0][1],
+		y1 = brush_coords[1][1];
+	return x0 <= cx && cx <= x1 && y0 <= cy && cy <= y1;    // This return TRUE or FALSE depending on if the points is in the selected area
+}
+
 function ParallelCoordinatePlot({ year, selectedCountries, handleCountrySelection, handleCountriesDefault }) {
 	let numClusters = 3;
 	const pcpSvgRef = useRef();
@@ -278,6 +286,8 @@ function ParallelCoordinatePlot({ year, selectedCountries, handleCountrySelectio
 						}) ? 1 : 0;
 					});
 
+					console.log(brushSelections)
+
 				}
 
 				function brushended(event) {
@@ -307,7 +317,7 @@ function ParallelCoordinatePlot({ year, selectedCountries, handleCountrySelectio
 
 	useEffect(() => {
 		d3.selectAll('path.line')
-			.style("opacity", d => selectedCountries.includes(d.Code) ? 1 : 0);
+			.style("opacity", d => selectedCountries.length == 0 || selectedCountries.includes(d.Code) ? 1 : 0);
 	}, [selectedCountries])
 
 	return (<svg width={1200} height={250} id='pcpPlot' ref={pcpSvgRef}></svg>);
