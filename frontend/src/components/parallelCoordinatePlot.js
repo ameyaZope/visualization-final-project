@@ -105,7 +105,7 @@ function ParallelCoordinatePlot({ year, selectedCountries, handleCountrySelectio
 			.append("g")
 			.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-		d3.json('/apis/data/pcp').then((pcpData) => {
+		d3.json(`/apis/data/pcp/${year}`).then((pcpData) => {
 			const color = d3.scaleOrdinal()
 				.domain(pcpData['data'].map(d => d['clusterId']))
 				.range(d3.schemeCategory10.slice(0, numClusters));
@@ -214,16 +214,9 @@ function ParallelCoordinatePlot({ year, selectedCountries, handleCountrySelectio
 					});
 				});
 
-			let filteredData = []
-			for (let i = 0; i < pcpData['data'].length; i++) {
-				if (pcpData['data'][i]['Year'] == year) {
-					filteredData.push(pcpData['data'][i])
-				}
-			}
-
 			// Draw the lines
 			svg.selectAll("path.line")
-				.data(filteredData)
+				.data(pcpData['data'])
 				.enter().append("path")
 				.attr("class", "line")
 				.attr("d", path)

@@ -43,18 +43,26 @@ for year in range(2000, 2021, 1):
         data.loc[(data['Year'] == year) & (data['Code'] ==
                                            row['Code']), 'clusterId'] = row['clusterId']
 
+final_data = loads(data.to_json(orient="records"))
+year_wise_data = {}
+for year in range(2000, 2021, 1):
+    year_wise_data[year] = []
+for year in range(2000, 2021, 1):
+    for i in range(len(final_data)):
+        if (final_data[i]['Year']==year):
+            year_wise_data[year].append(final_data[i])
 
-@app.route("/apis/data/scatterplot", methods=['GET'])
-def get_mds_data_plot():
+@app.route("/apis/data/scatterplot/<int:year>", methods=['GET'])
+def get_scatterplot_data_plot(year: int):
     return {
-        'data': loads(data.to_json(orient="records"))
+        'data': year_wise_data[year]
     } 
 
 
-@app.route("/apis/data/choroplethmap", methods=['GET'])
-def get_choro_plot():
+@app.route("/apis/data/choroplethmap/<int:year>", methods=['GET'])
+def get_choro_plot(year: int):
     return {
-        'data': loads(data.to_json(orient="records"))
+        'data': year_wise_data[year]
     } 
 
 
@@ -68,13 +76,14 @@ def get_world_lines_map_data():
     return world_polygons_topo_json
 
 
-@app.route("/apis/data/pcp", methods=['GET'])
-def get_pcp_data():
+@app.route("/apis/data/pcp/<int:year>", methods=['GET'])
+def get_pcp_data(year: int):
     return {
-        'data': loads(data.to_json(orient="records"))
+        'data': year_wise_data[year]
     }
 
 if __name__ == '__main__':
     # Make the server publicly available
     app.run(host='0.0.0.0', port=8080, debug=True)
     file_ptr_world_polygons.close()
+    file_ptr_lines_polygons.close()

@@ -48,7 +48,7 @@ function ChoroplethMap({ year, selectedCountries, handleCountrySelection, handle
 		const poly = svg.append("g");
 		const line = svg.append("g");
 
-		const dataUrl = "/apis/data/choroplethmap"
+		const dataUrl = `/apis/data/choroplethmap/${year}`
 		const polygonUrl = "/apis/data/geospatial/world/polygons"
 		const polylinesUrl = "/apis/data/geospatial/world/lines";
 
@@ -63,9 +63,7 @@ function ChoroplethMap({ year, selectedCountries, handleCountrySelection, handle
 			const data = {};
 			choroplethMapData = choroplethMapData['data']
 			for (let i = 0; i < choroplethMapData.length; i++) {
-				if (choroplethMapData[i]['Year'] == year) {
-					data[choroplethMapData[i]['Code']] = +choroplethMapData[i]['Corruption_index']
-				}
+				data[choroplethMapData[i]['Code']] = +choroplethMapData[i]['Corruption_index']
 			}
 
 			const mouseover = function (d) {
