@@ -303,9 +303,14 @@ function ParallelCoordinatePlot({ year, selectedCountries, handleCountrySelectio
 					.call(brush);
 			});
 		});
-	}, [year, selectedCountries]);
+	}, [year]);
 
-	return <svg width={1200} height={250} id='pcpPlot' ref={pcpSvgRef}></svg>;
+	useEffect(() => {
+		d3.selectAll('path.line')
+			.style("opacity", d => selectedCountries.includes(d.Code) ? 1 : 0);
+	}, [selectedCountries])
+
+	return (<svg width={1200} height={250} id='pcpPlot' ref={pcpSvgRef}></svg>);
 }
 
 export default ParallelCoordinatePlot;

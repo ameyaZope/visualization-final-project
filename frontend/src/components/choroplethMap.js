@@ -187,12 +187,15 @@ function ChoroplethMap({ year, selectedCountries, handleCountrySelection, handle
 						.duration(100)
 						.style("opacity", d => selectedCountries.includes(d.properties.color_code) ? 1 : 0.3);
 				});
-			d3.selectAll(".countries")
-				.transition()
-				.duration(100)
-				.style("opacity", d => selectedCountries.includes(d.properties.color_code) ? 1 : 0.3);
 		})
-	}, [year, selectedCountries])
+	}, [year])
+
+	useEffect(() => {
+		d3.selectAll(".countries")
+			.transition()
+			.duration(100)
+			.style("opacity", d => selectedCountries.includes(d.properties.color_code) ? 1 : 0.3);
+	}, [selectedCountries])
 
 	return (
 		<svg width={500} height={300} id="choroplethMap" ref={choroplethMapSvgRef}></svg>
