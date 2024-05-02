@@ -52,18 +52,30 @@ for year in range(2000, 2021, 1):
         if (final_data[i]['Year']==year):
             year_wise_data[year].append(final_data[i])
 
+
+@app.route("/apis/data/scatterplot", defaults={'year': None}, methods=['GET'])
 @app.route("/apis/data/scatterplot/<int:year>", methods=['GET'])
-def get_scatterplot_data_plot(year: int):
-    return {
-        'data': year_wise_data[year]
-    } 
+def get_scatterplot_data_plot(year: int = None):
+    if year is None:
+        return {
+            'data': year_wise_data
+        }
+    else:
+        return {
+            'data': year_wise_data[year]
+        }
 
-
+@app.route("/apis/data/choroplethmap", defaults={'year': None}, methods=['GET'])
 @app.route("/apis/data/choroplethmap/<int:year>", methods=['GET'])
-def get_choro_plot(year: int):
-    return {
-        'data': year_wise_data[year]
-    } 
+def get_choro_plot(year: int = None):
+    if year is None:
+        return {
+            'data': year_wise_data
+        }
+    else:
+        return {
+            'data': year_wise_data[year]
+        }
 
 
 @app.route("/apis/data/geospatial/world/lines", methods=['GET'])
@@ -76,11 +88,17 @@ def get_world_lines_map_data():
     return world_polygons_topo_json
 
 
+@app.route("/apis/data/pcp", defaults={'year': None}, methods=['GET'])
 @app.route("/apis/data/pcp/<int:year>", methods=['GET'])
-def get_pcp_data(year: int):
-    return {
-        'data': year_wise_data[year]
-    }
+def get_pcp_data(year: int = None):
+    if year is None:
+        return {
+            'data': year_wise_data
+        }
+    else:
+        return {
+            'data': year_wise_data[year]
+        }
 
 if __name__ == '__main__':
     # Make the server publicly available

@@ -13,7 +13,9 @@ function ParallelCoordinatePlot({ year, selectedCountries, handleCountrySelectio
 	let numClusters = 3;
 	const pcpSvgRef = useRef();
 	const brushSelections = {}; // Object to store selections for each dimension
-
+	const svgRef = useRef(null);
+	const colorRef = useRef(null);
+	const pathRef = useRef(null);
 
 	useEffect(() => {
 		const margin = { top: 80, right: 50, bottom: 15, left: 50 },
@@ -101,12 +103,65 @@ function ParallelCoordinatePlot({ year, selectedCountries, handleCountrySelectio
 			"Electricity from nuclear - TWh": false
 		}
 
+		let featureDomains = {
+			"Adjusted_school_years": [0, 100],
+			"Alcohol_consumption_per_capita": [0, 100],
+			"BCG_immunization": [0, 100],
+			"Cantril_ladder_score": [0, 100],
+			"Code": [0, 100],
+			"Continent": ['Asia', 'Europe', 'Africa', 'North America', 'South America', 'Oceania'],
+			"Corruption_index": [0, 1],
+			"Cereal Production": [0.0001, 36.761898],
+			"DTP3_immunization": [0, 100],
+			"Deaths_due_to_air_pollution": [0, 500],
+			"Drug_use_death_rate": [0, 20],
+			"Expenditure_estimates": [0, 16],
+			"Female_no_education_rate": [0, 100],
+			"GDP_PPP": [0, 23096385000000],
+			"Gender_Inequality_Index": [0, 1],
+			"Global_Hunger_Index": [0, 1],
+			"HDI": [0, 1],
+			"HepB3_immunization": [0, 100],
+			"Hib3_immunization": [0, 100],
+			"High_corruption_index": [0, 100],
+			"IPV1_immunization": [0, 100],
+			"Life_expectancy_at_birth": [20, 90],
+			"Literacy_estimates": [0, 100],
+			"Low_corruption_index": [0, 1],
+			"Lower_secondary_completion_rate": [0, 200],
+			"MCV1_immunization": [0, 100],
+			"Mean_income_consumption": [0, 100],
+			"Mean_schooling_years": [0, 15],
+			"PCV3_immunization": [0, 100],
+			"Patent_applications_per_million": [0, 3500],
+			"Pol3_immunization": [0, 100],
+			"Primary_completion_rate": [0, 100],
+			"Primary_school_enrollment": [0, 160],
+			"Public_admin_index": [-3, 5],
+			"RCV1_immunization": [0, 100],
+			"Researchers_per_million": [0, 9000],
+			"RotaC_immunization": [0, 100],
+			"Rule_of_law_index": [0, 1],
+			"Secondary_school_enrollment": [0, 200],
+			"Tertiary_school_enrollment": [0, 200],
+			"Under_fifteen_mortality_rate": [0, 30],
+			"Under_five_mortality_rate": [0, 30],
+			"Upper_secondary_completion_rate": [0, 100],
+			"YFV_immunization": [0, 100],
+			"Year": [2000, 2020],
+			"Mean years of schooling": [0, 100],
+			"Count of Women in Parliament": [0, 70],
+			"Annual CO₂ emissions (per capita)": [0, 70],
+			"Ozone depletion": [-4500, 100000],
+			"Electricity from nuclear - TWh": [0, 900]
+		}
+
 		// below line clears the svg so that next graph can be drawn on it, 
 		// else there is overlap of graphs
 		var svgSelected = d3.select("#pcpPlot");
 		svgSelected.selectAll("*").remove();
 
-		var svg = d3.select(pcpSvgRef.current)
+		svgRef.current = d3.select(pcpSvgRef.current)
 			.append("svg")
 			.attr("width", width + margin.left + margin.right)
 			.attr("height", height + margin.top + margin.bottom)
@@ -114,7 +169,7 @@ function ParallelCoordinatePlot({ year, selectedCountries, handleCountrySelectio
 			.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
 		d3.json(`/apis/data/pcp/${year}`).then((pcpData) => {
-			const color = d3.scaleOrdinal()
+			colorRef.current = d3.scaleOrdinal()
 				.domain(pcpData['data'].map(d => d['clusterId']))
 				.range(d3.schemeCategory10.slice(0, numClusters));
 
@@ -127,7 +182,7 @@ function ParallelCoordinatePlot({ year, selectedCountries, handleCountrySelectio
 						.range([height, 0]);
 				} else {
 					y[dim] = d3.scaleLinear()
-						.domain(d3.extent(pcpData['data'], d => d[dim]))
+						.domain(featureDomains[dim])
 						.range([height, 0]);
 				}
 			});
@@ -138,7 +193,7 @@ function ParallelCoordinatePlot({ year, selectedCountries, handleCountrySelectio
 				.domain(dimensions);
 
 
-			function path(d) {
+			pathRef.current = function path(d) {
 				return d3.line()(dimensions.map(p => { return [x(p), y[p](d[p])] }));
 			}
 
@@ -157,14 +212,14 @@ function ParallelCoordinatePlot({ year, selectedCountries, handleCountrySelectio
 						dimensions.splice(newPositionIndex, 0, d);
 
 						x.domain(dimensions);
-						svg.selectAll(".axis")
+						svgRef.current.selectAll(".axis")
 							.attr("transform", dimension => `translate(${x(dimension)})`)
 							.each(function (dimension) {
 								d3.select(this).call(d3.axisLeft().scale(y[dimension]));
 							});
 
-						svg.selectAll("path.line")
-							.attr("d", path); // Recalculate the line paths
+						svgRef.current.selectAll("path.line")
+							.attr("d", pathRef.current); // Recalculate the line paths
 					}
 				})
 				.on('end', function (event, d) {
@@ -188,7 +243,7 @@ function ParallelCoordinatePlot({ year, selectedCountries, handleCountrySelectio
 							}
 
 							// Apply global filtering logic
-							svg.selectAll("path.line").style("stroke-opacity", d => {
+							svgRef.current.selectAll("path.line").style("stroke-opacity", d => {
 								// Check every dimension's selection to decide if the line should be highlighted
 								return Object.keys(brushSelections).every(dim => {
 									const test = brushSelections[dim];
@@ -200,7 +255,7 @@ function ParallelCoordinatePlot({ year, selectedCountries, handleCountrySelectio
 
 						function brushended(event) {
 							if (!event.selection) {
-								svg.selectAll("path.line")
+								svgRef.current.selectAll("path.line")
 									.style("stroke-opacity", 0);
 							}
 
@@ -215,7 +270,7 @@ function ParallelCoordinatePlot({ year, selectedCountries, handleCountrySelectio
 							.on("brush", event => brushed(event, dim)) // Pass the current dimension
 							.on("end", brushended);
 
-						svg.append("g")
+						svgRef.current.append("g")
 							.attr("class", "brush")
 							.attr("transform", `translate(${x(dim)})`)
 							.call(brush);
@@ -223,17 +278,17 @@ function ParallelCoordinatePlot({ year, selectedCountries, handleCountrySelectio
 				});
 
 			// Draw the lines
-			svg.selectAll("path.line")
+			svgRef.current.selectAll("path.line")
 				.data(pcpData['data'])
 				.enter().append("path")
 				.attr("class", "line")
-				.attr("d", path)
+				.attr("d", pathRef.current)
 				.style("fill", "none")
-				.style("stroke", d => { return color(d['clusterId']) })
+				.style("stroke", d => { return colorRef.current(d['clusterId']) })
 				.style("opacity", d => selectedCountries.includes(d.Code) ? 1 : 0);
 
 			// Draw the axis and apply drag behavior
-			svg.selectAll(".axis")
+			svgRef.current.selectAll(".axis")
 				.data(dimensions).enter()
 				.append("g")
 				.attr("class", "axis")
@@ -249,7 +304,7 @@ function ParallelCoordinatePlot({ year, selectedCountries, handleCountrySelectio
 				.style("fill", "black")
 				.style("cursor", "all-scroll");;
 
-			svg.append("text")
+			svgRef.current.append("text")
 				.attr("x", width / 2)
 				.attr("y", 0 - (margin.top / 1.5))
 				.attr("text-anchor", "middle")
@@ -278,7 +333,7 @@ function ParallelCoordinatePlot({ year, selectedCountries, handleCountrySelectio
 					}
 
 					// Apply global filtering logic
-					svg.selectAll("path.line").style("stroke-opacity", d => {
+					svgRef.current.selectAll("path.line").style("stroke-opacity", d => {
 						// Check every dimension's selection to decide if the line should be highlighted
 						return Object.keys(brushSelections).every(dim => {
 							const test = brushSelections[dim];
@@ -292,7 +347,7 @@ function ParallelCoordinatePlot({ year, selectedCountries, handleCountrySelectio
 
 				function brushended(event) {
 					if (!event.selection) {
-						svg.selectAll("path.line")
+						svgRef.current.selectAll("path.line")
 							.style("stroke-opacity", 1);
 					}
 
@@ -307,13 +362,35 @@ function ParallelCoordinatePlot({ year, selectedCountries, handleCountrySelectio
 					.on("brush", event => brushed(event, dim)) // Pass the current dimension
 					.on("end", brushended);
 
-				svg.append("g")
+				svgRef.current.append("g")
 					.attr("class", "brush")
 					.attr("transform", `translate(${x(dim)})`)
 					.call(brush);
 			});
 		});
-	}, [year]);
+	}, []);
+
+	useEffect(() => {
+		d3.json(`/apis/data/pcp/${year}`).then((pcpData) => {
+
+			if (colorRef.current === null) {
+				colorRef.current = d3.scaleOrdinal()
+					.domain(pcpData['data'].map(d => d['clusterId']))
+					.range(d3.schemeCategory10.slice(0, numClusters));
+			}
+
+			svgRef.current.selectAll('path.line').remove();
+
+			svgRef.current.selectAll("path.line")
+				.data(pcpData['data'])
+				.enter().append("path")
+				.attr("class", "line")
+				.attr("d", pathRef.current)
+				.style("fill", "none")
+				.style("stroke", d => { return colorRef.current(d['clusterId']) })
+				.style("opacity", d => selectedCountries.includes(d.Code) ? 1 : 0);
+		});
+	}, [year])
 
 	useEffect(() => {
 		d3.selectAll('path.line')
