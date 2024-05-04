@@ -1,12 +1,21 @@
+import PauseCircleOutlineIcon from '@mui/icons-material/PauseCircleOutline';
 import PlayCircleOutlineIcon from '@mui/icons-material/PlayCircleOutline';
 import { Container, IconButton, Slider } from "@mui/material";
 import * as React from 'react';
+import { useEffect, useRef, useState } from "react";
 import ChoroplethMap from "../components/choroplethMap";
 import ParallelCoordinatePlot from "../components/parallelCoordinatePlot";
 import Scatterplot from "../components/scatterplot";
 
 
 function HomePage() {
+
+	const [isPlaying, setIsPlaying] = useState(false);
+	const intervalRef = useRef(null);
+
+	const togglePlay = () => {
+		setIsPlaying(!isPlaying);
+	};
 
 	const [year, setYear] = React.useState(2020)
 	const changeYear = (event, newYear) => {
@@ -57,15 +66,35 @@ function HomePage() {
 		})
 	}
 
+	useEffect(() => {
+		if (isPlaying) {
+			intervalRef.current = setInterval(() => {
+				setYear((prevYear) => {
+					const nextYear = prevYear + 1;
+					return nextYear > 2020 ? 2000 : nextYear; // Loop back to 2000 if the year exceeds 2020
+				});
+			}, 800);
+		} else if (intervalRef.current) {
+			clearInterval(intervalRef.current);
+		}
+
+		return () => {
+			if (intervalRef.current) {
+				clearInterval(intervalRef.current);
+			}
+		};
+	}, [isPlaying]);
+
 	return (
 		<>
 			<Container>
 				<IconButton
-					aria-label="play video"
-					color="green"
+					aria-label={isPlaying ? "pause" : "play"}
+					color={isPlaying ? "error" : "success"}
 					size="large"
+					onClick={togglePlay}
 				>
-					<PlayCircleOutlineIcon fontSize="large" />
+					{isPlaying ? <PauseCircleOutlineIcon fontSize="large" /> : <PlayCircleOutlineIcon fontSize="large" />}
 				</IconButton>
 				<Slider
 					aria-label="Year"
@@ -76,6 +105,7 @@ function HomePage() {
 					marks={marks}
 					min={2000}
 					max={2020}
+					value={year}
 					onChange={changeYear}
 					sx={{
 						color: 'green',
