@@ -8,6 +8,12 @@ function ChoroplethMap({ year, selectedCountries, handleCountrySelection, handle
 	const d3 = Object.assign(d3Base, { legendColor, lineChunked })
 	const choroplethMapSvgRef = useRef();
 	const selectedCountriesRef = useRef(selectedCountries);
+	const svgRef = useRef(null);
+	const colorRef = useRef(null);
+	const pathRef = useRef(null);
+	const countriesRef = useRef(null);
+	const polyRef = useRef(null);
+	const lineRef = useRef(null);
 
 	useEffect(() => {
 		var svgSelected = d3.select('#choroplethMap');
@@ -17,12 +23,12 @@ function ChoroplethMap({ year, selectedCountries, handleCountrySelection, handle
 		var width = 500 - margin.left - margin.right,
 			height = 300 - margin.top - margin.bottom;
 
-		var svg = d3.select(choroplethMapSvgRef.current)
+		svgRef.current = d3.select(choroplethMapSvgRef.current)
 			.attr('width', width + margin.left + margin.right)
 			.attr('height', height + margin.top + margin.bottom + 50)
 			.append('g')
 			.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-		svg.append('g')
+		svgRef.current.append('g')
 			.append("text")
 			.attr("x", width / 2)
 			.attr("y", 0 - (margin.top / 2))
@@ -36,18 +42,18 @@ function ChoroplethMap({ year, selectedCountries, handleCountrySelection, handle
 			.center([0, 0])
 			.translate([width / 2.2, height / 2]);
 
-		const path = d3.geoPath()
+		pathRef.current = d3.geoPath()
 			.projection(projection);
 
 		// set color scale
-		const color = d3.scaleThreshold()
+		colorRef.current = d3.scaleThreshold()
 			.domain([0.25, 0.5, 0.75, 1.0])
-			.range(["#8FBC8F", "#3CB371", "#2E8B57", "#006400"]) // DarkSeaGreen to MediumSeaGreen to SeaGreen to DarkGreen
+			.range(["#b2e061", "#6cc24a", "#1e8547", "#00441b"])
 			.unknown("#E6E6E6");
 
 		//declare polygon and polyline
-		const poly = svg.append("g");
-		const line = svg.append("g");
+		polyRef.current = svgRef.current.append("g");
+		lineRef.current = svgRef.current.append("g");
 
 		const dataUrl = `/apis/data/choroplethmap/${year}`
 		const polygonUrl = "/apis/data/geospatial/world/polygons"
@@ -84,19 +90,19 @@ function ChoroplethMap({ year, selectedCountries, handleCountrySelection, handle
 						.duration(100)
 						.style("opacity", d => selectedCountriesRef.current.includes(d.properties.color_code) ? 1 : 0.3);
 			};
-			const countries = poly
+			countriesRef.current = polyRef.current
 				.selectAll("path")
 				.data(feature(topology, topology.objects.world_polygons_simplified).features)
 				.join("path")
 				.attr("fill", function (d) {
-					return color(d['Corruption_index'] = data[d.properties.color_code])
+					return colorRef.current(d['Corruption_index'] = data[d.properties.color_code])
 				})
-				.attr("d", path)
+				.attr("d", pathRef.current)
 				.attr("class", function (d) { return "countries" })
 				.on("click", function(event, d) {
 					const code = d.properties.color_code;
 					handleCountriesAppend(code);  
-					svg.selectAll(".country")
+					svgRef.current.selectAll(".country")
 							.transition().duration(100)
 						.style("opacity", 0.3);  
 					d3.select(this)
@@ -111,12 +117,12 @@ function ChoroplethMap({ year, selectedCountries, handleCountrySelection, handle
 				});
 
 			d3.json(polylinesUrl).then(function (topology) {
-				line
+				lineRef.current
 					.selectAll("path")
 					.data(feature(topology, topology.objects.world_lines_simplified).features)
 					.enter()
 					.append("path")
-					.attr("d", path)
+					.attr("d", pathRef.current)
 					.style("fill", "none")
 					.style("stroke", "white")
 					.style("stroke-width", "0.5px")
@@ -129,17 +135,17 @@ function ChoroplethMap({ year, selectedCountries, handleCountrySelection, handle
 				var zoomFunction = d3.zoom()
 					.scaleExtent([1, 8])
 					.on('zoom', function (event) {
-						poly.selectAll('path')
+						polyRef.current.selectAll('path')
 							.attr('transform', event.transform);
-						line.selectAll('path')
+						lineRef.current.selectAll('path')
 							.attr('transform', event.transform);
 					});
-				svg.call(zoomFunction);
+				svgRef.current.call(zoomFunction);
 			};
 
 
 			// set legend
-			svg.append("g")
+			svgRef.current.append("g")
 				.attr("class", "legendThreshold")
 				.attr("transform", `translate(5,${height})`);
 
@@ -163,9 +169,9 @@ function ChoroplethMap({ year, selectedCountries, handleCountrySelection, handle
 				.shapePadding(2)
 				.orient('horizontal')
 				.shapeWidth(60)
-				.scale(color);
+				.scale(colorRef.current);
 
-			const legendG = svg.append("g")
+			const legendG = svgRef.current.append("g")
 				.attr("class", "legendThreshold")
 				.attr("transform", `translate(100,${height})`)
 				.call(legend)
@@ -175,7 +181,7 @@ function ChoroplethMap({ year, selectedCountries, handleCountrySelection, handle
 				.attr("transform", "rotate(15) translate(10, 30)")
 
 			legendG.selectAll("rect")
-				.data(color.range().map(color.invertExtent))
+				.data(colorRef.current.range().map(colorRef.current.invertExtent))
 				.on("mouseover", function (e, d) {
 					const [min, max] = d;
 					d3.selectAll(".countries").transition()
@@ -197,6 +203,69 @@ function ChoroplethMap({ year, selectedCountries, handleCountrySelection, handle
 						.transition()
 						.duration(100)
 						.style("opacity", d => selectedCountriesRef.current.includes(d.properties.color_code) ? 1 : 0.3);
+				});
+		})
+	}, [])
+
+	useEffect(() => {
+		const dataUrl = `/apis/data/choroplethmap/${year}`
+		const polygonUrl = "/apis/data/geospatial/world/polygons"
+		const polylinesUrl = "/apis/data/geospatial/world/lines";
+
+		const promises = [
+			d3.json(dataUrl),
+			d3.json(polygonUrl)
+		]
+
+		Promise.all(promises).then(([choroplethMapData, topology]) => {
+			const data = {};
+			choroplethMapData = choroplethMapData['data']
+			for (let i = 0; i < choroplethMapData.length; i++) {
+				data[choroplethMapData[i]['Code']] = +choroplethMapData[i]['Corruption_index']
+			}
+
+			const mouseover = function (d) {
+				d3.selectAll(".countries")
+					.transition()
+					.duration(100)
+					.style("opacity", 0.3)
+				d3.select(this)
+					.transition()
+					.duration(100)
+					.style("opacity", 1)
+			};
+
+			const mouseleave = function (d) {
+				d3.selectAll(".countries")
+					.transition()
+					.duration(100)
+					.style("opacity", d => selectedCountriesRef.current.includes(d.properties.color_code) ? 1 : 0.3);
+			};
+
+			countriesRef.current = polyRef.current
+				.selectAll("path")
+				.data(feature(topology, topology.objects.world_polygons_simplified).features)
+				.join("path")
+				.attr("fill", function (d) {
+					return colorRef.current(d['Corruption_index'] = data[d.properties.color_code])
+				})
+				.attr("d", pathRef.current)
+				.attr("class", function (d) { return "countries" })
+				.on("click", function (event, d) {
+					const code = d.properties.color_code;
+					handleCountriesAppend(code);
+					svgRef.current.selectAll(".country")
+						.transition().duration(100)
+						.style("opacity", 0.3);
+					d3.select(this)
+						.transition().duration(100)
+						.style("opacity", 1);
+				})
+				.on("mouseover", mouseover)
+				.on("mouseleave", mouseleave)
+				.append("title")
+				.text(function (d) {
+					return `Country: ${d['properties']['gis_name']}\nCorruption Index: ${d3.format(",")(d['Corruption_index'])}`
 				});
 		})
 	}, [year])

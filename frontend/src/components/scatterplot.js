@@ -18,6 +18,7 @@ function Scatterplot({ xAxisFeature, yAxisFeature, year, selectedCountries, hand
 	const xScale = useRef(null);
 	const yScale = useRef(null);
 	const svgRef = useRef(null);
+	
 	const featureList = [
 		"Adjusted_school_years",
 		"Alcohol_consumption_per_capita",
