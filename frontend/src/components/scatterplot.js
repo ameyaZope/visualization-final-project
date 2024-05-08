@@ -18,53 +18,6 @@ function Scatterplot({ xAxisFeature, yAxisFeature, year, selectedCountries, hand
 	const xScale = useRef(null);
 	const yScale = useRef(null);
 	const svgRef = useRef(null);
-	
-	const featureList = [
-		"Adjusted_school_years",
-		"Alcohol_consumption_per_capita",
-		"BCG_immunization",
-		"Cantril_ladder_score",
-		"Code",
-		"Corruption_index",
-		"DTP3_immunization",
-		"Deaths_due_to_air_pollution",
-		"Drug_use_death_rate",
-		"Entity",
-		"Expenditure_estimates",
-		"Female_no_education_rate",
-		"GDP_PPP",
-		"Gender_Inequality_Index",
-		"Global_Hunger_Index",
-		"HDI",
-		"HepB3_immunization",
-		"Hib3_immunization",
-		"High_corruption_index",
-		"IPV1_immunization",
-		"Life_expectancy_at_birth",
-		"Literacy_estimates",
-		"Low_corruption_index",
-		"Lower_secondary_completion_rate",
-		"MCV1_immunization",
-		"Mean_income_consumption",
-		"Mean_schooling_years",
-		"PCV3_immunization",
-		"Patent_applications_per_million",
-		"Pol3_immunization",
-		"Primary_completion_rate",
-		"Primary_school_enrollment",
-		"Public_admin_index",
-		"RCV1_immunization",
-		"Researchers_per_million",
-		"RotaC_immunization",
-		"Rule_of_law_index",
-		"Secondary_school_enrollment",
-		"Tertiary_school_enrollment",
-		"Under_fifteen_mortality_rate",
-		"Under_five_mortality_rate",
-		"Upper_secondary_completion_rate",
-		"YFV_immunization",
-		"Year"
-	]
 
 	const isFeatureCategorical = {
 		"Adjusted_school_years": false,
@@ -113,6 +66,59 @@ function Scatterplot({ xAxisFeature, yAxisFeature, year, selectedCountries, hand
 		"Year": false
 	}
 
+	let featureDomains = {
+		'Annual CO₂ emissions (per capita)': [0.019352028, 67.493744],
+		'BCG_immunization': [0.0, 99.0],
+		'Cantril_ladder_score': [2.5229, 7.85574],
+		'Cereal Production': [0.0001, 36.761898],
+		'Code': ['AFG', 'ZWE'],
+		'Continent': ['Africa', 'South America'],
+		'Corruption_index': [0.002, 0.967],
+		'Count of Women in Parliament': [0.0, 63.75],
+		'DTP3_immunization': [19.0, 99.0],
+		'Deaths_due_to_air_pollution': [2.6605287, 497.20084],
+		'Drug_use_death_rate': [0.06, 18.83],
+		'Electricity from nuclear - TWh': [0.0, 809.41],
+		'Entity': ['Afghanistan', 'Zimbabwe'],
+		'Expenditure_estimates': [0.12717403, 15.158183],
+		'GDP_PPP': [32781462.0, 22996385000000.0],
+		'GDP_Per_capita': [628.6933, 120647.82],
+		'Gender_Inequality_Index': [0.013, 0.822],
+		'HDI': [0.262, 0.962],
+		'HepB3_immunization': [2.0, 99.0],
+		'Hib3_immunization': [0.0, 99.0],
+		'High_corruption_index': [0.003, 0.981],
+		'IPV1_immunization': [0.0, 99.0],
+		'Life_expectancy_at_birth': [41.9572, 86.5424],
+		'Literacy Rate': [0.0, 99.9999465942383],
+		'Literacy rate, adult total (% of people ages 15 and above)': [14.37604, 99.99995],
+		'Low_corruption_index': [0.0, 0.957],
+		'Lower_secondary_completion_rate': [3.95885, 196.342],
+		'MCV1_immunization': [8.0, 99.0],
+		'Mean years of schooling': [0.55942, 14.13215],
+		'Mean_income_consumption': [1.0010916, 93.3278],
+		'Observation value - Unit of measure: Deaths per 100 live births - Indicator: Under-five mortality rate - Sex: Both sexes - Wealth quintile: All wealth quintiles_x': [0.17836553, 22.850826],
+		'Observation value - Unit of measure: Deaths per 100 live births - Indicator: Under-five mortality rate - Sex: Both sexes - Wealth quintile: All wealth quintiles_y': [0.17836553, 22.850826],
+		'Ozone depletion': [-4328.66, 90877.7],
+		'PCV3_immunization': [0.0, 99.0],
+		'Patent_applications_per_million': [0.010300319, 3481.109],
+		'Pol3_immunization': [8.0, 99.0],
+		'Primary completion rate, total (% of relevant age group)_x': [16.56425, 152.80666],
+		'Primary completion rate, total (% of relevant age group)_y': [16.57523, 134.54251],
+		'Primary_school_enrollment': [22.16299, 150.41019],
+		'Public_admin_index': [-2.848, 4.046],
+		'RCV1_immunization': [6.0, 99.0],
+		'Researchers_per_million': [5.91183, 8713.594],
+		'RotaC_immunization': [0.0, 99.0],
+		'Rule_of_law_index': [0.009, 0.999],
+		'Secondary_school_enrollment': [6.07717, 164.07982],
+		'Tertiary_school_enrollment': [0.11737, 143.31068],
+		'Under_fifteen_mortality_rate': [0.23066321, 26.790155],
+		'Upper_secondary_completion_rate': [0.0, 99.0],
+		'YFV_immunization': [0.0, 99.0],
+		'Year': [2000, 2020]
+	};
+
 	useEffect(() => {
 
 		var svgSelected = d3.select('#scatterplot');
@@ -158,12 +164,15 @@ function Scatterplot({ xAxisFeature, yAxisFeature, year, selectedCountries, hand
 					.style('text-anchor', 'end')
 			}
 			else {
+				console.log(`xAxisFeature=${xAxisFeature}`)
 				let maxVal = 0
+				let minVal = Infinity
 				for (const item of scatterplotData['data']) {
 					maxVal = Math.max(maxVal, item[xAxisFeature])
+					minVal = Math.min(minVal, item[xAxisFeature])
 				}
 				xScale.current = d3.scaleLinear()
-					.domain([0, 150])
+					.domain(featureDomains[xAxisFeature])
 					.range([0, width])
 				xAxisRef.current = svgRef.current.append('g')
 					.call(d3.axisBottom(xScale.current))
@@ -203,12 +212,15 @@ function Scatterplot({ xAxisFeature, yAxisFeature, year, selectedCountries, hand
 					.style("font", "bold 16px Comic Sans MS")
 			}
 			else {
+				console.log(`yAxisFeature=${yAxisFeature}`)
 				let maxVal = 0;
+				let minVal = Infinity;
 				for (const item of scatterplotData['data']) {
 					maxVal = Math.max(maxVal, item[yAxisFeature])
+					minVal = Math.min(minVal, item[yAxisFeature])
 				}
 				yScale.current = d3.scaleLinear()
-					.domain([0, 1])
+					.domain(featureDomains[yAxisFeature])
 					.range([height, 0])
 				yAxisRef.current = svgRef.current.append('g')
 					.transition()
@@ -390,7 +402,7 @@ function Scatterplot({ xAxisFeature, yAxisFeature, year, selectedCountries, hand
 		}).catch(error => {
 			console.error('Failed to fetch data: ', error);
 		});
-	}, [year]);
+	}, [xAxisFeature, yAxisFeature, year]);
 
 	useEffect(() => {
 		d3.selectAll('circle')
@@ -398,7 +410,7 @@ function Scatterplot({ xAxisFeature, yAxisFeature, year, selectedCountries, hand
 			.style("fill", d => selectedCountries.includes(d['Code']) ? "purple" : "#69b3a2")
 			.style("stroke", d => selectedCountries.includes(d['Code']) ? "black" : null)
 			.style("stroke-width", d => selectedCountries.includes(d['Code']) ? 1 : 0);
-	}, [selectedCountries])
+	}, [xAxisFeature, yAxisFeature, selectedCountries])
 
 	return (
 		<svg id="scatterplot" ref={scatterPlotSvgRef}></svg>

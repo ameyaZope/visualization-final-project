@@ -223,7 +223,7 @@ function HomePage() {
 
 				<Grid item style={{ height: '350px', width: '36%', marginTop: '10px', }}>
 					<Paper elevation={10} style={{ height: '100%', width: '100%' }}>
-						<ChoroplethMap year={year} selectedCountries={selectedCountries} handleCountrySelection={handleCountrySelection} handleCountriesDefault={handleCountriesDefault} handleCountriesAppend={handleCountriesAppend} />
+						<ChoroplethMap year={year} selectedCountries={selectedCountries} selectedFeature={growthMetric} handleCountrySelection={handleCountrySelection} handleCountriesDefault={handleCountriesDefault} handleCountriesAppend={handleCountriesAppend} />
 					</Paper>
 				</Grid>
 

@@ -4,7 +4,7 @@ import { legendColor } from 'd3-svg-legend';
 import { useEffect, useRef } from "react";
 import { feature } from 'topojson-client';
 
-function ChoroplethMap({ year, selectedCountries, handleCountrySelection, handleCountriesDefault, handleCountriesAppend }) {
+function ChoroplethMap({ year, selectedCountries, selectedFeature, handleCountrySelection, handleCountriesDefault, handleCountriesAppend }) {
 	const d3 = Object.assign(d3Base, { legendColor, lineChunked })
 	const choroplethMapSvgRef = useRef();
 	const selectedCountriesRef = useRef(selectedCountries);
@@ -70,7 +70,7 @@ function ChoroplethMap({ year, selectedCountries, handleCountrySelection, handle
 			const data = {};
 			choroplethMapData = choroplethMapData['data']
 			for (let i = 0; i < choroplethMapData.length; i++) {
-				data[choroplethMapData[i]['Code']] = +choroplethMapData[i]['Corruption_index']
+				data[choroplethMapData[i]['Code']] = +choroplethMapData[i][selectedFeature]
 			}
 
 			const mouseover = function (d) {
@@ -95,7 +95,7 @@ function ChoroplethMap({ year, selectedCountries, handleCountrySelection, handle
 				.data(feature(topology, topology.objects.world_polygons_simplified).features)
 				.join("path")
 				.attr("fill", function (d) {
-					return colorRef.current(d['Corruption_index'] = data[d.properties.color_code])
+					return colorRef.current(d[selectedFeature] = data[d.properties.color_code])
 				})
 				.attr("d", pathRef.current)
 				.attr("class", function (d) { return "countries" })
@@ -113,7 +113,7 @@ function ChoroplethMap({ year, selectedCountries, handleCountrySelection, handle
 				.on("mouseleave", mouseleave)
 				.append("title")
 				.text(function (d) {
-					return `Country: ${d['properties']['gis_name']}\nCorruption Index: ${d3.format(",")(d['Corruption_index'])}`
+					return `Country: ${d['properties']['gis_name']}\nCorruption Index: ${d3.format(",")(d[selectedFeature])}`
 				});
 
 			d3.json(polylinesUrl).then(function (topology) {
@@ -205,7 +205,7 @@ function ChoroplethMap({ year, selectedCountries, handleCountrySelection, handle
 						.style("opacity", d => selectedCountriesRef.current.includes(d.properties.color_code) ? 1 : 0.3);
 				});
 		})
-	}, [])
+	}, [selectedFeature])
 
 	useEffect(() => {
 		const dataUrl = `/apis/data/choroplethmap/${year}`
@@ -221,7 +221,7 @@ function ChoroplethMap({ year, selectedCountries, handleCountrySelection, handle
 			const data = {};
 			choroplethMapData = choroplethMapData['data']
 			for (let i = 0; i < choroplethMapData.length; i++) {
-				data[choroplethMapData[i]['Code']] = +choroplethMapData[i]['Corruption_index']
+				data[choroplethMapData[i]['Code']] = +choroplethMapData[i][selectedFeature]
 			}
 
 			const mouseover = function (d) {
@@ -247,7 +247,7 @@ function ChoroplethMap({ year, selectedCountries, handleCountrySelection, handle
 				.data(feature(topology, topology.objects.world_polygons_simplified).features)
 				.join("path")
 				.attr("fill", function (d) {
-					return colorRef.current(d['Corruption_index'] = data[d.properties.color_code])
+					return colorRef.current(d[selectedFeature] = data[d.properties.color_code])
 				})
 				.attr("d", pathRef.current)
 				.attr("class", function (d) { return "countries" })
@@ -265,7 +265,7 @@ function ChoroplethMap({ year, selectedCountries, handleCountrySelection, handle
 				.on("mouseleave", mouseleave)
 				.append("title")
 				.text(function (d) {
-					return `Country: ${d['properties']['gis_name']}\nCorruption Index: ${d3.format(",")(d['Corruption_index'])}`
+					return `Country: ${d['properties']['gis_name']}\nCorruption Index: ${d3.format(",")(d[selectedFeature])}`
 				});
 		})
 	}, [year])
