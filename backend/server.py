@@ -100,6 +100,18 @@ def get_pcp_data(year: int = None):
             'data': year_wise_data[year]
         }
 
+@app.route("/apis/data/lineplot", defaults={'year': None}, methods=['GET'])
+@app.route("/apis/data/lineplot/<int:year>", methods=['GET'])
+def get_lineplot_data(year: int = None):
+    if year is None:
+        return {
+            'data': year_wise_data
+        }
+    else:
+        return {
+            'data': year_wise_data[year]
+        }
+
 if __name__ == '__main__':
     # Make the server publicly available
     app.run(host='0.0.0.0', port=8080, debug=True)
