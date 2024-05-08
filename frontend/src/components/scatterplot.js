@@ -164,7 +164,6 @@ function Scatterplot({ xAxisFeature, yAxisFeature, year, selectedCountries, hand
 					.style('text-anchor', 'end')
 			}
 			else {
-				console.log(`xAxisFeature=${xAxisFeature}`)
 				let maxVal = 0
 				let minVal = Infinity
 				for (const item of scatterplotData['data']) {
@@ -212,7 +211,6 @@ function Scatterplot({ xAxisFeature, yAxisFeature, year, selectedCountries, hand
 					.style("font", "bold 16px Comic Sans MS")
 			}
 			else {
-				console.log(`yAxisFeature=${yAxisFeature}`)
 				let maxVal = 0;
 				let minVal = Infinity;
 				for (const item of scatterplotData['data']) {
