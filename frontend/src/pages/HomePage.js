@@ -125,7 +125,7 @@ function HomePage() {
 				<Scatterplot xAxisFeature={"Secondary_school_enrollment"} yAxisFeature={"Corruption_index"} year={year} selectedCountries={selectedCountries} handleCountrySelection={handleCountrySelection} handleCountriesDefault={handleCountriesDefault} handleCountriesAppend={handleCountriesAppend} />
 				<ChoroplethMap year={year} selectedCountries={selectedCountries} handleCountrySelection={handleCountrySelection} handleCountriesDefault={handleCountriesDefault} handleCountriesAppend={handleCountriesAppend} />
 				<ParallelCoordinatePlot year={year} selectedCountries={selectedCountries} handleCountrySelection={handleCountrySelection} handleCountriesDefault={handleCountriesDefault} handleCountriesAppend={handleCountriesAppend} />
-				<Barchart xAxisFeature={"Entity"} yAxisFeature={"Secondary_school_enrollment"}/>
+				<Barchart xAxisFeature={"Entity"} yAxisFeature={"Secondary_school_enrollment"} year={year}/>
 			</Container>
 		</>
 	);
