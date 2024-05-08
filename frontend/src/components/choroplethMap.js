@@ -19,13 +19,13 @@ function ChoroplethMap({ year, selectedCountries, handleCountrySelection, handle
 		var svgSelected = d3.select('#choroplethMap');
 		svgSelected.selectAll('*').remove();
 
-		var margin = { top: 30, bottom: 60, left: 80, right: 10 };
-		var width = 500 - margin.left - margin.right,
-			height = 300 - margin.top - margin.bottom;
+		var margin = { top: 30, bottom: 60, left: 0, right: 10 };
+		var width = 450 - margin.left - margin.right,
+			height = 330 - margin.top - margin.bottom;
 
 		svgRef.current = d3.select(choroplethMapSvgRef.current)
 			.attr('width', width + margin.left + margin.right)
-			.attr('height', height + margin.top + margin.bottom + 50)
+			.attr('height', height + margin.top + margin.bottom)
 			.append('g')
 			.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 		svgRef.current.append('g')
@@ -38,7 +38,7 @@ function ChoroplethMap({ year, selectedCountries, handleCountrySelection, handle
 			.text(`Choropleth Map`);
 
 		const projection = d3.geoEqualEarth()
-			.scale(85)
+			.scale(100)
 			.center([0, 0])
 			.translate([width / 2.2, height / 2]);
 
@@ -187,13 +187,13 @@ function ChoroplethMap({ year, selectedCountries, handleCountrySelection, handle
 					d3.selectAll(".countries").transition()
 						.duration(100)
 						.style("opacity", b => { 
-							if(min != undefined && max!=undefined) {
+							if (min !== undefined && max !== undefined) {
 								return (data[b.properties.color_code] >= min && data[b.properties.color_code] < max) ? 1 : 0.3
 							}
-							else if(min == undefined) {
+							else if (min === undefined) {
 								return (data[b.properties.color_code] < max) ? 1 : 0.3
 							}
-							else if(max==undefined) {
+							else if (max === undefined) {
 								return (data[b.properties.color_code] >= min) ? 1 : 0.3
 							}
 						});
@@ -279,7 +279,7 @@ function ChoroplethMap({ year, selectedCountries, handleCountrySelection, handle
 	}, [selectedCountries])
 
 	return (
-		<svg width={500} height={300} id="choroplethMap" ref={choroplethMapSvgRef}></svg>
+		<svg width={400} height={350} id="choroplethMap" ref={choroplethMapSvgRef}></svg>
 	)
 }
 

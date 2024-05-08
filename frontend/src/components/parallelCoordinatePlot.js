@@ -18,9 +18,9 @@ function ParallelCoordinatePlot({ year, selectedCountries, handleCountrySelectio
 	const pathRef = useRef(null);
 
 	useEffect(() => {
-		const margin = { top: 80, right: 50, bottom: 15, left: 50 },
-			width = 1200 - margin.left - margin.right,
-			height = 250 - margin.top - margin.bottom;
+		const margin = { top: 80, right: 50, bottom: 15, left: 30 },
+			width = 1020 - margin.left - margin.right,
+			height = 300 - margin.top - margin.bottom;
 
 		let all_dimensions = [
 			"Continent",
@@ -298,7 +298,7 @@ function ParallelCoordinatePlot({ year, selectedCountries, handleCountrySelectio
 				.append("text")
 				.style("text-anchor", "middle")
 				.attr("y", -9)
-				.attr("transform", "translate(-10,0)rotate(-10)")
+				.attr("transform", "translate(-10,0)rotate(-20)")
 				.style("text-anchor", "start")
 				.text(d => d)
 				.style("fill", "black")
@@ -397,7 +397,7 @@ function ParallelCoordinatePlot({ year, selectedCountries, handleCountrySelectio
 			.style("opacity", d => selectedCountries.length == 0 || selectedCountries.includes(d.Code) ? 1 : 0);
 	}, [selectedCountries])
 
-	return (<svg width={1200} height={250} id='pcpPlot' ref={pcpSvgRef}></svg>);
+	return (<svg width={1200} height={300} id='pcpPlot' ref={pcpSvgRef}></svg>);
 }
 
 export default ParallelCoordinatePlot;

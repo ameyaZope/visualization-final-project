@@ -121,9 +121,9 @@ function Scatterplot({ xAxisFeature, yAxisFeature, year, selectedCountries, hand
 		let xlabel = xAxisFeature
 		let ylabel = yAxisFeature
 
-		var margin = { top: 30, bottom: 60, left: 80, right: 10 };
-		var width = 500 - margin.left - margin.right,
-			height = 300 - margin.top - margin.bottom;
+		var margin = { top: 30, bottom: 60, left: 60, right: 10 };
+		var width =475 - margin.left - margin.right,
+			height = 330 - margin.top - margin.bottom;
 
 		svgRef.current = d3.select(scatterPlotSvgRef.current)
 			.attr('width', width + margin.left + margin.right)
@@ -317,9 +317,9 @@ function Scatterplot({ xAxisFeature, yAxisFeature, year, selectedCountries, hand
 		d3.json(`/apis/data/scatterplot/${year}`).then(function (scatterplotData) {
 			svgRef.current.selectAll('circle').remove();
 
-			var margin = { top: 30, bottom: 60, left: 80, right: 10 };
-			var width = 500 - margin.left - margin.right,
-				height = 300 - margin.top - margin.bottom;
+			var margin = { top: 30, bottom: 60, left: 60, right: 10 };
+			var width = 475 - margin.left - margin.right,
+				height = 330 - margin.top - margin.bottom;
 
 			svgRef.current.append('g')
 				.selectAll("dot")
@@ -401,7 +401,7 @@ function Scatterplot({ xAxisFeature, yAxisFeature, year, selectedCountries, hand
 	}, [selectedCountries])
 
 	return (
-		<svg width={500} height={300} id="scatterplot" ref={scatterPlotSvgRef}></svg>
+		<svg id="scatterplot" ref={scatterPlotSvgRef}></svg>
 	)
 }
 
