@@ -85,7 +85,7 @@ function ChoroplethMap({ year, selectedCountries, selectedFeature, handleCountry
 			.attr("text-anchor", "middle")
 			.style("text-decoration", "underline")
 			.style("font", "bold 16px Comic Sans MS")
-			.text(`Choropleth Map`);
+			.text(`${selectedFeature}`);
 
 		const projection = d3.geoEqualEarth()
 			.scale(100)
@@ -242,6 +242,8 @@ function ChoroplethMap({ year, selectedCountries, selectedFeature, handleCountry
 						.style("opacity", d => selectedCountriesRef.current.includes(d.properties.color_code) ? 1 : 0.3);
 				});
 
+
+
 			let legendText = []
 			for (let item in legendData) {
 				if (legendData[item][0] === undefined) {
@@ -329,6 +331,19 @@ function ChoroplethMap({ year, selectedCountries, selectedFeature, handleCountry
 				.text(function (d) {
 					return `Country: ${d['properties']['gis_name']}\nCorruption Index: ${d3.format(",")(d[selectedFeature])}`
 				});
+
+			const zoom = true
+			if (zoom) {
+				var zoomFunction = d3.zoom()
+					.scaleExtent([1, 8])
+					.on('zoom', function (event) {
+						polyRef.current.selectAll('path')
+							.attr('transform', event.transform);
+						lineRef.current.selectAll('path')
+							.attr('transform', event.transform);
+					});
+				svgRef.current.call(zoomFunction);
+			};
 		})
 	}, [year])
 

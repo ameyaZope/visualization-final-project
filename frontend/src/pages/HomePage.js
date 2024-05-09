@@ -18,14 +18,12 @@ function HomePage() {
 		'BCG_immunization',
 		'Cantril_ladder_score',
 		'Cereal Production',
-		'Code',
 		'Corruption_index',
 		'Count of Women in Parliament',
 		'DTP3_immunization',
 		'Deaths_due_to_air_pollution',
 		'Drug_use_death_rate',
 		'Electricity from nuclear - TWh',
-		'Entity',
 		'Expenditure_estimates',
 		'GDP_PPP',
 		'GDP_Per_capita',
@@ -59,8 +57,7 @@ function HomePage() {
 		'Under_fifteen_mortality_rate',
 		'Under_five_mortality_rate',
 		'Upper_secondary_completion_rate',
-		'YFV_immunization',
-		'Year'
+		'YFV_immunization'
 	];
 
 	const [isPlaying, setIsPlaying] = useState(false);
@@ -155,7 +152,7 @@ function HomePage() {
 				<Grid item style={{ height: '350px', width: '24%', marginTop: '10px', marginLeft: '10px' }}>
 					<Paper elevation={10} style={{ height: '100%', width: '100%' }}>
 						<div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '10px' }}>
-							<Typography variant="h5" style={{ fontWeight: 'bold'}}>
+							<Typography variant="h5" style={{ fontWeight: 'bold', textAlign: 'center'}}>
 								Education as a Catalyst for Change
 							</Typography>
 
