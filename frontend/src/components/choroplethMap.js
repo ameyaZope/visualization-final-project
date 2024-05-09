@@ -69,7 +69,7 @@ function ChoroplethMap({ year, selectedCountries, selectedFeature, handleCountry
 		var svgSelected = d3.select('#choroplethMap');
 		svgSelected.selectAll('*').remove();
 
-		var margin = { top: 30, bottom: 60, left: 0, right: 10 };
+		var margin = { top: 50, bottom: 60, left: 0, right: 10 };
 		var width = 450 - margin.left - margin.right,
 			height = 330 - margin.top - margin.bottom;
 

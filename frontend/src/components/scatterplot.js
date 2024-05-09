@@ -123,7 +123,7 @@ function Scatterplot({ xAxisFeature, yAxisFeature, year, selectedCountries, hand
 		let xlabel = xAxisFeature
 		let ylabel = yAxisFeature
 
-		var margin = { top: 30, bottom: 60, left: 60, right: 10 };
+		var margin = { top: 50, bottom: 60, left: 60, right: 10 };
 		var width =475 - margin.left - margin.right,
 			height = 330 - margin.top - margin.bottom;
 
@@ -328,7 +328,7 @@ function Scatterplot({ xAxisFeature, yAxisFeature, year, selectedCountries, hand
 		d3.json(`/apis/data/scatterplot/${year}`).then(function (scatterplotData) {
 			svgRef.current.selectAll('circle').remove();
 
-			var margin = { top: 30, bottom: 60, left: 60, right: 10 };
+			var margin = { top: 50, bottom: 60, left: 60, right: 10 };
 			var width = 475 - margin.left - margin.right,
 				height = 330 - margin.top - margin.bottom;
 
