@@ -5,6 +5,7 @@ import Select from '@mui/material/Select';
 import * as React from 'react';
 import { useEffect, useRef, useState } from "react";
 import ChoroplethMap from "../components/choroplethMap";
+import Histogram from '../components/histogram';
 import ParallelCoordinatePlot from "../components/parallelCoordinatePlot";
 import Scatterplot from "../components/scatterplot";
 
@@ -12,51 +13,55 @@ import Scatterplot from "../components/scatterplot";
 function HomePage() {
 
 	const featureList = [
-		"Adjusted_school_years",
-		"Alcohol_consumption_per_capita",
-		"BCG_immunization",
-		"Cantril_ladder_score",
-		"Code",
-		"Corruption_index",
-		"DTP3_immunization",
-		"Deaths_due_to_air_pollution",
-		"Drug_use_death_rate",
-		"Entity",
-		"Expenditure_estimates",
-		"Female_no_education_rate",
-		"GDP_PPP",
-		"Gender_Inequality_Index",
-		"Global_Hunger_Index",
-		"HDI",
-		"HepB3_immunization",
-		"Hib3_immunization",
-		"High_corruption_index",
-		"IPV1_immunization",
-		"Life_expectancy_at_birth",
-		"Literacy_estimates",
-		"Low_corruption_index",
-		"Lower_secondary_completion_rate",
-		"MCV1_immunization",
-		"Mean_income_consumption",
-		"Mean_schooling_years",
-		"PCV3_immunization",
-		"Patent_applications_per_million",
-		"Pol3_immunization",
-		"Primary_completion_rate",
-		"Primary_school_enrollment",
-		"Public_admin_index",
-		"RCV1_immunization",
-		"Researchers_per_million",
-		"RotaC_immunization",
-		"Rule_of_law_index",
-		"Secondary_school_enrollment",
-		"Tertiary_school_enrollment",
-		"Under_fifteen_mortality_rate",
-		"Under_five_mortality_rate",
-		"Upper_secondary_completion_rate",
-		"YFV_immunization",
-		"Year"
-	]
+		'Adjusted_school_years',
+		'Annual CO₂ emissions (per capita)',
+		'BCG_immunization',
+		'Cantril_ladder_score',
+		'Cereal Production',
+		'Code',
+		'Corruption_index',
+		'Count of Women in Parliament',
+		'DTP3_immunization',
+		'Deaths_due_to_air_pollution',
+		'Drug_use_death_rate',
+		'Electricity from nuclear - TWh',
+		'Entity',
+		'Expenditure_estimates',
+		'GDP_PPP',
+		'GDP_Per_capita',
+		'Gender_Inequality_Index',
+		'HDI',
+		'HepB3_immunization',
+		'Hib3_immunization',
+		'High_corruption_from matplotlib import pyplotindex',
+		'IPV1_immunization',
+		'Life_expectancy_at_birth',
+		'Literacy Rate',
+		'Literacy rate, adult total (% of people ages 15 and above)',
+		'Low_corruption_index',
+		'Lower_secondary_completion_rate',
+		'MCV1_immunization',
+		'Mean years of schooling',
+		'Mean_income_consumption',
+		'Ozone depletion',
+		'PCV3_immunization',
+		'Patent_applications_per_million',
+		'Pol3_immunization',
+		'Primary_completion_rate',
+		'Primary_school_enrollment',
+		'Public_admin_index',
+		'RCV1_immunization',
+		'Researchers_per_million',
+		'RotaC_immunization',
+		'Rule_of_law_index',
+		'Secondary_school_enrollment',
+		'Tertiary_school_enrollment',
+		'Under_fifteen_mortality_rate',
+		'Under_five_mortality_rate',
+		'Upper_secondary_completion_rate',
+		'YFV_immunization',
+		'Year'
+	];
 
 	const [isPlaying, setIsPlaying] = useState(false);
 	const intervalRef = useRef(null);
@@ -184,12 +189,12 @@ function HomePage() {
 						</div>
 						<div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
 							<FormControl style={{ minWidth: '200px', marginBottom: '10px' }}>
-								<InputLabel id="education-metric-label">Education metric</InputLabel>
+								<InputLabel id="education-metric-label">X-Axis: Education metric</InputLabel>
 								<Select
 									labelId="education-metric-label"
 									id="education-metric"
 									value={eduMetric}
-									label="Education metric"
+									label="X-Axis: Education metric"
 									onChange={e => { changeEduMetric(e.target.value) }}
 								>
 									{featureList.map((feature) => (
@@ -198,12 +203,12 @@ function HomePage() {
 								</Select>
 							</FormControl>
 							<FormControl style={{ minWidth: '200px', marginBottom: '10px' }}>
-								<InputLabel id="growth-metric-label">Growth metric</InputLabel>
+								<InputLabel id="growth-metric-label">Y-Axis: Growth metric</InputLabel>
 								<Select
 									labelId="growth-metric-label"
 									id="growth-metric-label"
 									value={growthMetric}
-									label="Growth metric"
+									label="Y-Axis: Growth metric"
 									onChange={e => { changeGrowthMetric(e.target.value) }}
 								>
 									{featureList.map((feature) => (
@@ -227,13 +232,14 @@ function HomePage() {
 					</Paper>
 				</Grid>
 
-				<Grid item style={{ height: '300px', width: '24%', marginLeft: '10px' }}>
+				<Grid item style={{ height: '330px', width: '24%', marginLeft: '10px' }}>
 					<Paper elevation={10} style={{ height: '100%', width: '100%' }}>
+						<Histogram currColName={growthMetric} currColDispName={growthMetric} year={year} />
 					</Paper>
 				</Grid>
 
-				<Grid item style={{ height: '300px', width: '60%', }}>
-					<Paper elevation={10} style={{ height: '300px', width: '950px' }}>
+				<Grid item style={{ height: '320px', width: '60%', }}>
+					<Paper elevation={10} style={{ height: '320px', width: '950px' }}>
 						<ParallelCoordinatePlot year={year} selectedCountries={selectedCountries} handleCountrySelection={handleCountrySelection} handleCountriesDefault={handleCountriesDefault} handleCountriesAppend={handleCountriesAppend} />
 					</Paper>
 				</Grid>

@@ -99,6 +99,18 @@ def get_pcp_data(year: int = None):
         return {
             'data': year_wise_data[year]
         }
+    
+@app.route("/apis/data/histogram", defaults={'year': None}, methods=['GET'])
+@app.route("/apis/data/histogram/<int:year>", methods=['GET'])
+def get_histogram_data(year: int = None):
+    if year is None:
+        return {
+            'data': year_wise_data
+        }
+    else:
+        return {
+            'data': year_wise_data[year]
+        }
 
 if __name__ == '__main__':
     # Make the server publicly available

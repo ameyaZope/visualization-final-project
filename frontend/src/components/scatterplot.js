@@ -18,6 +18,7 @@ function Scatterplot({ xAxisFeature, yAxisFeature, year, selectedCountries, hand
 	const xScale = useRef(null);
 	const yScale = useRef(null);
 	const svgRef = useRef(null);
+	const firstLoad = useRef(null);
 
 	const isFeatureCategorical = {
 		"Adjusted_school_years": false,
@@ -67,56 +68,51 @@ function Scatterplot({ xAxisFeature, yAxisFeature, year, selectedCountries, hand
 	}
 
 	let featureDomains = {
-		'Annual CO₂ emissions (per capita)': [0.019352028, 67.493744],
-		'BCG_immunization': [0.0, 99.0],
-		'Cantril_ladder_score': [2.5229, 7.85574],
+		'Under_five_mortality_rate': [0.17836553, 22.850826],
+		'Mean years of schooling': [0.55942, 14.13215],
 		'Cereal Production': [0.0001, 36.761898],
-		'Code': ['AFG', 'ZWE'],
-		'Continent': ['Africa', 'South America'],
-		'Corruption_index': [0.002, 0.967],
-		'Count of Women in Parliament': [0.0, 63.75],
-		'DTP3_immunization': [19.0, 99.0],
+		'Upper_secondary_completion_rate': [0.0, 99.0],
+		'Mean_income_consumption': [1.0010916, 93.3278],
 		'Deaths_due_to_air_pollution': [2.6605287, 497.20084],
 		'Drug_use_death_rate': [0.06, 18.83],
-		'Electricity from nuclear - TWh': [0.0, 809.41],
-		'Entity': ['Afghanistan', 'Zimbabwe'],
-		'Expenditure_estimates': [0.12717403, 15.158183],
-		'GDP_PPP': [32781462.0, 22996385000000.0],
-		'GDP_Per_capita': [628.6933, 120647.82],
 		'Gender_Inequality_Index': [0.013, 0.822],
-		'HDI': [0.262, 0.962],
+		'BCG_immunization': [0.0, 99.0],
 		'HepB3_immunization': [2.0, 99.0],
 		'Hib3_immunization': [0.0, 99.0],
-		'High_corruption_index': [0.003, 0.981],
 		'IPV1_immunization': [0.0, 99.0],
-		'Life_expectancy_at_birth': [41.9572, 86.5424],
-		'Literacy Rate': [0.0, 99.9999465942383],
-		'Literacy rate, adult total (% of people ages 15 and above)': [14.37604, 99.99995],
-		'Low_corruption_index': [0.0, 0.957],
-		'Lower_secondary_completion_rate': [3.95885, 196.342],
 		'MCV1_immunization': [8.0, 99.0],
-		'Mean years of schooling': [0.55942, 14.13215],
-		'Mean_income_consumption': [1.0010916, 93.3278],
-		'Observation value - Unit of measure: Deaths per 100 live births - Indicator: Under-five mortality rate - Sex: Both sexes - Wealth quintile: All wealth quintiles_x': [0.17836553, 22.850826],
-		'Observation value - Unit of measure: Deaths per 100 live births - Indicator: Under-five mortality rate - Sex: Both sexes - Wealth quintile: All wealth quintiles_y': [0.17836553, 22.850826],
-		'Ozone depletion': [-4328.66, 90877.7],
 		'PCV3_immunization': [0.0, 99.0],
-		'Patent_applications_per_million': [0.010300319, 3481.109],
 		'Pol3_immunization': [8.0, 99.0],
-		'Primary completion rate, total (% of relevant age group)_x': [16.56425, 152.80666],
-		'Primary completion rate, total (% of relevant age group)_y': [16.57523, 134.54251],
-		'Primary_school_enrollment': [22.16299, 150.41019],
-		'Public_admin_index': [-2.848, 4.046],
 		'RCV1_immunization': [6.0, 99.0],
-		'Researchers_per_million': [5.91183, 8713.594],
 		'RotaC_immunization': [0.0, 99.0],
-		'Rule_of_law_index': [0.009, 0.999],
+		'YFV_immunization': [0.0, 99.0],
+		'DTP3_immunization': [19.0, 99.0],
+		'Cantril_ladder_score': [2.5229, 7.85574],
+		'HDI': [0.262, 0.962],
+		'Life_expectancy_at_birth': [41.9572, 86.5424],
+		'GDP_PPP': [32781462.0, 130444530000000.0],
+		'Patent_applications_per_million': [0.010300319, 3481.109],
+		'Corruption_index': [0.002, 0.967],
+		'High_corruption_from matplotlib import pyplotindex': [0.003, 0.981],
+		'Low_corruption_index': [0.0, 0.957],
+		'Primary_school_enrollment': [22.16299, 150.41019],
 		'Secondary_school_enrollment': [6.07717, 164.07982],
 		'Tertiary_school_enrollment': [0.11737, 143.31068],
+		'Primary_completion_rate': [16.56425, 152.80666],
+		'Lower_secondary_completion_rate': [3.95885, 196.342],
+		'Researchers_per_million': [5.91183, 8713.594],
+		'Public_admin_index': [-2.848, 4.046],
+		'Rule_of_law_index': [0.009, 0.999],
+		'Expenditure_estimates': [0.12717403, 15.158183],
 		'Under_fifteen_mortality_rate': [0.23066321, 26.790155],
-		'Upper_secondary_completion_rate': [0.0, 99.0],
-		'YFV_immunization': [0.0, 99.0],
-		'Year': [2000, 2020]
+		'Literacy rate, adult total (% of people ages 15 and above)': [14.37604, 99.99995],
+		'Count of Women in Parliament': [0.0, 63.75],
+		'Literacy Rate': [12.7964200973511, 99.9999465942383],
+		'Annual CO₂ emissions (per capita)': [0.019352028, 67.493744],
+		'GDP_Per_capita': [628.6933, 120647.82],
+		'Electricity from nuclear - TWh': [0.0, 2735.62],
+		'Ozone depletion': [-4328.66, 263260.4],
+		'Adjusted_school_years': [2.2065024, 12.937873]
 	};
 
 	useEffect(() => {
@@ -319,11 +315,16 @@ function Scatterplot({ xAxisFeature, yAxisFeature, year, selectedCountries, hand
 						}
 					})
 				)
+			firstLoad.current = 1;
 		})
 
 	}, [xAxisFeature, yAxisFeature])
 
 	useEffect(() => {
+		if (firstLoad.current === null) {
+			return;
+		}
+
 		d3.json(`/apis/data/scatterplot/${year}`).then(function (scatterplotData) {
 			svgRef.current.selectAll('circle').remove();
 
@@ -403,6 +404,10 @@ function Scatterplot({ xAxisFeature, yAxisFeature, year, selectedCountries, hand
 	}, [xAxisFeature, yAxisFeature, year]);
 
 	useEffect(() => {
+		if (firstLoad.current === null) {
+			return;
+		}
+
 		d3.selectAll('circle')
 			.style("opacity", d => selectedCountries.includes(d['Code']) ? 1 : 0.5)
 			.style("fill", d => selectedCountries.includes(d['Code']) ? "purple" : "#69b3a2")
