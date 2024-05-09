@@ -352,7 +352,7 @@ function ChoroplethMap({ year, selectedCountries, selectedFeature, handleCountry
 		d3.selectAll(".countries")
 			.transition()
 			.duration(100)
-			.style("opacity", d => selectedCountries.includes(d.properties.color_code) ? 1 : 0.3);
+			.style("opacity", d => selectedCountries.includes(d.properties.color_code) || selectedCountries.length == 0 ? 1 : 0.3);
 	}, [selectedCountries])
 
 	return (
