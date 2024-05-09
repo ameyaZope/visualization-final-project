@@ -144,7 +144,6 @@ function Histogram({ currColName, numBins = 20, currColDispName, year }) {
 		if (firstLoad.current===null) {
 			return;
 		}
-		svgRef.current.selectAll('rect').remove();
 
 		var margin = { top: 50, right: 20, bottom: 80, left: 50 },
 			width = 300 - margin.left - margin.right,
@@ -172,40 +171,34 @@ function Histogram({ currColName, numBins = 20, currColDispName, year }) {
 				.text('a simple tooltip');
 
 			// Add a rect for each bin.
-			svgRef.current.append("g")
-				.attr("fill", "#69b3a2")
-				.selectAll()
-				.data(bins)
-				.join("rect")
-				.attr("x", (d) => xScale.current(d.x0) + 1)
-				.attr("width", (d) => xScale.current(d.x1) - xScale.current(d.x0))
-				.attr("y", (d) => yScale.current(0))
-				.attr("height", (d) => height - yScale.current(0))
-				.attr("stroke", "black") 
-				.attr("stroke-width", 1)
-				.on('mouseover', function (event, data) {
-					tooltip
-						.html(
-							`<div>Frequency: ${data.length} <br> Range: [${data.x0}, ${data.x1})</div>`
-						)
-						.style('visibility', 'visible');
-					d3.select(this).transition().attr('fill', 'purple');
-				})
-				.on('mousemove', function (d) {
-					tooltip
-						.style('top', d.pageY - 10 + 'px')
-						.style('left', d.pageX + 10 + 'px');
-				})
-				.on('mouseout', function () {
-					tooltip.html(``).style('visibility', 'hidden');
-					d3.select(this).transition().attr('fill', '#69b3a2');
-				});
-
-			// Animation
 			svgRef.current.selectAll("rect")
+				.data(bins)
+				.transition()
+				.duration(800)
+				.attr("x", (d) => { return xScale.current(d.x0) + 1 })
+				.attr("width", (d) => xScale.current(d.x1) - xScale.current(d.x0))
 				.attr("y", (d) => yScale.current(d.length))
 				.attr("height", (d) => yScale.current(0) - yScale.current(d.length))
-
+				.on('end', function () {
+					d3.select(this)
+						.on('mouseover', function (event, data) {
+							tooltip
+								.html(
+									`<div>Frequency: ${data.length} <br> Range: [${data.x0}, ${data.x1})</div>`
+								)
+								.style('visibility', 'visible');
+							d3.select(this).transition().attr('fill', 'purple');
+						})
+						.on('mousemove', function (d) {
+							tooltip
+								.style('top', d.pageY - 10 + 'px')
+								.style('left', d.pageX + 10 + 'px');
+						})
+						.on('mouseout', function () {
+							tooltip.html(``).style('visibility', 'hidden');
+							d3.select(this).transition().attr('fill', '#69b3a2');
+						});
+						});
 		});
 	}, [year]);
 
