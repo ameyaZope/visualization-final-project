@@ -168,7 +168,7 @@ function ChoroplethMap({ year, selectedCountries, selectedFeature, handleCountry
 				.on("mouseleave", mouseleave)
 				.append("title")
 				.text(function (d) {
-					return `Country: ${d['properties']['gis_name']}\nCorruption Index: ${d3.format(",")(d[selectedFeature])}`
+					return `Country: ${d['properties']['gis_name']}\n${selectedFeature}: ${d3.format(",")(d[selectedFeature])}`
 				});
 
 			d3.json(polylinesUrl).then(function (topology) {
@@ -329,7 +329,7 @@ function ChoroplethMap({ year, selectedCountries, selectedFeature, handleCountry
 				.on("mouseleave", mouseleave)
 				.append("title")
 				.text(function (d) {
-					return `Country: ${d['properties']['gis_name']}\nCorruption Index: ${d3.format(",")(d[selectedFeature])}`
+					return `Country: ${d['properties']['gis_name']}\n${selectedFeature}: ${d3.format(",")(d[selectedFeature])}`
 				});
 
 			const zoom = true

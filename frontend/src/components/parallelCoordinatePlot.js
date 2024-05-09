@@ -152,7 +152,7 @@ function ParallelCoordinatePlot({ year, selectedCountries, handleCountrySelectio
 			"Upper_secondary_completion_rate": [0, 100],
 			"YFV_immunization": [0, 100],
 			"Year": [2000, 2020],
-			"Mean years of schooling": [0, 100],
+			"Mean years of schooling": [0, 16],
 			"Count of Women in Parliament": [0, 70],
 			"Annual CO₂ emissions (per capita)": [0, 70],
 			"Ozone depletion": [-4500, 100000],
