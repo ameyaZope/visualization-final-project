@@ -16,6 +16,9 @@ function ParallelCoordinatePlot({ year, selectedCountries, handleCountrySelectio
 	const svgRef = useRef(null);
 	const colorRef = useRef(null);
 	const pathRef = useRef(null);
+	const firstLoad = useRef(null);
+	const xRef = useRef(null);
+	const yRef = useRef(null);
 
 	useEffect(() => {
 		const margin = { top: 80, right: 50, bottom: 15, left: 30 },
@@ -173,28 +176,28 @@ function ParallelCoordinatePlot({ year, selectedCountries, handleCountrySelectio
 				.domain(pcpData['data'].map(d => d['clusterId']))
 				.range(d3.schemeCategory10.slice(0, numClusters));
 
-			var y = {};
+			yRef.current = {};
 			dimensions.forEach((dim, i) => {
 				if (isFeatureCategorical[dim]) {
 					let uniqueValues = [...new Set(pcpData['data'].map(d => d[dim]))];
-					y[dim] = d3.scalePoint()
+					yRef.current[dim] = d3.scalePoint()
 						.domain(uniqueValues)
 						.range([height, 0]);
 				} else {
-					y[dim] = d3.scaleLinear()
+					yRef.current[dim] = d3.scaleLinear()
 						.domain(featureDomains[dim])
 						.range([height, 0]);
 				}
 			});
 
-			let x = d3.scalePoint()
+			xRef.current = d3.scalePoint()
 				.range([0, width])
 				.padding(1)
 				.domain(dimensions);
 
 
 			pathRef.current = function path(d) {
-				return d3.line()(dimensions.map(p => { return [x(p), y[p](d[p])] }));
+				return d3.line()(dimensions.map(p => { return [xRef.current(p), yRef.current[p](d[p])] }));
 			}
 
 			// Handle dragging
@@ -211,11 +214,11 @@ function ParallelCoordinatePlot({ year, selectedCountries, handleCountrySelectio
 						dimensions.splice(currentIndex, 1);
 						dimensions.splice(newPositionIndex, 0, d);
 
-						x.domain(dimensions);
+						xRef.current.domain(dimensions);
 						svgRef.current.selectAll(".axis")
-							.attr("transform", dimension => `translate(${x(dimension)})`)
+							.attr("transform", dimension => `translate(${xRef.current(dimension)})`)
 							.each(function (dimension) {
-								d3.select(this).call(d3.axisLeft().scale(y[dimension]));
+								d3.select(this).call(d3.axisLeft().scale(yRef.current[dimension]));
 							});
 
 						svgRef.current.selectAll("path.line")
@@ -230,13 +233,13 @@ function ParallelCoordinatePlot({ year, selectedCountries, handleCountrySelectio
 								brushSelections[dim] = null; // Clear selection for this dimension
 							} else {
 								if (!isFeatureCategorical[dim]) {
-									const [y1, y0] = event.selection.map(y[dim].invert, y[dim]);
+									const [y1, y0] = event.selection.map(yRef.current[dim].invert, yRef.current[dim]);
 									brushSelections[dim] = d => d[dim] >= y0 && d[dim] <= y1;
 								} else {
 									// Handle categorical dimension
-									const positions = y[dim].domain().map(d => y[dim](d));
+									const positions = yRef.current[dim].domain().map(d => yRef.current[dim](d));
 									brushSelections[dim] = d => {
-										const position = y[dim](d[dim]);
+										const position = yRef.current[dim](d[dim]);
 										return position >= event.selection[0] && position <= event.selection[1];
 									};
 								}
@@ -266,13 +269,13 @@ function ParallelCoordinatePlot({ year, selectedCountries, handleCountrySelectio
 						}
 
 						const brush = d3.brushY()
-							.extent([[-10, 0], [10, height]])
+							.extent([[0, 0], [width, height]])
 							.on("brush", event => brushed(event, dim)) // Pass the current dimension
 							.on("end", brushended);
 
 						svgRef.current.append("g")
 							.attr("class", "brush")
-							.attr("transform", `translate(${x(dim)})`)
+							.attr("transform", `translate(${xRef.current(dim)})`)
 							.call(brush);
 					});
 				});
@@ -292,8 +295,8 @@ function ParallelCoordinatePlot({ year, selectedCountries, handleCountrySelectio
 				.data(dimensions).enter()
 				.append("g")
 				.attr("class", "axis")
-				.attr("transform", d => `translate(${x(d)})`)
-				.each(function (d) { d3.select(this).call(d3.axisLeft().scale(y[d])); })
+				.attr("transform", d => `translate(${xRef.current(d)})`)
+				.each(function (d) { d3.select(this).call(d3.axisLeft().scale(yRef.current[d])); })
 				.call(handleDrag) // Apply the drag behavior to each axis
 				.append("text")
 				.style("text-anchor", "middle")
@@ -320,13 +323,13 @@ function ParallelCoordinatePlot({ year, selectedCountries, handleCountrySelectio
 						brushSelections[dim] = null; // Clear selection for this dimension
 					} else {
 						if (!isFeatureCategorical[dim]) {
-							const [y1, y0] = event.selection.map(y[dim].invert, y[dim]);
+							const [y1, y0] = event.selection.map(yRef.current[dim].invert, yRef.current[dim]);
 							brushSelections[dim] = d => d[dim] >= y0 && d[dim] <= y1;
 						} else {
 							// Handle categorical dimension
-							const positions = y[dim].domain().map(d => y[dim](d));
+							const positions = yRef.current[dim].domain().map(d => yRef.current[dim](d));
 							brushSelections[dim] = d => {
-								const position = y[dim](d[dim]);
+								const position = yRef.current[dim](d[dim]);
 								return position >= event.selection[0] && position <= event.selection[1];
 							};
 						}
@@ -364,13 +367,49 @@ function ParallelCoordinatePlot({ year, selectedCountries, handleCountrySelectio
 
 				svgRef.current.append("g")
 					.attr("class", "brush")
-					.attr("transform", `translate(${x(dim)})`)
+					.attr("transform", `translate(${xRef.current(dim)})`)
 					.call(brush);
+				firstLoad.current = 1;
 			});
 		});
 	}, []);
 
 	useEffect(() => {
+		if (firstLoad.current === null) {
+			return;
+		}
+		const margin = { top: 80, right: 50, bottom: 15, left: 30 },
+			width = 1020 - margin.left - margin.right,
+			height = 300 - margin.top - margin.bottom;
+
+		let all_dimensions = [
+			"Continent",
+			"Mean years of schooling",
+			"Deaths_due_to_air_pollution",
+			"Drug_use_death_rate",
+			"Gender_Inequality_Index",
+			"BCG_immunization",
+			"MCV1_immunization",
+			"RCV1_immunization",
+			"DTP3_immunization",
+			"Life_expectancy_at_birth",
+			"GDP_PPP",
+			"Corruption_index",
+			"Primary_school_enrollment",
+			"Public_admin_index",
+			"Rule_of_law_index",
+			"Under_fifteen_mortality_rate",
+			"Count of Women in Parliament",
+			"Annual CO₂ emissions (per capita)",
+			"Ozone depletion",
+			"Electricity from nuclear - TWh"
+		];
+
+		let dimensions = [];
+		for (let i = 0; i < all_dimensions.length; i++) {
+			dimensions.push(all_dimensions[i]);
+		}
+
 		d3.json(`/apis/data/pcp/${year}`).then((pcpData) => {
 
 			if (colorRef.current === null) {
@@ -393,6 +432,10 @@ function ParallelCoordinatePlot({ year, selectedCountries, handleCountrySelectio
 	}, [year])
 
 	useEffect(() => {
+		if (firstLoad.current === null) {
+			return;
+		}
+
 		d3.selectAll('path.line')
 			.style("opacity", d => selectedCountries.length == 0 || selectedCountries.includes(d.Code) ? 1 : 0);
 	}, [selectedCountries])

@@ -244,7 +244,12 @@ function ChoroplethMap({ year, selectedCountries, selectedFeature, handleCountry
 
 			let legendText = []
 			for (let item in legendData) {
-				legendText.push(legendData[item][0])
+				if (legendData[item][0] === undefined) {
+					legendText.push(0)
+				}
+				else {
+					legendText.push(legendData[item][0])
+				}
 			}
 			legendText.push(legendData[legendData.length-1][1])
 

@@ -8,7 +8,7 @@ function Histogram({ currColName, numBins = 20, currColDispName, year }) {
 	const xScale = useRef(null);
 	const yScale = useRef(null);
 	const svgRef = useRef(null);
-
+	const firstLoad = useRef(null);
 
 
 	useEffect(() => {
@@ -133,13 +133,13 @@ function Histogram({ currColName, numBins = 20, currColDispName, year }) {
 				.attr("y", (d) => yScale.current(d.length))
 				.attr("height", (d) => yScale.current(0) - yScale.current(d.length))
 
+			firstLoad.current = 1;
+
 		});
 	}, [currColName, numBins, currColDispName])
 
 	useEffect(() => {
-		if (xAxisRef.current === null || yAxisRef.current === null
-			|| svgRef.current === null || xScale.current === null
-			|| yScale.current === null) {
+		if (firstLoad.current===null) {
 			return;
 		}
 		svgRef.current.selectAll('rect').remove();
