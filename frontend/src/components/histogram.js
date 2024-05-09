@@ -35,17 +35,28 @@ function Histogram({ currColName, numBins = 20, currColDispName, year }) {
 			.text(`Frequency vs ${currColDispName}`);
 
 		// get the data
-		d3.json(`/apis/data/histogram/${year}`).then(function (histogramData) {
+		d3.json(`/apis/data/histogram`).then(function (histogramData) {
 			histogramData = histogramData['data']
 			// Bin the data.
-			const bins = d3.bin()
+			const currBins = d3.bin()
 				.thresholds(numBins)
 				.value((d) => { return d[currColName] })
-				(histogramData);
+				(histogramData[year]);
+
+			let minX = Number.POSITIVE_INFINITY;
+			let maxX = Number.NEGATIVE_INFINITY;
+			for (let yr = 2000; yr <= 2020; yr++) {
+				let bins = d3.bin()
+					.thresholds(numBins)
+					.value((d) => { return d[currColName] })
+					(histogramData[yr]);
+				minX = Math.min(minX, bins[0].x0)
+				maxX = Math.max(maxX, bins[bins.length - 1].x1)
+			}
 
 			// Declare the x (horizontal position) scale.
 			xScale.current = d3.scaleLinear()
-				.domain([bins[0].x0, bins[bins.length - 1].x1])
+				.domain([minX, maxX])
 				.range([0, width]);
 			//Add the X Axis and The Label
 			xAxisRef.current = svgRef.current.append("g")
@@ -61,9 +72,19 @@ function Histogram({ currColName, numBins = 20, currColDispName, year }) {
 				.style("font", "bold 16px Comic Sans MS")
 				.text(`${currColDispName}`);
 
+			let maxY = Number.NEGATIVE_INFINITY;
+			for (let yr = 2000; yr <= 2020; yr++) {
+				let bins = d3.bin()
+					.thresholds(numBins)
+					.value((d) => { return d[currColName] })
+					(histogramData[yr]);
+					for(let i=0;i<bins.length;i++) {
+						maxY = Math.max(maxY, bins[i].length)
+					}
+			}
 			// Declare the y (vertical position) scale.
 			yScale.current = d3.scaleLinear()
-				.domain([0, d3.max(bins, (d) => d.length)])
+				.domain([0, maxY])
 				.range([height, 0]);
 			//Add y Axis and the label
 			yAxisRef.current = svgRef.current.append("g")
@@ -100,7 +121,7 @@ function Histogram({ currColName, numBins = 20, currColDispName, year }) {
 			svgRef.current.append("g")
 				.attr("fill", "#69b3a2")
 				.selectAll()
-				.data(bins)
+				.data(currBins)
 				.join("rect")
 				.attr("x", (d) => xScale.current(d.x0) + 1)
 				.attr("width", (d) => xScale.current(d.x1) - xScale.current(d.x0))
@@ -128,7 +149,7 @@ function Histogram({ currColName, numBins = 20, currColDispName, year }) {
 
 			// Animation
 			svgRef.current.selectAll("rect")
-				.data(bins)
+				.data(currBins)
 				.transition()
 				.duration(800)
 				.delay((d, i) => { return i * 20 })
