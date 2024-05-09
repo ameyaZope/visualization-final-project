@@ -103,7 +103,7 @@ function ChoroplethMap({ year, selectedCountries, selectedFeature, handleCountry
 		
 		colorRef.current = d3.scaleThreshold()
 			.domain(colorDomain)
-			.range(["#b2e061", "#6cc24a", "#1e8547", "#00441b"])
+			.range(["#aad9b5", "#5ba97d", "#307d56", "#13542d"])
 			.unknown("#E6E6E6");
 
 		//declare polygon and polyline
