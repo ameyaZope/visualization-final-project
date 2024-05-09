@@ -288,6 +288,7 @@ function ParallelCoordinatePlot({ year, selectedCountries, handleCountrySelectio
 				.attr("d", pathRef.current)
 				.style("fill", "none")
 				.style("stroke", d => { return colorRef.current(d['clusterId']) })
+				.attr('stroke-width', '1.5px')
 				.style("opacity", d => selectedCountries.includes(d.Code) ? 1 : 0);
 
 			// Draw the axis and apply drag behavior
@@ -427,6 +428,7 @@ function ParallelCoordinatePlot({ year, selectedCountries, handleCountrySelectio
 				.attr("d", pathRef.current)
 				.style("fill", "none")
 				.style("stroke", d => { return colorRef.current(d['clusterId']) })
+				.attr('stroke-width', '1.5px')
 				.style("opacity", d => selectedCountries.includes(d.Code) ? 1 : 0);
 		});
 	}, [year])
