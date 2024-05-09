@@ -13,7 +13,6 @@ import Scatterplot from "../components/scatterplot";
 function HomePage() {
 
 	const featureList = [
-		'Adjusted_school_years',
 		'Annual CO₂ emissions (per capita)',
 		'BCG_immunization',
 		'Cantril_ladder_score',

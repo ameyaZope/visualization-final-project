@@ -32,7 +32,7 @@ function Histogram({ currColName, numBins = 20, currColDispName, year }) {
 			.attr("text-anchor", "middle")
 			.style("font", "bold 16px 'JetBrains Mono'")
 			.style("text-decoration", "underline")
-			.text(`Frequency vs ${currColDispName}`);
+			.text(`${currColDispName}`);
 
 		// get the data
 		d3.json(`/apis/data/histogram`).then(function (histogramData) {
