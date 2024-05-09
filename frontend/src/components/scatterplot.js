@@ -139,7 +139,7 @@ function Scatterplot({ xAxisFeature, yAxisFeature, year, selectedCountries, hand
 			.attr("text-anchor", "middle")
 			.style("text-decoration", "underline")
 			.style("font", "bold 16px 'JetBrains Mono'")
-			.text(`${ylabel} vs ${xlabel}`);
+			.text(`Growth vs Education`);
 
 		d3.json(`/apis/data/scatterplot/${year}`).then(function (scatterplotData) {
 			// create and place the x axis

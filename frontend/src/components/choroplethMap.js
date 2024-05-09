@@ -85,7 +85,7 @@ function ChoroplethMap({ year, selectedCountries, selectedFeature, handleCountry
 			.attr("text-anchor", "middle")
 			.style("text-decoration", "underline")
 			.style("font", "bold 16px 'JetBrains Mono'")
-			.text(`${selectedFeature}`);
+			.text(`Growth: ${selectedFeature}`);
 
 		const projection = d3.geoEqualEarth()
 			.scale(100)
