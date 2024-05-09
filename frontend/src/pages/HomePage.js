@@ -218,15 +218,15 @@ function HomePage() {
 						</div>
 						<div style={{ display: 'flex', marginTop: '5px' }}>
 							<div style={{ display: 'flex', alignItems: 'center', marginRight: '5px' }}>
-								<div style={{ width: '10px', height: '10px', borderRadius: '50%', backgroundColor: '#2ca02c', marginLeft: '5px' }}></div>
+								<div style={{ width: '10px', height: '10px', borderRadius: '50%', backgroundColor: '#2ca02c', marginLeft: '5px', marginRight: '2px' }}></div>
 								<Typography variant="body2">Developed</Typography>
 							</div>
 							<div style={{ display: 'flex', alignItems: 'center', marginRight: '5px' }}>
-								<div style={{ width: '10px', height: '10px', borderRadius: '50%', backgroundColor: '#ff7f0e'}}></div>
+								<div style={{ width: '10px', height: '10px', borderRadius: '50%', backgroundColor: '#ff7f0e', marginRight: '2px'}}></div>
 								<Typography variant="body2">Developing</Typography>
 							</div>
 							<div style={{ display: 'flex', alignItems: 'center', marginRight: '5px' }}>
-								<div style={{ width: '10px', height: '10px', borderRadius: '50%', backgroundColor: '#1f77b4'}}></div>
+								<div style={{ width: '10px', height: '10px', borderRadius: '50%', backgroundColor: '#1f77b4', marginRight: '2px'}}></div>
 								<Typography variant="body2">Underdeveloped</Typography>
 							</div>
 						</div>
