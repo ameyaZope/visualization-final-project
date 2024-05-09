@@ -84,7 +84,7 @@ function ChoroplethMap({ year, selectedCountries, selectedFeature, handleCountry
 			.attr("y", 0 - (margin.top / 2))
 			.attr("text-anchor", "middle")
 			.style("text-decoration", "underline")
-			.style("font", "bold 16px Comic Sans MS")
+			.style("font", "bold 16px 'JetBrains Mono'")
 			.text(`${selectedFeature}`);
 
 		const projection = d3.geoEqualEarth()
@@ -265,7 +265,7 @@ function ChoroplethMap({ year, selectedCountries, selectedFeature, handleCountry
 				.attr("dy", "1em") 
 				.attr("dx", -5) 
 				.text(d => d3.format(",.2f")(d)) 
-				.style("font", "bold 16px Comic Sans MS")
+				.style("font", "bold 16px 'JetBrains Mono'")
 				.style("text-anchor", "start")
 				.attr("transform", (d, i) => {return `translate(0, 10) rotate(25, ${i*60}, 30)`}); 
 		})

@@ -134,11 +134,11 @@ function Scatterplot({ xAxisFeature, yAxisFeature, year, selectedCountries, hand
 			.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 		svgRef.current.append('g')
 			.append("text")
-			.attr("x", width / 2)
+			.attr("x", width / 2 - 25)
 			.attr("y", 0 - (margin.top / 2))
 			.attr("text-anchor", "middle")
 			.style("text-decoration", "underline")
-			.style("font", "bold 16px Comic Sans MS")
+			.style("font", "bold 16px 'JetBrains Mono'")
 			.text(`${ylabel} vs ${xlabel}`);
 
 		d3.json(`/apis/data/scatterplot/${year}`).then(function (scatterplotData) {
@@ -156,7 +156,7 @@ function Scatterplot({ xAxisFeature, yAxisFeature, year, selectedCountries, hand
 					.duration(1000)
 					.selectAll('text')
 					.attr('transform', 'translate(-10, 0) rotate(-45)')
-					.style("font", "bold 16px Comic Sans MS")
+					.style("font", "bold 16px 'JetBrains Mono'")
 					.style('text-anchor', 'end')
 			}
 			else {
@@ -177,7 +177,7 @@ function Scatterplot({ xAxisFeature, yAxisFeature, year, selectedCountries, hand
 					.duration(1000)
 					.selectAll('text')
 					.attr('transform', 'translate(-10, 0) rotate(-45)')
-					.style("font", "bold 16px Comic Sans MS")
+					.style("font", "bold 16px 'JetBrains Mono'")
 					.style('text-anchor', 'end')
 			}
 
@@ -188,7 +188,7 @@ function Scatterplot({ xAxisFeature, yAxisFeature, year, selectedCountries, hand
 				.attr("y", height + margin.bottom*4/5)
 				.attr("fill", "currentColor")
 				.style("text-anchor", "middle")
-				.style("font", "bold 16px Comic Sans MS")
+				.style("font", "bold 16px 'JetBrains Mono'")
 				.text(`${xlabel} →`)
 
 			//create and place the y axis. 
@@ -204,7 +204,7 @@ function Scatterplot({ xAxisFeature, yAxisFeature, year, selectedCountries, hand
 					.selectAll('text')
 					.attr('transform', 'translate(-10, 0) rotate(-45)')
 					.style('text-anchor', 'end')
-					.style("font", "bold 16px Comic Sans MS")
+					.style("font", "bold 16px 'JetBrains Mono'");
 			}
 			else {
 				let maxVal = 0;
@@ -223,7 +223,7 @@ function Scatterplot({ xAxisFeature, yAxisFeature, year, selectedCountries, hand
 					.selectAll('text')
 					.attr('transform', 'translate(-10, 0) rotate(-45)')
 					.style('text-anchor', 'end')
-					.style("font", "bold 16px Comic Sans MS")
+					.style("font", "bold 16px 'JetBrains Mono'")
 			}
 
 			svgRef.current.append('g')
@@ -233,7 +233,7 @@ function Scatterplot({ xAxisFeature, yAxisFeature, year, selectedCountries, hand
 				.attr("x", 0 - (height / 2))
 				.attr("dy", "1em")
 				.style("text-anchor", "middle")
-				.style("font", "bold 16px Comic Sans MS")
+				.style("font", "bold 16px 'JetBrains Mono'")
 				.text(`${ylabel} →`);
 
 			var tooltip = d3

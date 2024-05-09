@@ -27,10 +27,10 @@ function Histogram({ currColName, numBins = 20, currColDispName, year }) {
 			.attr("transform",
 				"translate(" + margin.left + "," + margin.top + ")");
 		svgRef.current.append("text")
-			.attr("x", width / 2)
+			.attr("x", width / 2 - 15)
 			.attr("y", 0 - (margin.top / 2))
 			.attr("text-anchor", "middle")
-			.style("font", "bold 16px Comic Sans MS")
+			.style("font", "bold 16px 'JetBrains Mono'")
 			.style("text-decoration", "underline")
 			.text(`Frequency vs ${currColDispName}`);
 
@@ -65,11 +65,11 @@ function Histogram({ currColName, numBins = 20, currColDispName, year }) {
 				.selectAll("text")
 				.attr("transform", "translate(-10,0)rotate(-45)")
 				.style("text-anchor", "end")
-				.style("font", "bold 16px Comic Sans MS");
+				.style("font", "bold 16px 'JetBrains Mono'");
 			svgRef.current.append("text")
 				.attr("transform", `translate(${width / 2}, ${height + margin.bottom/2 + 5})`)
 				.style("text-anchor", "middle")
-				.style("font", "bold 16px Comic Sans MS")
+				.style("font", "bold 16px 'JetBrains Mono'")
 				.text(`${currColDispName}`);
 
 			let maxY = Number.NEGATIVE_INFINITY;
@@ -94,7 +94,7 @@ function Histogram({ currColName, numBins = 20, currColDispName, year }) {
 				.selectAll("text")
 				.attr("transform", "translate(-10,0)rotate(-45)")
 				.style("text-anchor", "end")
-				.style("font", "bold 16px Comic Sans MS");
+				.style("font", "bold 16px 'JetBrains Mono'");
 			svgRef.current.append("text")
 				.attr("transform", "rotate(-90)")
 				.attr("y", 0 - margin.left)
@@ -102,7 +102,7 @@ function Histogram({ currColName, numBins = 20, currColDispName, year }) {
 				.attr("dy", "1em")
 				.style("text-anchor", "middle")
 				.text("Frequency")
-				.style("font", "bold 16px Comic Sans MS");
+				.style("font", "bold 16px 'JetBrains Mono'");
 
 			var tooltip = d3
 				.select('body')

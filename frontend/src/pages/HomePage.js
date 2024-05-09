@@ -152,7 +152,7 @@ function HomePage() {
 				<Grid item style={{ height: '350px', width: '24%', marginTop: '10px', marginLeft: '10px' }}>
 					<Paper elevation={10} style={{ height: '100%', width: '100%' }}>
 						<div style={{ padding: '10px' }}>
-							<Typography variant="h5" style={{ fontWeight: 'bold', textAlign: 'center' }}>
+							<Typography variant="h5" style={{ fontFamily: "'JetBrains Mono'", fontWeight: 'bold', textAlign: 'center' }}>
 								Education as a Catalyst for Change
 							</Typography>
 						</div>
@@ -181,13 +181,14 @@ function HomePage() {
 									'& .MuiSlider-markLabel': {
 										top: 26,
 										color: 'green',
-										fontWeight: 'bold'
+										fontWeight: 'bold',
+										fontFamily: "'JetBrains Mono'"
 									}
 								}}
 							/>
 						</div>
 						<div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-							<FormControl style={{ minWidth: '200px', marginBottom: '10px' }}>
+							<FormControl style={{ minWidth: '200px', marginBottom: '10px', fontFamily: "'JetBrains Mono'" }}>
 								<InputLabel id="education-metric-label">X-Axis: Education metric</InputLabel>
 								<Select
 									labelId="education-metric-label"
@@ -197,7 +198,7 @@ function HomePage() {
 									onChange={e => { changeEduMetric(e.target.value) }}
 								>
 									{featureList.map((feature) => (
-										<MenuItem key={feature} value={feature}>{feature}</MenuItem>
+										<MenuItem key={feature} value={feature} style={{ fontFamily: "'JetBrains Mono'" }}>{feature}</MenuItem>
 									))}
 								</Select>
 							</FormControl>
@@ -219,15 +220,15 @@ function HomePage() {
 						<div style={{ display: 'flex', marginTop: '5px' }}>
 							<div style={{ display: 'flex', alignItems: 'center', marginRight: '5px' }}>
 								<div style={{ width: '10px', height: '10px', borderRadius: '50%', backgroundColor: '#2ca02c', marginLeft: '5px', marginRight: '2px' }}></div>
-								<Typography variant="body2">Developed</Typography>
+								<Typography variant="body2" style={{ fontFamily: "'JetBrains Mono'", fontWeight: 'bold', fontSize: '12px' }} >Developed</Typography>
 							</div>
 							<div style={{ display: 'flex', alignItems: 'center', marginRight: '5px' }}>
 								<div style={{ width: '10px', height: '10px', borderRadius: '50%', backgroundColor: '#ff7f0e', marginRight: '2px'}}></div>
-								<Typography variant="body2">Developing</Typography>
+								<Typography variant="body2" style={{ fontFamily: "'JetBrains Mono'", fontWeight: 'bold', fontSize: '12px' }} >Developing</Typography>
 							</div>
 							<div style={{ display: 'flex', alignItems: 'center', marginRight: '5px' }}>
 								<div style={{ width: '10px', height: '10px', borderRadius: '50%', backgroundColor: '#1f77b4', marginRight: '2px'}}></div>
-								<Typography variant="body2">Underdeveloped</Typography>
+								<Typography variant="body2" style={{ fontFamily: "'JetBrains Mono'", fontWeight: 'bold', fontSize: '12px' }} >Underdeveloped</Typography>
 							</div>
 						</div>
 					</Paper>

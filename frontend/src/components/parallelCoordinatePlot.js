@@ -313,7 +313,7 @@ function ParallelCoordinatePlot({ year, selectedCountries, handleCountrySelectio
 				.attr("text-anchor", "middle")
 				.style("font-size", "20px")
 				.style("text-decoration", "underline")
-				.style("font", "bold 16px Comic Sans MS")
+				.style("font", "bold 16px 'JetBrains Mono'")
 				.text(`Parallel Coordinate Plot`);
 
 			// Create a brush for each axis
