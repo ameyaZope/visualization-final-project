@@ -197,7 +197,7 @@ function ParallelCoordinatePlot({ year, selectedCountries, handleCountrySelectio
 
 
 			pathRef.current = function path(d) {
-				return d3.line()(dimensions.map(p => { return [xRef.current(p), yRef.current[p](d[p])] }));
+				return d3.line().curve(d3.curveCatmullRom.alpha(0.5))(dimensions.map(p => { return [xRef.current(p), yRef.current[p](d[p])] }));
 			}
 
 			// Handle dragging
