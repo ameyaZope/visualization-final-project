@@ -106,6 +106,8 @@ function Histogram({ currColName, numBins = 20, currColDispName, year }) {
 				.attr("width", (d) => xScale.current(d.x1) - xScale.current(d.x0))
 				.attr("y", (d) => yScale.current(0))
 				.attr("height", (d) => height - yScale.current(0))
+				.attr("stroke", "black") 
+				.attr("stroke-width", 1)
 				.on('mouseover', function (event, data) {
 					tooltip
 						.html(
@@ -179,6 +181,8 @@ function Histogram({ currColName, numBins = 20, currColDispName, year }) {
 				.attr("width", (d) => xScale.current(d.x1) - xScale.current(d.x0))
 				.attr("y", (d) => yScale.current(0))
 				.attr("height", (d) => height - yScale.current(0))
+				.attr("stroke", "black") 
+				.attr("stroke-width", 1)
 				.on('mouseover', function (event, data) {
 					tooltip
 						.html(
