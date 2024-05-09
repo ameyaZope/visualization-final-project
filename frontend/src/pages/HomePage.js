@@ -151,11 +151,12 @@ function HomePage() {
 			<Grid container spacing={1.5} height={'100%'}>
 				<Grid item style={{ height: '350px', width: '24%', marginTop: '10px', marginLeft: '10px' }}>
 					<Paper elevation={10} style={{ height: '100%', width: '100%' }}>
-						<div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '10px' }}>
-							<Typography variant="h5" style={{ fontWeight: 'bold', textAlign: 'center'}}>
+						<div style={{ padding: '10px' }}>
+							<Typography variant="h5" style={{ fontWeight: 'bold', textAlign: 'center' }}>
 								Education as a Catalyst for Change
 							</Typography>
-
+						</div>
+						<div style={{ display: 'flex', marginBottom: '10px' }}>
 							<IconButton
 								aria-label={isPlaying ? "pause" : "play"}
 								color={isPlaying ? "error" : "success"}
@@ -169,7 +170,8 @@ function HomePage() {
 								value={year} onChange={changeYear}
 								sx={{
 									color: 'green',
-									width: '80%',
+									marginTop: '15px',
+									width: '70%',
 									'& .MuiSlider-mark': {
 										backgroundColor: 'green',
 										width: '8px',
@@ -213,6 +215,20 @@ function HomePage() {
 									))}
 								</Select>
 							</FormControl>
+						</div>
+						<div style={{ display: 'flex', marginTop: '5px' }}>
+							<div style={{ display: 'flex', alignItems: 'center', marginRight: '5px' }}>
+								<div style={{ width: '10px', height: '10px', borderRadius: '50%', backgroundColor: '#2ca02c', marginLeft: '5px' }}></div>
+								<Typography variant="body2">Developed</Typography>
+							</div>
+							<div style={{ display: 'flex', alignItems: 'center', marginRight: '5px' }}>
+								<div style={{ width: '10px', height: '10px', borderRadius: '50%', backgroundColor: '#ff7f0e'}}></div>
+								<Typography variant="body2">Developing</Typography>
+							</div>
+							<div style={{ display: 'flex', alignItems: 'center', marginRight: '5px' }}>
+								<div style={{ width: '10px', height: '10px', borderRadius: '50%', backgroundColor: '#1f77b4'}}></div>
+								<Typography variant="body2">Underdeveloped</Typography>
+							</div>
 						</div>
 					</Paper>
 				</Grid>
